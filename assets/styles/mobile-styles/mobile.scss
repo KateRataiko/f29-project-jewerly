@@ -67,6 +67,9 @@ $lh-large: 130%;
     @include font($fs-medium);
 }
 
+.wrapper {
+    padding: 20px;
+}
 /* styles for блок-хедер START*/
 /* styles for блок-хедер END*/
 

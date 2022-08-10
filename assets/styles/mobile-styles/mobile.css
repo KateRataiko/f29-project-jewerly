@@ -42,6 +42,10 @@
   line-height: 120%;
 }
 
+.wrapper {
+  padding: 20px;
+}
+
 /* styles for блок-хедер START*/
 /* styles for блок-хедер END*/
 /* styles for блок-приветствие START*/
