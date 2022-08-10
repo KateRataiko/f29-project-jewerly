@@ -53,10 +53,57 @@
 /* styles for блок-приветствие START*/
 /* styles for блок-приветствие END*/
 /* srtyles for блок-про производство START*/
+.workshop {
+  max-width: 100%;
+  height: auto;
+}
+.workshop__text {
+  margin-top: 20px;
+}
+.workshop__images_img1 {
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 2%;
+}
+.workshop__images_img2 {
+  display: none;
+}
+.workshop__images_img3 {
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 2%;
+}
+
 /* styles for блок-про производство END*/
 /* srtyles for блок-витрина START*/
 /* styles for блок-витрина END*/
 /* srtyles for блок-отзывы START*/
+.opinions {
+  max-width: 100%;
+  height: auto;
+}
+.opinions__container-content {
+  border-bottom: 1px solid #747272;
+}
+.opinions__content {
+  background-color: #F1F1F1;
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 2%;
+}
+.opinions__content_img {
+  float: left;
+  margin-right: 10px;
+  margin-top: 10px;
+  border-radius: 50%;
+}
+.opinions__content_title {
+  padding: 15px;
+}
+.opinions__content_text {
+  padding-right: 10px;
+}
+
 /* styles for блок-отзывы END*/
 /* srtyles for блок-футер START*/
 /* styles for блок-футер END*//*# sourceMappingURL=mobile.css.map */
