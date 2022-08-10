@@ -1,23 +1,23 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "Inter";
-  src: local("Inter Light"), local("Inter-Light"), url(../../fonts/Inter-Light.ttf);
+  font-family: 'Inter';
+  font-style: normal;
   font-weight: 300;
-  font-style: normal;
+  src: local(""), url("../../fonts/inter-v12-latin_cyrillic-300.woff2") format("woff2"), url("../../fonts/inter-v12-latin_cyrillic-300.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Inter";
-  src: local("Inter Medium"), local("Inter-Medium"), url(../../fonts/Inter-Medium.ttf);
-  font-weight: 500;
+  font-family: 'Inter';
   font-style: normal;
-}
-
-@font-face {
-  font-family: "Inter";
-  src: local("Inter SemiBold"), local("Inter-SemiBold"), url(../../fonts/Inter-SemiBold.ttf);
   font-weight: 600;
+  src: local(""), url("../../fonts/inter-v12-latin_cyrillic-600.woff2") format("woff2"), url("../../fonts/inter-v12-latin_cyrillic-600.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
   font-style: normal;
+  font-weight: 500;
+  src: local(""), url("../../fonts/inter-v12-latin_cyrillic-500.woff2") format("woff2"), url("../../fonts/inter-v12-latin_cyrillic-500.woff") format("woff");
 }
 
 .title {
