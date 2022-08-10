@@ -1,7 +1,5 @@
 @charset "UTF-8";
-@media screen and (min-width: 992px) {
-  /* styles for блок-хедер START*/
-  /* styles for блок-хедер END*/
+@media screen and (min-width: 1024px) {
   /* styles for блок-приветствие START*/
   /* styles for блок-приветствие END*/
   /* srtyles for блок-про производство START*/

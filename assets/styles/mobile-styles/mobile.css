@@ -1,15 +1,43 @@
 @charset "UTF-8";
-@media screen and (max-width: 767px) {
-  /* styles for блок-хедер START*/
-  /* styles for блок-хедер END*/
-  /* styles for блок-приветствие START*/
-  /* styles for блок-приветствие END*/
-  /* srtyles for блок-про производство START*/
-  /* styles for блок-про производство END*/
-  /* srtyles for блок-витрина START*/
-  /* styles for блок-витрина END*/
-  /* srtyles for блок-отзывы START*/
-  /* styles for блок-отзывы END*/
-  /* srtyles for блок-футер START*/
-  /* styles for блок-футер END*/
-}/*# sourceMappingURL=mobile.css.map */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* styles for блок-хедер START*/
+/* styles for блок-хедер END*/
+/* styles for блок-приветствие START*/
+/* styles for блок-приветствие END*/
+/* srtyles for блок-про производство START*/
+/* styles for блок-про производство END*/
+/* srtyles for блок-витрина START*/
+/* styles for блок-витрина END*/
+/* srtyles for блок-отзывы START*/
+.opinions {
+  max-width: 100%;
+  height: auto;
+}
+.opinions__wrapper {
+  padding: 20px;
+}
+.opinions__content {
+  background-color: #F1F1F1;
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 2%;
+}
+.opinions__content_img {
+  float: left;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+.opinions__content_title {
+  padding: 15px;
+}
+.opinions__content_text {
+  padding-right: 10px;
+}
+
+/* styles for блок-отзывы END*/
+/* srtyles for блок-футер START*/
+/* styles for блок-футер END*//*# sourceMappingURL=mobile.css.map */
