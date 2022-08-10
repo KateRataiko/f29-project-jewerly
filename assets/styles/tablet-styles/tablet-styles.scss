@@ -1,17 +1,47 @@
-@media screen and (min-width: 768px) and (max-width: 1023px){
+// ================ Переменные для шрифтов
 
-/* styles for блок-приветствие START*/
-/* styles for блок-приветствие END*/
+// Для свойства font-family
+$ff-primary: "Inter", Verdana, sans-serif;
+// $ff-secondary: можно добавить, если будет несколько шрифтов
 
-/* srtyles for блок-про производство START*/
-/* styles for блок-про производство END*/
+// Для свойства font-weight
+$fw-light: 300;
+$fw-meduim: 500;
+$fw-bold: 600;
 
-/* srtyles for блок-витрина START*/
-/* styles for блок-витрина END*/
+// Для свойства font-size
+$fs-small: 1rem;
+$fs-medium: 1.25rem;
+$fs-large: 1.875rem;
 
-/* srtyles for блок-отзывы START*/
-/* styles for блок-отзывы END*/
+// Для свойства line-height
+$lh-small: 100%;
+$lh-medium: 120%;
+$lh-large: 130%;
 
-/* srtyles for блок-футер START*/
-/* styles for блок-футер END*/
+// ================ Миксин для шрифтов
+
+@mixin font($font-size, $line-height: $lh-medium, $font-weight: $fw-meduim, $font-family: $ff-primary,) {
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    /* styles for блок-приветствие START*/
+    /* styles for блок-приветствие END*/
+
+    /* srtyles for блок-про производство START*/
+    /* styles for блок-про производство END*/
+
+    /* srtyles for блок-витрина START*/
+    /* styles for блок-витрина END*/
+
+    /* srtyles for блок-отзывы START*/
+    /* styles for блок-отзывы END*/
+
+    /* srtyles for блок-футер START*/
+    /* styles for блок-футер END*/
 }

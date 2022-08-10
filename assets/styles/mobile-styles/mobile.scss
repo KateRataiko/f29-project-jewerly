@@ -1,3 +1,56 @@
+@font-face {
+    font-family: "Inter";
+    src: local("Inter Light"), local("Inter-Light"),
+    url(../../fonts/Inter-Light.ttf);
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: local("Inter Medium"), local("Inter-Medium"),
+    url(../../fonts/Inter-Medium.ttf);
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: local("Inter SemiBold"), local("Inter-SemiBold"),
+    url(../../fonts/Inter-SemiBold.ttf);
+    font-weight: 600;
+    font-style: normal;
+}
+
+// ================ Переменные для шрифтов
+
+// Для свойства font-family
+$ff-primary: "Inter", Verdana, sans-serif;
+// $ff-secondary: можно добавить, если будет несколько шрифтов
+
+// Для свойства font-weight
+$fw-light: 300;
+$fw-meduim: 500;
+$fw-bold: 600;
+
+// Для свойства font-size
+$fs-small: 1rem;
+$fs-medium: 1.25rem;
+$fs-large: 1.875rem;
+
+// Для свойства line-height
+$lh-small: 100%;
+$lh-medium: 120%;
+$lh-large: 130%;
+
+// ================ Миксин для шрифтов
+
+@mixin font($font-size, $line-height: $lh-medium, $font-weight: $fw-meduim, $font-family: $ff-primary,) {
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+}
 
 /* styles for блок-хедер START*/
 /* styles for блок-хедер END*/
