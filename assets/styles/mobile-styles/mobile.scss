@@ -84,6 +84,31 @@ $lh-large: 130%;
 /* styles for блок-приветствие END*/
 
 /* srtyles for блок-про производство START*/
+.workshop {
+    max-width: 100%;
+    height: auto;
+
+    &__text {
+        margin-top: 20px;
+    }
+
+    &__images {
+
+        &_img1 {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        &_img2 {
+            display: none;
+        }
+
+        &_img3 {
+            width: 100%;
+            margin-top: 20px;
+        }
+    }
+}
 /* styles for блок-про производство END*/
 
 /* srtyles for блок-витрина START*/
