@@ -2,6 +2,78 @@
     margin: 0;
     padding: 0;
 }
+@font-face {
+    font-family: "Inter";
+    src: local("Inter Light"), local("Inter-Light"),
+    url(../../fonts/Inter-Light.ttf);
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: local("Inter Medium"), local("Inter-Medium"),
+    url(../../fonts/Inter-Medium.ttf);
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: local("Inter SemiBold"), local("Inter-SemiBold"),
+    url(../../fonts/Inter-SemiBold.ttf);
+    font-weight: 600;
+    font-style: normal;
+}
+
+// ================ Переменные для шрифтов
+
+// Для свойства font-family
+$ff-primary: "Inter", Verdana, sans-serif;
+// $ff-secondary: можно добавить, если будет несколько шрифтов
+
+// Для свойства font-weight
+$fw-light: 300;
+$fw-meduim: 500;
+$fw-bold: 600;
+
+// Для свойства font-size
+$fs-small: 1rem;
+$fs-medium: 1.25rem;
+$fs-large: 1.875rem;
+
+// Для свойства line-height
+$lh-small: 100%;
+$lh-medium: 120%;
+$lh-large: 130%;
+
+// ================ Миксин для шрифтов
+
+@mixin font($font-size, $line-height: $lh-medium, $font-weight: $fw-meduim, $font-family: $ff-primary,) {
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+}
+// Заголовки секций-блоков h2, кроме h1, 30px
+.title {
+    @include font($fs-large, $lh-large, $fw-bold);
+    text-transform: uppercase;
+}
+
+// Небольшие текстовые элементы, мелкие подписи, p, span, 16px
+.text {
+    @include font($fs-small, $lh-medium, $fw-light);
+}
+
+// Заголовки карточек, текст для кнопок, т.д. 20px
+.small-title {
+    @include font($fs-medium);
+}
+
+.wrapper {
+    padding: 20px;
+}
 /* styles for блок-хедер START*/
 /* styles for блок-хедер END*/
 
@@ -18,10 +90,6 @@
 .opinions {
     max-width: 100%;
     height: auto;
-
-    &__wrapper {
-        padding: 20px;
-    }
 
     &__content {
         background-color: #F1F1F1;
