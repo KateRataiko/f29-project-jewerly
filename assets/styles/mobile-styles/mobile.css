@@ -20,6 +20,28 @@
   font-style: normal;
 }
 
+.title {
+  font-family: "Inter", Verdana, sans-serif;
+  font-weight: 600;
+  font-size: 1.875rem;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+
+.text {
+  font-family: "Inter", Verdana, sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 120%;
+}
+
+.small-title {
+  font-family: "Inter", Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 120%;
+}
+
 /* styles for блок-хедер START*/
 /* styles for блок-хедер END*/
 /* styles for блок-приветствие START*/
