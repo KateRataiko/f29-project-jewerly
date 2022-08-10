@@ -63,6 +63,7 @@
 .workshop__images_img1 {
   width: 100%;
   margin-top: 20px;
+  border-radius: 2%;
 }
 .workshop__images_img2 {
   display: none;
@@ -70,6 +71,7 @@
 .workshop__images_img3 {
   width: 100%;
   margin-top: 20px;
+  border-radius: 2%;
 }
 
 /* styles for блок-про производство END*/
