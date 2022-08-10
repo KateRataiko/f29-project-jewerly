@@ -1,9 +1,4 @@
 @charset "UTF-8";
-* {
-  margin: 0;
-  padding: 0;
-}
-
 @font-face {
   font-family: "Inter";
   src: local("Inter Light"), local("Inter-Light"), url(../../fonts/Inter-Light.ttf);
@@ -61,6 +56,9 @@
   max-width: 100%;
   height: auto;
 }
+.opinions__container-content {
+  border-bottom: 1px solid #747272;
+}
 .opinions__content {
   background-color: #F1F1F1;
   margin: 20px 0;
@@ -70,6 +68,7 @@
 .opinions__content_img {
   float: left;
   margin-right: 10px;
+  margin-top: 10px;
   border-radius: 50%;
 }
 .opinions__content_title {
