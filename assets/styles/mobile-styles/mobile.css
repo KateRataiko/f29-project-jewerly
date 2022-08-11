@@ -54,6 +54,12 @@
   padding: 20px;
 }
 
+.btn {
+  border: 0.5px solid rgb(18, 18, 18);
+  border-radius: 20px;
+  background-color: #F1F1F1;
+}
+
 /* styles for блок-хедер START*/
 /* styles for блок-хедер END*/
 /* styles for блок-приветствие START*/
@@ -166,7 +172,30 @@
   margin: 2rem 0 0 0;
 }
 .footer__container {
-  margin: 1rem 0;
+  margin: 1rem 0 0 0;
+}
+.footer__fieldset {
+  all: unset;
+  margin: 2rem 0 0 0;
+}
+.footer__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.form-item {
+  border: 0.5px solid rgb(18, 18, 18);
+  height: 1.5rem;
+  width: 14rem;
+}
+.form-item:focus {
+  background-color: white;
+}
+
+.form-btn {
+  height: 1.8rem;
+  width: 14rem;
 }
 
 /* styles for блок-футер END*//*# sourceMappingURL=mobile.css.map */

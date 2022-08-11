@@ -170,7 +170,7 @@
                 </div>
             </div>
             <div class="footer__information">
-                <p>Контакты:</p>
+                <p class="small-title">Контакты:</p>
                 <div class="footer__container">
                     <p>Позвонить по телефону <a class="footer__link" href="tel:+375293164866">+375293164866</a></p>
                 </div>
@@ -189,6 +189,21 @@
                     </p>
                 </div>
             </div>
+            <fieldset class="footer__fieldset">
+                <legend class="footer__container">
+                    Оставьте свой номер телефона,
+                    Вам перезвонят
+                </legend>
+                <form class="footer__form">
+                    <div>
+                        <input class="footer__container form-item" type="text" pattern="\D [^0-9]" name="name"
+                            placeholder="Ваше имя">
+                        <input class="footer__container form-item" type="number" name="tel" placeholder="Ваш телефон">
+                    </div>
+                    <button class="footer__container btn form-btn small-title" type="button">Отправить для
+                        связи</button>
+                </form>
+            </fieldset>
         </div>
     </footer>
     <!--блок-футер END-->
