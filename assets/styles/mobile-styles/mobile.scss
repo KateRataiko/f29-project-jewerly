@@ -216,8 +216,19 @@ $lh-large: 130%;
     text-align: center;
 
     &__link {
-        text-decoration: none;
-        color: black
+        color: black;
+
+        &:focus{
+            color: white;
+        }
+    }
+    
+    &__information{
+        margin: 2rem 0 0 0;
+    }
+    
+    &__container{
+        margin: 1rem 0;
     }
 }
 /* styles for блок-футер END*/
