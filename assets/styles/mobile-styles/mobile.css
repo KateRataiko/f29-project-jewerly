@@ -86,21 +86,21 @@
   border-bottom: 1px solid #747272;
 }
 .opinions__content {
-  background-color: #F1F1F1;
   margin: 20px 0;
   padding: 15px;
   border-radius: 2%;
+  background-color: #F1F1F1;
 }
-.opinions__content_img {
+.opinions__img {
   float: left;
   margin-right: 10px;
   margin-top: 10px;
   border-radius: 50%;
 }
-.opinions__content_title {
+.opinions__title {
   padding: 15px;
 }
-.opinions__content_text {
+.opinions__text {
   padding-right: 10px;
 }
 
