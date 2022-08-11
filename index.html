@@ -15,14 +15,84 @@
 <body>
     <!--блок-хедер START-->
     <header>
-        <div class="wrapper"></div>
+        <div class="wrapper">
+
+            <div class="header">
+                <img class="header__logo" src=./assets/images/Skinn.png alt="print" />
+                <a href="#" class="header__shop">Shop All</a>
+                <a href="#" class="header__story">Our story</a>
+                <a href="#" class="header__blog">Blog</a>
+                <a href="#" class="header__pages">Pages</a>
+                <div class="header__cart">Cart</div>
+                <span class="cart_img-container">
+                    <img class="header__frame-img" src="./assets/images/Frame.png" alt="print"></span>
+            </div>
+
+            <div class="header__menu-small">
+
+                <nav role="navigation">
+                    <div id="menuToggle">
+                        <!--
+              A fake / hidden checkbox is used as click reciever,
+              so you can use the :checked selector on it.
+              -->
+                        <input type="checkbox" />
+
+                        <!--
+              Some spans to act as a hamburger.
+              
+              They are acting like a real hamburger,
+              not that McDonalds stuff.
+              -->
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                        <!--
+              Too bad the menu has to be inside of the button
+              but hey, it's pure CSS magic.
+              -->
+                        <ul id="menu">
+                            <a href="#">
+                                <li>Shop All</li>
+                            </a>
+                            <a href="#">
+                                <li>Our Story</li>
+                            </a>
+                            <a href="#">
+                                <li>Blog</li>
+                            </a>
+                            <a href="#">
+                                <li>Pages</li>
+                            </a>
+
+                            </a>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+        </div>
     </header>
     <!--блок-хедер END-->
 
     <main>
         <!--блок-приветствие START-->
-        <section>
-            <div class="wrapper"></div>
+        <section class="welcome">
+            <div class="welcome__wrapper wrapper">
+                <h4 class="welcome__slogan slogan"> Adilio.Store – будь неотразима! </h4>
+                <p class="welcome__text text">Украшения из натуральных камней и премиум фурнитуры
+                    <br>
+                    <br> Создание новых
+                    украшений из старых материалов
+                </p>
+
+                <div class="welcome__image">
+                    <img class="welcome__image_model" src="assets/images/model.JPG" alt="welcome">
+
+
+
+                </div>
         </section>
         <!--блок-приветствие END-->
 
@@ -52,23 +122,35 @@
                 <h4 class="opinions__small-title small-title">Отзывы покупателей</h4>
                 <div class="opinions__container-content">
                     <div class="opinions__content">
+
+
                         <img class="opinions__img" src="assets/images/Ekaterina.jpg" alt="photo">
                         <h4 class="opinions__title small-title">Екатерина г.Солигорск</h4>
-                        <p class="opinions__text text">Спасибо большое. Всё великолепно, начиная с упаковки, заканчивая изделиями и моими эмоциями от заказа 💜💜💜</p>
+                        <p class="opinions__text text">Спасибо большое. Всё великолепно, начиная с упаковки, заканчивая
+                            изделиями и моими эмоциями от заказа 💜💜💜</p>
+
                     </div>
                 </div>
                 <div class="opinions__container-content">
                     <div class="opinions__content">
+
+
                         <img class="opinions__img" src="assets/images/Natalya.PNG" alt="photo">
                         <h4 class="opinions__title small-title">Наталья, г.Марьина горка</h4>
-                        <p class="opinions__text text">Ирина, большое спасибо за чокеры! Целый день хожу и получаю комплименты. Радуется душа!!!!</p>
+                        <p class="opinions__text text">Ирина, большое спасибо за чокеры! Целый день хожу и получаю
+                            комплименты. Радуется душа!!!!</p>
+
                     </div>
                 </div>
                 <div>
                     <div class="opinions__content">
+
+
                         <img class="opinions__img" src="assets/images/Inna.PNG" alt="photo">
                         <h4 class="opinions__title small-title">Инна, г.Минск</h4>
-                        <p class="opinions__text text">Ирина, всё такое красивое и стильное!!! Буду и дальше следить за вашим творчеством и новиночками)</p>
+                        <p class="opinions__text text">Ирина, всё такое красивое и стильное!!! Буду и дальше следить за
+                            вашим творчеством и новиночками)</p>
+
                     </div>
                 </div>
             </div>

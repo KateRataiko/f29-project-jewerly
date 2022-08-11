@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 * {
   margin: 0;
   padding: 0;
@@ -10,18 +11,28 @@
   font-weight: 300;
   src: local(""), url("../../fonts/inter-v12-latin_cyrillic-300.woff2") format("woff2"), url("../../fonts/inter-v12-latin_cyrillic-300.woff") format("woff");
 }
+
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   src: local(""), url("../../fonts/inter-v12-latin_cyrillic-600.woff2") format("woff2"), url("../../fonts/inter-v12-latin_cyrillic-600.woff") format("woff");
 }
+
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   src: local(""), url("../../fonts/inter-v12-latin_cyrillic-500.woff2") format("woff2"), url("../../fonts/inter-v12-latin_cyrillic-500.woff") format("woff");
 }
+
+@font-face {
+  font-family: "Himalaya";
+  font-style: normal;
+  font-weight: 500;
+  src: local(""), url("../../fonts/himalaya") format("ttf");
+}
+
 .title {
   font-family: "Inter", Verdana, sans-serif;
   font-weight: 600;
@@ -51,23 +62,64 @@
 /* styles for блок-хедер START*/
 /* styles for блок-хедер END*/
 /* styles for блок-приветствие START*/
+.welcome {
+  max-width: 100%;
+  height: auto;
+  background-image: url(./assets/images/model.jpg);
+}
+
+.welcome__slogan {
+  font-family: "Inter", Verdana, sans-serif;
+  font-weight: 600;
+  font-size: 2.3em;
+  line-height: 130%;
+  /* font-family: Georgia, 'Times New Roman', Times, serif;*/
+  font-family: Himalaya, serif;
+  text-align: center;
+}
+
+.welcome__text {
+  font-family: "Inter", Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 120%;
+  position: absolute;
+  top: 58%;
+  z-index: 1;
+  color: white;
+  max-width: 86%;
+  text-align: start;
+  margin-left: 1rem;
+  text-shadow: 3px 0 3px #0b0b0b;
+}
+
+.welcome__image_model {
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 2%;
+}
+
 /* styles for блок-приветствие END*/
 /* srtyles for блок-про производство START*/
 .workshop {
   max-width: 100%;
   height: auto;
 }
+
 .workshop__text {
   margin-top: 20px;
 }
+
 .workshop__images_img1 {
   width: 100%;
   margin-top: 20px;
   border-radius: 2%;
 }
+
 .workshop__images_img2 {
   display: none;
 }
+
 .workshop__images_img3 {
   width: 100%;
   margin-top: 20px;
@@ -82,28 +134,37 @@
   max-width: 100%;
   height: auto;
 }
+
 .opinions__container-content {
   border-bottom: 1px solid #747272;
 }
+
 .opinions__content {
   margin: 20px 0;
   padding: 15px;
   border-radius: 2%;
   background-color: #F1F1F1;
 }
+
+
+
 .opinions__img {
   float: left;
   margin-right: 10px;
   margin-top: 10px;
   border-radius: 50%;
 }
+
+
 .opinions__title {
   padding: 15px;
 }
+
 .opinions__text {
   padding-right: 10px;
 }
 
 /* styles for блок-отзывы END*/
 /* srtyles for блок-футер START*/
-/* styles for блок-футер END*//*# sourceMappingURL=mobile.css.map */
+/* styles for блок-футер END*/
+/*# sourceMappingURL=mobile.css.map */
