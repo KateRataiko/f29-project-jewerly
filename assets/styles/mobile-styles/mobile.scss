@@ -199,10 +199,36 @@ $lh-large: 130%;
     &__text {
         padding-right: 10px;
     }
-   
 }
 
 /* styles for блок-отзывы END*/
 
-/* srtyles for блок-футер START*/
+/* styles for блок-футер START*/
+.footer{
+    background-color: #c9c9c9;
+
+    width: 100vw;
+    height: fit-content;
+
+    display: flex;
+    justify-content: center;
+
+    text-align: center;
+
+    &__link {
+        color: black;
+
+        &:focus{
+            color: white;
+        }
+    }
+    
+    &__information{
+        margin: 2rem 0 0 0;
+    }
+    
+    &__container{
+        margin: 1rem 0;
+    }
+}
 /* styles for блок-футер END*/
