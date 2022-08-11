@@ -17,6 +17,61 @@
     <header>
         <div class="wrapper">
 
+            <div class="header">
+                <img class="header__logo" src=./assets/images/Skinn.png alt="print" />
+                <a href="#" class="header__shop">Shop All</a>
+                <a href="#" class="header__story">Our story</a>
+                <a href="#" class="header__blog">Blog</a>
+                <a href="#" class="header__pages">Pages</a>
+                <div class="header__cart">Cart</div>
+                <span class="cart_img-container">
+                    <img class="header__frame-img" src="./assets/images/Frame.png" alt="print"></span>
+            </div>
+
+            <div class="header__menu-small">
+
+                <nav role="navigation">
+                    <div id="menuToggle">
+                        <!--
+              A fake / hidden checkbox is used as click reciever,
+              so you can use the :checked selector on it.
+              -->
+                        <input type="checkbox" />
+
+                        <!--
+              Some spans to act as a hamburger.
+              
+              They are acting like a real hamburger,
+              not that McDonalds stuff.
+              -->
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                        <!--
+              Too bad the menu has to be inside of the button
+              but hey, it's pure CSS magic.
+              -->
+                        <ul id="menu">
+                            <a href="#">
+                                <li>Shop All</li>
+                            </a>
+                            <a href="#">
+                                <li>Our Story</li>
+                            </a>
+                            <a href="#">
+                                <li>Blog</li>
+                            </a>
+                            <a href="#">
+                                <li>Pages</li>
+                            </a>
+
+                            </a>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
         </div>
     </header>
     <!--блок-хедер END-->
