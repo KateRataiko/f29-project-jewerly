@@ -140,7 +140,9 @@ $lh-large: 130%;
 
         &_img1 {
             width: 100%;
+
             margin-top: 20px;
+
             border-radius: 2%;
         }
 
@@ -150,7 +152,9 @@ $lh-large: 130%;
 
         &_img3 {
             width: 100%;
+
             margin-top: 20px;
+
             border-radius: 2%;
         }
     }
@@ -171,26 +175,31 @@ $lh-large: 130%;
     }
 
     &__content {
-        background-color: #F1F1F1;
         margin: 20px 0;
         padding: 15px;
+
         border-radius: 2%;
 
-        &_img {
-            float: left;
-            margin-right: 10px;
-            margin-top: 10px;
-            border-radius: 50%;
-        }
-
-        &_title {
-            padding: 15px;
-        }
-
-        &_text {
-            padding-right: 10px;
-        }
+        background-color: #F1F1F1;
     }
+
+    &__img {
+        float: left;
+
+        margin-right: 10px;
+        margin-top: 10px;
+
+        border-radius: 50%;
+    }
+
+    &__title {
+        padding: 15px;
+    }
+
+    &__text {
+        padding-right: 10px;
+    }
+   
 }
 
 /* styles for блок-отзывы END*/
