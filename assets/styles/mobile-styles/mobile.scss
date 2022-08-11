@@ -1,4 +1,82 @@
-@media screen and (max-width: 767px){
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    src: local(''),
+        url('../../fonts/inter-v12-latin_cyrillic-300.woff2') format('woff2'),
+        url('../../fonts/inter-v12-latin_cyrillic-300.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+        url('../../fonts/inter-v12-latin_cyrillic-600.woff2') format('woff2'),
+        url('../../fonts/inter-v12-latin_cyrillic-600.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+        url('../../fonts/inter-v12-latin_cyrillic-500.woff2') format('woff2'),
+        url('../../fonts/inter-v12-latin_cyrillic-500.woff') format('woff');
+}
+
+// ================ Переменные для шрифтов
+
+// Для свойства font-family
+$ff-primary: "Inter", Verdana, sans-serif;
+// $ff-secondary: можно добавить, если будет несколько шрифтов
+
+// Для свойства font-weight
+$fw-light: 300;
+$fw-meduim: 500;
+$fw-bold: 600;
+
+// Для свойства font-size
+$fs-small: 1rem;
+$fs-medium: 1.25rem;
+$fs-large: 1.875rem;
+
+// Для свойства line-height
+$lh-small: 100%;
+$lh-medium: 120%;
+$lh-large: 130%;
+
+// ================ Миксин для шрифтов
+
+@mixin font($font-size, $line-height: $lh-medium, $font-weight: $fw-meduim, $font-family: $ff-primary,) {
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+}
+// Заголовки секций-блоков h2, кроме h1, 30px
+.title {
+    @include font($fs-large, $lh-large, $fw-bold);
+    text-transform: uppercase;
+}
+
+// Небольшие текстовые элементы, мелкие подписи, p, span, 16px
+.text {
+    @include font($fs-small, $lh-medium, $fw-light);
+}
+
+// Заголовки карточек, текст для кнопок, т.д. 20px
+.small-title {
+    @include font($fs-medium);
+}
+
+.wrapper {
+    padding: 20px;
+}
 /* styles for блок-хедер START*/
 /* styles for блок-хедер END*/
 
@@ -6,14 +84,80 @@
 /* styles for блок-приветствие END*/
 
 /* srtyles for блок-про производство START*/
+.workshop {
+    max-width: 100%;
+    height: auto;
+
+    &__text {
+        margin-top: 20px;
+    }
+
+    &__images {
+
+        &_img1 {
+            width: 100%;
+            margin-top: 20px;
+            border-radius: 2%;
+        }
+
+        &_img2 {
+            display: none;
+        }
+
+        &_img3 {
+            width: 100%;
+            margin-top: 20px;
+            border-radius: 2%;
+        }
+    }
+}
 /* styles for блок-про производство END*/
 
 /* srtyles for блок-витрина START*/
 /* styles for блок-витрина END*/
 
 /* srtyles for блок-отзывы START*/
+.opinions {
+    max-width: 100%;
+    height: auto;
+
+    &__container-content {
+        border-bottom:1px solid #747272;
+    }
+
+    &__content {
+        background-color: #F1F1F1;
+        margin: 20px 0;
+        padding: 15px;
+        border-radius: 2%;
+
+        &_img {
+            float: left;
+            margin-right: 10px;
+            margin-top: 10px;
+            border-radius: 50%;
+        }
+
+        &_title {
+            padding: 15px;
+        }
+
+        &_text {
+            padding-right: 10px;
+        }
+    }
+}
 /* styles for блок-отзывы END*/
 
-/* srtyles for блок-футер START*/
-/* styles for блок-футер END*/
+/* styles for блок-футер START*/
+.footer{
+    background-color: #c9c9c9;
+
+    width: 100vw;
+
+    &__link {
+        text-decoration: none;
+        color: black
+    }
 }
+/* styles for блок-футер END*/

@@ -1,6 +1,43 @@
-@media  screen and (min-width: 992px){
-/* styles for блок-хедер START*/
-/* styles for блок-хедер END*/
+// ================ Переменные для шрифтов
+
+// Для свойства font-family
+$ff-primary: "Inter", Verdana, sans-serif;
+// $ff-secondary: можно добавить, если будет несколько шрифтов
+
+// Для свойства font-weight
+$fw-light: 300;
+$fw-meduim: 500;
+$fw-bold: 600;
+
+// Для свойства font-size
+$fs-small: 1rem;
+$fs-medium: 1.25rem;
+$fs-large: 1.875rem;
+
+// Для свойства line-height
+$lh-small: 100%;
+$lh-medium: 120%;
+$lh-large: 130%;
+
+// ================ Миксин для шрифтов
+
+@mixin font($font-size, $line-height: $lh-medium, $font-weight: $fw-meduim, $font-family: $ff-primary,) {
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+}
+
+@media  screen and (min-width: 1024px) {
+
+    .wrapper {
+        max-width: 1680px;
+
+        margin: 0 auto;
+        padding: 40px;
+    }
+
+
 
 /* styles for блок-приветствие START*/
 /* styles for блок-приветствие END*/

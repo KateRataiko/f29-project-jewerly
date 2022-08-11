@@ -1,15 +1,118 @@
 @charset "UTF-8";
-@media screen and (max-width: 767px) {
-  /* styles for блок-хедер START*/
-  /* styles for блок-хедер END*/
-  /* styles for блок-приветствие START*/
-  /* styles for блок-приветствие END*/
-  /* srtyles for блок-про производство START*/
-  /* styles for блок-про производство END*/
-  /* srtyles for блок-витрина START*/
-  /* styles for блок-витрина END*/
-  /* srtyles for блок-отзывы START*/
-  /* styles for блок-отзывы END*/
-  /* srtyles for блок-футер START*/
-  /* styles for блок-футер END*/
-}/*# sourceMappingURL=mobile.css.map */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  src: local(""), url("../../fonts/inter-v12-latin_cyrillic-300.woff2") format("woff2"), url("../../fonts/inter-v12-latin_cyrillic-300.woff") format("woff");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  src: local(""), url("../../fonts/inter-v12-latin_cyrillic-600.woff2") format("woff2"), url("../../fonts/inter-v12-latin_cyrillic-600.woff") format("woff");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  src: local(""), url("../../fonts/inter-v12-latin_cyrillic-500.woff2") format("woff2"), url("../../fonts/inter-v12-latin_cyrillic-500.woff") format("woff");
+}
+.title {
+  font-family: "Inter", Verdana, sans-serif;
+  font-weight: 600;
+  font-size: 1.875rem;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+
+.text {
+  font-family: "Inter", Verdana, sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 120%;
+}
+
+.small-title {
+  font-family: "Inter", Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 120%;
+}
+
+.wrapper {
+  padding: 20px;
+}
+
+/* styles for блок-хедер START*/
+/* styles for блок-хедер END*/
+/* styles for блок-приветствие START*/
+/* styles for блок-приветствие END*/
+/* srtyles for блок-про производство START*/
+.workshop {
+  max-width: 100%;
+  height: auto;
+}
+.workshop__text {
+  margin-top: 20px;
+}
+.workshop__images_img1 {
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 2%;
+}
+.workshop__images_img2 {
+  display: none;
+}
+.workshop__images_img3 {
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 2%;
+}
+
+/* styles for блок-про производство END*/
+/* srtyles for блок-витрина START*/
+/* styles for блок-витрина END*/
+/* srtyles for блок-отзывы START*/
+.opinions {
+  max-width: 100%;
+  height: auto;
+}
+.opinions__container-content {
+  border-bottom: 1px solid #747272;
+}
+.opinions__content {
+  background-color: #F1F1F1;
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 2%;
+}
+.opinions__content_img {
+  float: left;
+  margin-right: 10px;
+  margin-top: 10px;
+  border-radius: 50%;
+}
+.opinions__content_title {
+  padding: 15px;
+}
+.opinions__content_text {
+  padding-right: 10px;
+}
+
+/* styles for блок-отзывы END*/
+/* styles for блок-футер START*/
+.footer {
+  background-color: #c9c9c9;
+  width: 100vw;
+}
+.footer__link {
+  text-decoration: none;
+  color: black;
+}
+
+/* styles for блок-футер END*//*# sourceMappingURL=mobile.css.map */
