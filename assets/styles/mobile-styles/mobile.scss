@@ -74,6 +74,7 @@ $lh-large: 130%;
 .title {
     @include font($fs-large, $lh-large, $fw-bold);
     text-transform: uppercase;
+    letter-spacing: 0.3rem;
 }
 
 // Небольшие текстовые элементы, мелкие подписи, p, span, 16px
