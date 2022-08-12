@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+
 @font-face {
     font-family: 'Inter';
     font-style: normal;
@@ -29,6 +30,15 @@
         url('../../fonts/inter-v12-latin_cyrillic-500.woff') format('woff');
 }
 
+@font-face {
+    font-family: 'Himalaya';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+        url('../../fonts/himalaya') format('ttf'),
+}
+
+
 // ================ Переменные для шрифтов
 
 // Для свойства font-family
@@ -52,12 +62,13 @@ $lh-large: 130%;
 
 // ================ Миксин для шрифтов
 
-@mixin font($font-size, $line-height: $lh-medium, $font-weight: $fw-meduim, $font-family: $ff-primary,) {
+@mixin font($font-size, $line-height: $lh-medium, $font-weight: $fw-meduim, $font-family: $ff-primary, ) {
     font-family: $font-family;
     font-weight: $font-weight;
     font-size: $font-size;
     line-height: $line-height;
 }
+
 // Заголовки секций-блоков h2, кроме h1, 30px
 .title {
     @include font($fs-large, $lh-large, $fw-bold);
@@ -77,10 +88,49 @@ $lh-large: 130%;
 .wrapper {
     padding: 20px;
 }
+
+.btn {
+border: 0.5px solid rgb(18, 18, 18);
+border-radius: 20px;
+
+background-color: #F1F1F1;
+}
 /* styles for блок-хедер START*/
 /* styles for блок-хедер END*/
 
 /* styles for блок-приветствие START*/
+.welcome {
+    max-width: 100%;
+    height: auto;
+    background-image: url(./assets/images/model.jpg);
+
+    &__slogan {
+        @include font(2.3em, $lh-large, $fw-bold);
+        /* font-family: Georgia, 'Times New Roman', Times, serif;*/
+        font-family: Himalaya, serif;
+        text-align: center;
+
+    }
+
+    &__text {
+        @include font($fs-medium, $lh-medium, $fw-meduim);
+        position: absolute;
+        top: 58%;
+        z-index: 1;
+        color: white;
+        max-width: 86%;
+        text-align: start;
+        margin-left: 1rem;
+        text-shadow: 3px 0 3px #0b0b0b;
+    }
+
+    &__image_model {
+        width: 100%;
+        margin-top: 20px;
+        border-radius: 2%;
+    }
+}
+
 /* styles for блок-приветствие END*/
 
 /* srtyles for блок-про производство START*/
@@ -115,6 +165,7 @@ $lh-large: 130%;
         }
     }
 }
+
 /* styles for блок-про производство END*/
 
 /* srtyles for блок-витрина START*/
@@ -126,7 +177,7 @@ $lh-large: 130%;
     height: auto;
 
     &__container-content {
-        border-bottom:1px solid #747272;
+        border-bottom: 1px solid #747272;
     }
 
     &__content {
@@ -154,9 +205,63 @@ $lh-large: 130%;
     &__text {
         padding-right: 10px;
     }
-   
 }
+
 /* styles for блок-отзывы END*/
 
-/* srtyles for блок-футер START*/
+/* styles for блок-футер START*/
+.footer{
+    background-color: #c9c9c9;
+
+    width: 100vw;
+    height: fit-content;
+
+    display: flex;
+    justify-content: center;
+
+    text-align: center;
+
+    &__link {
+        color: black;
+
+        &:focus{
+            color: white;
+        }
+    }
+    
+    &__information{
+        margin: 2rem 0 0 0;
+    }
+    
+    &__container{
+        margin: 1rem 0 0 0;
+    }
+    &__fieldset{
+        all: unset;
+
+        margin: 2rem 0 0 0;
+    }
+    &__form{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+}
+
+.form-item{
+    border: 0.5px solid rgb(18, 18, 18);
+    
+    height: 1.5rem;
+    width: 14rem;
+
+    &:focus{
+        background-color:white;
+    }
+}
+
+.form-btn{
+    height: 1.8rem;
+    width: 14rem;
+}
 /* styles for блок-футер END*/
