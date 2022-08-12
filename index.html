@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="assets/styles/normalize.css">
     <link rel="stylesheet" href="assets/styles/desktop-styles/desktop-styles.css">
     <link rel="stylesheet" href="assets/styles/tablet-styles/tablet-styles.css">
     <link rel="stylesheet" href="assets/styles/mobile-styles/mobile.css">
@@ -99,7 +100,6 @@
                         <h4 class="opinions__title small-title">Екатерина г.Солигорск</h4>
                         <p class="opinions__text text">Спасибо большое. Всё великолепно, начиная с упаковки, заканчивая
                             изделиями и моими эмоциями от заказа 💜💜💜</p>
-
                     </div>
                 </div>
                 <div class="opinions__container-content">
@@ -110,7 +110,6 @@
                         <h4 class="opinions__title small-title">Наталья, г.Марьина горка</h4>
                         <p class="opinions__text text">Ирина, большое спасибо за чокеры! Целый день хожу и получаю
                             комплименты. Радуется душа!!!!</p>
-
                     </div>
                 </div>
                 <div>
@@ -121,7 +120,6 @@
                         <h4 class="opinions__title small-title">Инна, г.Минск</h4>
                         <p class="opinions__text text">Ирина, всё такое красивое и стильное!!! Буду и дальше следить за
                             вашим творчеством и новиночками)</p>
-
                     </div>
                 </div>
             </div>
@@ -130,8 +128,54 @@
     </main>
 
     <!--блок-футер START-->
-    <footer>
-        <div class="wrapper"></div>
+    <footer class="footer text">
+        <div class="footer__wrapper wrapper">
+            <div class="footer__information">
+                <p>Автор украшений: Ирен Фамилия</p>
+                <div class="footer__container">
+                    <p>Инстаграм
+                        <a class="footer__link" href="https://instagram.com/adilio.store?igshid=YmMyMTA2M2Y="
+                            target="_blank">
+                            @adilio.store</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer__information">
+                <p class="small-title">Контакты:</p>
+                <div class="footer__container">
+                    <p>Позвонить по телефону <a class="footer__link" href="tel:+375293164866">+375293164866</a></p>
+                </div>
+                <div class="footer__container">
+                    <p>Написать в WhatsApp <a class="footer__link" href="https://wa.me/375293164866"
+                            target="_blank">+375293164866</a>
+                    </p>
+                </div>
+                <div class="footer__container">
+                    <p>Написать в Telegram <a class="footer__link" href="https://telegram.me/@irendi"
+                            target="_blank">@irendi</a></p>
+                </div>
+                <div class="footer__container">
+                    <p>Отправить e-mail <a class="footer__link"
+                            href="mailto:adilio.jew.store@gmail.com">adilio.jew.store@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+            <fieldset class="footer__fieldset">
+                <legend class="footer__container">
+                    Оставьте свой номер телефона,
+                    Вам перезвонят
+                </legend>
+                <form class="footer__form">
+                    <div>
+                        <input class="footer__container form-item" type="text" pattern="\D [^0-9]" name="name"
+                            placeholder="Ваше имя">
+                        <input class="footer__container form-item" type="number" name="tel" placeholder="Ваш телефон">
+                    </div>
+                    <button class="footer__container btn form-btn small-title" type="button">Отправить для
+                        связи</button>
+                </form>
+            </fieldset>
+        </div>
     </footer>
     <!--блок-футер END-->
 

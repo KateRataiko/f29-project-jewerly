@@ -54,6 +54,12 @@
   padding: 20px;
 }
 
+.btn {
+  border: 0.5px solid rgb(18, 18, 18);
+  border-radius: 20px;
+  background-color: #F1F1F1;
+}
+
 /* styles for блок-хедер START*/
 .header {
   max-width: 100%;
@@ -183,7 +189,9 @@
   font-family: Himalaya, serif;
   text-align: center;
 }
+
 .welcome__text_first {
+
   font-family: "Inter", Verdana, sans-serif;
   font-weight: 500;
   font-size: 1.25rem;
@@ -197,6 +205,7 @@
   margin-left: 1rem;
   text-shadow: 3px 0 3px #0b0b0b;
 }
+
 .welcome__text_second {
   font-family: "Inter", Verdana, sans-serif;
   font-weight: 500;
@@ -212,6 +221,7 @@
   text-shadow: 3px 0 3px #0b0b0b;
 }
 .welcome__image {
+
   width: 100%;
   margin-top: 20px;
   border-radius: 2%;
@@ -271,5 +281,52 @@
 }
 
 /* styles for блок-отзывы END*/
-/* srtyles for блок-футер START*/
-/* styles for блок-футер END*//*# sourceMappingURL=mobile.css.map */
+
+/* styles for блок-футер START*/
+.footer {
+  background-color: #c9c9c9;
+  width: 100vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.footer__link {
+  color: black;
+}
+.footer__link:focus {
+  color: white;
+}
+.footer__information {
+  margin: 2rem 0 0 0;
+}
+.footer__container {
+  margin: 1rem 0 0 0;
+}
+.footer__fieldset {
+  all: unset;
+  margin: 2rem 0 0 0;
+}
+.footer__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.form-item {
+  border: 0.5px solid rgb(18, 18, 18);
+  height: 1.5rem;
+  width: 14rem;
+}
+.form-item:focus {
+  background-color: white;
+}
+
+.form-btn {
+  height: 1.8rem;
+  width: 14rem;
+}
+
+/* styles for блок-футер END*//*
