@@ -106,10 +106,10 @@ $lh-large: 130%;
 
     }
 
-    &__text {
+    &__text_first {
         @include font($fs-medium, $lh-medium, $fw-meduim);
         position: absolute;
-        top: 58%;
+        top: 90%;
         z-index: 1;
         color: white;
         max-width: 86%;
@@ -118,7 +118,19 @@ $lh-large: 130%;
         text-shadow: 3px 0 3px #0b0b0b;
     }
 
-    &__image_model {
+    &__text_second {
+        @include font($fs-medium, $lh-medium, $fw-meduim);
+        position: absolute;
+        top: 104%;
+        z-index: 1;
+        color: white;
+        max-width: 86%;
+        text-align: start;
+        margin-left: 1rem;
+        text-shadow: 3px 0 3px #0b0b0b;
+    }
+
+    &__image {
         width: 100%;
         margin-top: 20px;
         border-radius: 2%;
@@ -199,7 +211,7 @@ $lh-large: 130%;
     &__text {
         padding-right: 10px;
     }
-   
+
 }
 
 /* styles for блок-отзывы END*/
