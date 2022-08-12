@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 @font-face {
@@ -169,6 +170,100 @@ background-color: #F1F1F1;
 /* styles for блок-про производство END*/
 
 /* srtyles for блок-витрина START*/
+.showcase {
+    max-width: 100%;
+
+    &__title {
+        text-align: center;
+    }
+}
+
+.category {
+    max-width: 100%;
+
+    margin-top: 40px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    column-gap: 10px;
+
+    &_layout-1 {
+        grid-column: 1/3;
+    }
+
+    &_layout-2 {
+        grid-column: 1/2;
+    }
+
+    &_layout-3 {
+        grid-column: 2/3;
+    }
+
+    &__title {
+        margin-bottom: 30px;
+        padding: 10px;
+        text-align: start;
+
+        border-bottom: 1px solid #747272;
+    }
+}
+
+.bordered {
+    border-radius: 2%;
+    
+    padding: 10px;
+    border: 1px solid #747272;
+        margin-bottom: 30px;
+}
+
+.colored {
+    border-radius: 2%;
+
+    padding: 10px;
+    background-color: #F1F1F1;
+    margin-bottom: 30px;
+}
+
+.card {
+    // margin-bottom: 30px;
+    // max-width: 100%;
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 5px;
+    align-items: center;
+
+    &__img {
+        max-width: 100%;
+
+        grid-column: 1/3;
+    }
+
+    &__img img {
+        border-radius: 2%;
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+    &__small-title {
+        @include font(0.8rem, $lh-small);
+        grid-column: 1/2;
+    }
+
+    &__text {
+        @include font(0.6rem, $lh-small, $fw-light);
+        grid-column: 1/2;
+    }
+
+    &__price {
+        grid-column: 2/3;
+        grid-row: 2/3;
+
+        justify-self: end;
+    }
+}
+
 /* styles for блок-витрина END*/
 
 /* srtyles for блок-отзывы START*/
