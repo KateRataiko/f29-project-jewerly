@@ -92,27 +92,45 @@ $lh-large: 130%;
 /* styles for блок-хедер START*/
 .header {
     max-width: 100%;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.1fr 1fr;
+    background: #e2e2e2;
 
-    &__burger-menu {
-        grid-column: 1;
-        grid-row: 2;
+
+
+    &__wrapper {
+        text-align: center;
+        display: flex;
+        justify-content: end;
+        margin-right: -1vw;
     }
 
-    &__logo {
-        width: 10%;
-        grid-column: 2;
-        grid-row: 2;
+
+    &__phrase {
+        max-width: 60%;
+        @include font($fs-small, $lh-medium, $fw-meduim);
+        margin-right: -10px;
+        /*border: #747272 solid 1px;
+        border-radius: 10px;
+        height: 6vh;*/
+
     }
 
-    &__logo-container {
-        width: 10%;
-        grid-column: 2;
-        grid-row: 2;
+    /*&__logo {
+        width: 3vw;
+        position: absolute;
+        top: 20px;
+        right: 60px;
+        z-index: 1;
+    }*/
+
+    &__logo-img {
+        display: none;
+        /*width: 18%;
+        z-index: 1;
+        position: absolute;
+        top: 0px;
+        right: 0px;*/
     }
+
 }
 
 /*скрываем чекбокс*/
@@ -164,7 +182,7 @@ $lh-large: 130%;
         top: 0;
         left: -100%;
         margin: 0;
-        padding: 80px 0;
+        padding: 50px 0;
         list-style: none;
         text-align: center;
 
@@ -181,9 +199,23 @@ $lh-large: 130%;
     }
 
     &__item:hover {
-        background-color: #9a9494;
+        background-color: #f2eded;
+    }
+
+    &__contact {
+        display: block;
+        padding: 12px 24px;
+        color: rgb(22, 21, 21);
+        @include font($fs-medium, $lh-medium, $fw-meduim);
+        text-decoration: underline;
+    }
+
+    &__contact:hover {
+        background-color: #f2eded;
+
     }
 }
+
 
 #burger-menu__toggle:checked~.burger-menu__btn>span {
     transform: rotate(45deg);
@@ -233,44 +265,56 @@ $lh-large: 130%;
 .welcome {
     max-width: 100%;
     height: auto;
-    background-image: url(./assets/images/model.jpg);
+
+
+    &__wrapper {
+        /*display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.3fr 0.2fr 0.2fr;*/
+        background: url("../assets/images/model.jpg");
+
+    }
 
     &__slogan {
-        @include font(2.3em, $lh-large, $fw-bold);
-        /* font-family: Georgia, 'Times New Roman', Times, serif;*/
-        font-family: Himalaya, serif;
         text-align: center;
+        /* grid-row: 1/2;*/
+        @include font($fs-large, $lh-medium, $fw-bold);
+
 
     }
 
     &__text_first {
         @include font($fs-medium, $lh-medium, $fw-meduim);
         position: absolute;
-        margin-top: 90%;
+        margin-top: 86%;
         z-index: 1;
         color: white;
-        max-width: 86%;
+        max-width: 82%;
         text-align: start;
         margin-left: 1rem;
         text-shadow: 3px 0 3px #0b0b0b;
+        /*grid-row: 2/3;*/
     }
 
     &__text_second {
         @include font($fs-medium, $lh-medium, $fw-meduim);
         position: absolute;
-        margin-top: 104%;
+        margin-top: 106%;
         z-index: 1;
         color: white;
-        max-width: 86%;
+        max-width: 82%;
         text-align: start;
         margin-left: 1rem;
         text-shadow: 3px 0 3px #0b0b0b;
+        /*grid-row: 3/4;*/
     }
 
     &__image {
         width: 100%;
         margin-top: 20px;
         border-radius: 2%;
+        /*grid-row: 2/4;
+        grid-column: 1;*/
     }
 }
 
