@@ -97,6 +97,143 @@ $lh-large: 130%;
 }
 
 /* styles for блок-хедер START*/
+.header {
+    max-width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr;
+
+    &__burger-menu {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    &__logo {
+        width: 10%;
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    &__logo-container {
+        width: 10%;
+        grid-column: 2;
+        grid-row: 2;
+    }
+}
+
+/*скрываем чекбокс*/
+#burger-menu__toggle {
+    opacity: 0;
+}
+
+
+/*стилизуем кнопку*/
+.burger-menu__btn {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/*добавляем гамбургер*/
+.burger-menu {
+
+    &__btn>span,
+    &__btn>span::before,
+    &__btn>span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: gray;
+    }
+
+    &__btn>span::before {
+        content: '';
+        top: -8px;
+    }
+
+    &__btn>span::after {
+        content: '';
+        top: 8px;
+    }
+
+    &__box {
+        display: block;
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        left: -100%;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        text-align: center;
+
+        background-color: rgb(217, 209, 209);
+        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    }
+
+    &__item {
+        display: block;
+        padding: 12px 24px;
+        color: rgb(22, 21, 21);
+        @include font($fs-medium, $lh-medium, $fw-meduim);
+        text-decoration: none;
+    }
+
+    &__item:hover {
+        background-color: #9a9494;
+    }
+}
+
+#burger-menu__toggle:checked~.burger-menu__btn>span {
+    transform: rotate(45deg);
+}
+
+#burger-menu__toggle:checked~.burger-menu__btn>span::before {
+    top: 0;
+    transform: rotate(0);
+}
+
+
+#burger-menu__toggle:checked~.burger-menu__btn>span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+#burger-menu__toggle:checked~.burger-menu__box {
+    visibility: visible;
+    left: 0;
+}
+
+.burger-menu {
+
+    &__btn>span,
+    &__btn>span::before,
+    &__btn>span::after {
+        transition-duration: .25s;
+    }
+
+    &__box {
+        transition-duration: .25s;
+    }
+
+    &__item {
+        transition-duration: .25s;
+    }
+
+}
+
+
+
+
+
 /* styles for блок-хедер END*/
 
 /* styles for блок-приветствие START*/
@@ -113,7 +250,7 @@ $lh-large: 130%;
 
     }
 
-    &__text_first {
+    &__text_first_first {
         @include font($fs-medium, $lh-medium, $fw-meduim);
         position: absolute;
         top: 90%;
@@ -146,7 +283,7 @@ $lh-large: 130%;
 
 /* styles for блок-приветствие END*/
 
-/* srtyles for блок-про производство START*/
+/* styles for блок-про производство START*/
 .workshop {
     max-width: 100%;
     height: auto;
@@ -218,67 +355,66 @@ $lh-large: 130%;
     &__text {
         padding-right: 10px;
     }
-}
 
 
-/* styles for блок-отзывы END*/
+    /* styles for блок-отзывы END*/
 
-/* styles for блок-футер START*/
-.footer {
-    background-color: #c9c9c9;
+    /* styles for блок-футер START*/
+    .footer {
+        background-color: #c9c9c9;
 
-    width: 100vw;
-    height: fit-content;
+        width: 100vw;
+        height: fit-content;
 
-    display: flex;
-    justify-content: center;
+        display: flex;
+        justify-content: center;
 
-    text-align: center;
+        text-align: center;
 
-    &__link {
-        color: black;
+        &__link {
+            color: black;
 
-        &:focus {
-            color: white;
+            &:focus {
+                color: white;
+            }
+        }
+
+        &__information {
+            margin: 2rem 0 0 0;
+        }
+
+        &__container {
+            margin: 1rem 0 0 0;
+        }
+
+        &__fieldset {
+            all: unset;
+
+            margin: 2rem 0 0 0;
+        }
+
+        &__form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
         }
     }
 
-    &__information {
-        margin: 2rem 0 0 0;
+    .form-item {
+        border: 0.5px solid rgb(18, 18, 18);
+
+        height: 1.5rem;
+        width: 14rem;
+
+        &:focus {
+            background-color: white;
+        }
     }
 
-    &__container {
-        margin: 1rem 0 0 0;
+    .form-btn {
+        height: 1.8rem;
+        width: 14rem;
     }
 
-    &__fieldset {
-        all: unset;
-
-        margin: 2rem 0 0 0;
-    }
-
-    &__form {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-
-    }
-}
-
-.form-item {
-    border: 0.5px solid rgb(18, 18, 18);
-
-    height: 1.5rem;
-    width: 14rem;
-
-    &:focus {
-        background-color: white;
-    }
-}
-
-.form-btn {
-    height: 1.8rem;
-    width: 14rem;
-}
-
-/* styles for блок-футер END*/
+    /* styles for блок-футер END*/

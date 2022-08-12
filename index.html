@@ -10,70 +10,44 @@
     <link rel="stylesheet" href="assets/styles/desktop-styles/desktop-styles.css">
     <link rel="stylesheet" href="assets/styles/tablet-styles/tablet-styles.css">
     <link rel="stylesheet" href="assets/styles/mobile-styles/mobile.css">
-    <title>Adilio.Story</title>
+    <title>Adilio.Store</title>
 </head>
 
 <body>
     <!--блок-хедер START-->
     <header>
-        <div class="wrapper">
 
-            <div class="header">
-                <img class="header__logo" src=./assets/images/Skinn.png alt="print" />
-                <a href="#" class="header__shop">Shop All</a>
-                <a href="#" class="header__story">Our story</a>
-                <a href="#" class="header__blog">Blog</a>
-                <a href="#" class="header__pages">Pages</a>
-                <div class="header__cart">Cart</div>
-                <span class="cart_img-container">
-                    <img class="header__frame-img" src="./assets/images/Frame.png" alt="print"></span>
+        <section class="header">
+            <!--<div class="header__wrapper wrapper">-->
+
+            <div class="header__burger-menu">
+                <input id="burger-menu__toggle" type="checkbox" />
+                <label class="burger-menu__btn" for="burger-menu__toggle">
+                    <span></span>
+                </label>
+
+                <ul class="burger-menu__box">
+                    <li><a class="burger-menu__item" href="#">Кольца</a> </li>
+                    <li><a class="burger-menu__item" href="#">Серьги</a> </li>
+                    <li><a class="burger-menu__item" href="#">Браслеты</a> </li>
+                    <li><a class="burger-menu__item" href="#">Чокеры</a> </li>
+                    <li><a class="burger-menu__item" href="#">Подвески</a> </li>
+                    <li><a class="burger-menu__item" href="#">Цепи</a> </li>
+                    <li><a class="burger-menu__item" href="#">Анклеты</a> </li>
+                </ul>
             </div>
 
-            <div class="header__menu-small">
 
-                <nav role="navigation">
-                    <div id="menuToggle">
-                        <!--
-              A fake / hidden checkbox is used as click reciever,
-              so you can use the :checked selector on it.
-              -->
-                        <input type="checkbox" />
 
-                        <!--
-              Some spans to act as a hamburger.
-              
-              They are acting like a real hamburger,
-              not that McDonalds stuff.
-              -->
-                        <span></span>
-                        <span></span>
-                        <span></span>
-
-                        <!--
-              Too bad the menu has to be inside of the button
-              but hey, it's pure CSS magic.
-              -->
-                        <ul id="menu">
-                            <a href="#">
-                                <li>Shop All</li>
-                            </a>
-                            <a href="#">
-                                <li>Our Story</li>
-                            </a>
-                            <a href="#">
-                                <li>Blog</li>
-                            </a>
-                            <a href="#">
-                                <li>Pages</li>
-                            </a>
-
-                            </a>
-                        </ul>
-                    </div>
-                </nav>
+            <div class="header__logo">
+                <span class="header__logo-container">
+                    <img class="header__image_logo" src="assets/images/.JPG" alt="logo"></span>
             </div>
 
-        </div>
+
+
+        </section>
+
     </header>
     <!--блок-хедер END-->
 
@@ -82,10 +56,13 @@
         <section class="welcome">
             <div class="welcome__wrapper wrapper">
                 <h4 class="welcome__slogan slogan"> Adilio.Store – будь неотразима! </h4>
-                <p class="welcome__text_first">Украшения из натуральных камней и премиум фурнитуры</p>
-                <p class="welcome__text_second"> Создание новых украшений из старых материалов </p>
+                <p class="welcome__text_first">Украшения из натуральных камней и премиум фурнитуры
+                </p>
 
-                <div>>
+                <p class="welcome__text_second">Создание новых украшений из старых материалов</a>
+                </p>
+
+                <div>
                     <img class="welcome__image" src="assets/images/model.JPG" alt="welcome">
                 </div>
         </section>
