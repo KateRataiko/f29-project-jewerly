@@ -200,7 +200,7 @@ background-color: #F1F1F1;
         grid-column: 2/3;
     }
 
-    &__title {
+    &__small-title {
         margin-bottom: 30px;
         padding: 10px;
         text-align: start;
@@ -209,25 +209,8 @@ background-color: #F1F1F1;
     }
 }
 
-.bordered {
-    border-radius: 2%;
-    
-    padding: 10px;
-    border: 1px solid #747272;
-        margin-bottom: 30px;
-}
-
-.colored {
-    border-radius: 2%;
-
-    padding: 10px;
-    background-color: #F1F1F1;
-    margin-bottom: 30px;
-}
-
 .card {
-    // margin-bottom: 30px;
-    // max-width: 100%;
+    margin-bottom: 30px;
 
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -241,18 +224,17 @@ background-color: #F1F1F1;
     }
 
     &__img img {
-        border-radius: 2%;
         max-width: 100%;
         object-fit: cover;
     }
 
     &__small-title {
-        @include font(0.8rem, $lh-small);
+        @include font(1rem, $lh-small);
         grid-column: 1/2;
     }
 
     &__text {
-        @include font(0.6rem, $lh-small, $fw-light);
+        @include font(0.8rem, $lh-small, $fw-light);
         grid-column: 1/2;
     }
 
