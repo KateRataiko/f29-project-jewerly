@@ -86,11 +86,7 @@ $lh-large: 130%;
 .btn {
     border: 0.5px solid rgb(18, 18, 18);
     border-radius: 20px;
-<<<<<<< HEAD
 
-=======
->>>>>>> e66f203fa7de0fbf1f2860ebebaa6fa95b97f37f
-    background-color: #F1F1F1;
 }
 
 /* styles for блок-хедер START*/
@@ -267,26 +263,6 @@ $lh-large: 130%;
 
     &__text_first_first {
         @include font($fs-medium, $lh-medium, $fw-meduim);
-<<<<<<< HEAD
-        position: absolute;
-        top: 90%;
-=======
->>>>>>> e66f203fa7de0fbf1f2860ebebaa6fa95b97f37f
-        z-index: 1;
-        color: black;
-        max-width: 90%;
-        max-height: 50%;
-        text-align: start;
-        margin-left: 0rem;
-    }
-
-    &__text_second {
-        @include font($fs-medium, $lh-medium, $fw-meduim);
-<<<<<<< HEAD
-        position: absolute;
-        top: 104%;
-=======
->>>>>>> e66f203fa7de0fbf1f2860ebebaa6fa95b97f37f
         z-index: 1;
         color: black;
         max-width: 90%;
@@ -375,7 +351,6 @@ $lh-large: 130%;
         margin-bottom: 30px;
         padding: 10px;
         text-align: start;
-
         border-bottom: 1px solid #747272;
     }
 }
@@ -491,23 +466,17 @@ $lh-large: 130%;
 }
 
 
-<<<<<<< HEAD
-    /* styles for блок-отзывы END*/
-=======
+
+
 /* styles for блок-футер START*/
 .footer {
     background-color: #c9c9c9;
->>>>>>> e66f203fa7de0fbf1f2860ebebaa6fa95b97f37f
 
-    /* styles for блок-футер START*/
-    .footer {
-        background-color: #c9c9c9;
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
 
-        width: 100vw;
-        height: fit-content;
-
-<<<<<<< HEAD
-=======
     text-align: center;
 
     &__link {
@@ -533,53 +502,13 @@ $lh-large: 130%;
     }
 
     &__form {
->>>>>>> e66f203fa7de0fbf1f2860ebebaa6fa95b97f37f
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
-
-        text-align: center;
-
-        &__link {
-            color: black;
-
-            &:focus {
-                color: white;
-            }
-        }
-
-        &__information {
-            margin: 2rem 0 0 0;
-        }
-
-        &__container {
-            margin: 1rem 0 0 0;
-        }
-
-        &__fieldset {
-            all: unset;
-
-            margin: 2rem 0 0 0;
-        }
-
-        &__form {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-
-        }
     }
+}
 
-<<<<<<< HEAD
-    .form-item {
-        border: 0.5px solid rgb(18, 18, 18);
 
-        height: 1.5rem;
-        width: 14rem;
-
-        &:focus {
-            background-color: white;
-        }
-=======
 .form-item {
     border: 0.5px solid rgb(18, 18, 18);
 
@@ -588,21 +517,12 @@ $lh-large: 130%;
 
     &:focus {
         background-color: white;
->>>>>>> e66f203fa7de0fbf1f2860ebebaa6fa95b97f37f
     }
 
-<<<<<<< HEAD
     .form-btn {
         height: 1.8rem;
         width: 14rem;
     }
-
-    /* styles for блок-футер END*/
-=======
-.form-btn {
-    height: 1.8rem;
-    width: 14rem;
 }
 
 /* styles for блок-футер END*/
->>>>>>> e66f203fa7de0fbf1f2860ebebaa6fa95b97f37f
