@@ -1,1 +1,9 @@
-{"version":3,"sources":["tablet-styles.css","tablet-styles.scss"],"names":[],"mappings":"AAAA,gBAAgB;AC8BhB;EAEI;IACI,iBAAA;IAEA,cAAA;IACA,aAAA;ED9BN;ECiCE,qCAAA;EACA,mCAAA;EAEA,2CAAA;EACA,wCAAA;EAEA,kCAAA;EACA,+BAAA;EAEA,iCAAA;EACA,8BAAA;EAEA,gCAAA;EACA,6BAAA;ADnCJ","file":"tablet-styles.css"}
+{
+    "version": 3,
+    "mappings": ";AA8BA,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK,OAAO,SAAS,EAAE,SAAS;EAE1D,AAAA,QAAQ,CAAC;IACL,SAAS,EAAE,MAAM;IAEjB,MAAM,EAAE,MAAM;IACd,OAAO,EAAE,IAAI;GAChB;EAED,sCAAsC;EACtC,oCAAoC;EAEpC,4CAA4C;EAC5C,yCAAyC;EAEzC,mCAAmC;EACnC,gCAAgC;EAEhC,kCAAkC;EAClC,+BAA+B;EAE/B,iCAAiC;EACjC,8BAA8B",
+    "sources": [
+        "tablet-styles.scss"
+    ],
+    "names": [],
+    "file": "tablet-styles.css"
+}
