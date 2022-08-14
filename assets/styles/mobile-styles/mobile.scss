@@ -363,9 +363,9 @@ background-color: #F1F1F1;
     margin-bottom: 30px;
 
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 1fr;
     column-gap: 5px;
-    align-items: center;
+    align-items: flex-start;
 
     &__img {
         max-width: 100%;
@@ -376,6 +376,11 @@ background-color: #F1F1F1;
     &__img img {
         max-width: 100%;
         object-fit: cover;
+    }
+
+    &__small-title,
+    &__price {
+        align-self: center;
     }
 
     &__small-title {
@@ -389,10 +394,40 @@ background-color: #F1F1F1;
     }
 
     &__price {
+        @include font(1rem, $lh-small);
         grid-column: 2/3;
         grid-row: 2/3;
 
+        text-align: end;
         justify-self: end;
+    }
+
+    &_accent_hit,
+    &_accent_sale {
+        position: relative;
+    }
+
+    &_accent_hit::after,
+    &_accent_sale::after {
+        position: absolute;
+
+        top: 20px;
+        left: 5%;
+        padding: 5px;
+        max-width: min-content;
+        height: max-content;
+
+        @include font(1rem, $lh-small, $fw-light);
+        background-color: #FFFFFF;
+        // border: 1px solid #8D8D8D;
+    }
+
+    &_accent_sale::after {
+        content: "-35%";
+    }
+
+    &_accent_hit:after {
+        content: "Хит!";
     }
 }
 

@@ -315,9 +315,9 @@
 .card {
   margin-bottom: 30px;
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 2fr 1fr;
   column-gap: 5px;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .card__img {
@@ -328,6 +328,10 @@
 .card__img img {
   max-width: 100%;
   object-fit: cover;
+}
+
+.card__small-title, .card__price {
+  align-self: center;
 }
 
 .card__small-title {
@@ -347,9 +351,40 @@
 }
 
 .card__price {
+  font-family: "Inter", Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 100%;
   grid-column: 2/3;
   grid-row: 2/3;
+  text-align: end;
   justify-self: end;
+}
+
+.card_accent_hit, .card_accent_sale {
+  position: relative;
+}
+
+.card_accent_hit::after, .card_accent_sale::after {
+  position: absolute;
+  top: 20px;
+  left: 5%;
+  padding: 5px;
+  max-width: min-content;
+  height: max-content;
+  font-family: "Inter", Verdana, sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 100%;
+  background-color: #FFFFFF;
+}
+
+.card_accent_sale::after {
+  content: "-35%";
+}
+
+.card_accent_hit:after {
+  content: "Хит!";
 }
 
 /* styles for блок-витрина END*/
