@@ -211,57 +211,103 @@ background-color: #F1F1F1;
 
 /* styles for блок-футер START*/
 .footer{
-    background-color: #c9c9c9;
-
+    background-color: #656565;
+    color: #F1F1F1;
+    
     width: 100vw;
     height: fit-content;
-
+    
+    text-align: center;
+    
+    &__link {
+    all: unset;
+    
+    &:focus{
+    text-decoration: underline;
+    }
+    }
+    
+    &__information-block{
+    margin: 2rem 0 0 0;
+    }
+    
+    &__item{
+    margin: 1rem 0 0 0;
+    }
+    
+    &__icons-block{
+    margin: 3rem 0 ;
+    
     display: flex;
     justify-content: center;
-
+    }
+    
+    &__icon{
+    margin: 0 2rem 0 0;
+    }
+    }
+    
+    .fieldset{
+    all: unset;
+    
+    margin: 1rem 0 0 0;
+    
+    width: 70vw;
+    
+    &__legend{
+    margin: 0 0 3rem 0;
+    }
+    
+    &__input{
+    all: unset;
+    
+    background-color: #F1F1F1;
+    color: black;
+    
+    margin: 0 0 3rem 0;
+    background-clip: padding-box;
+    
+    border: 1px solid #bdbdbd;
+    border-radius: 0.25rem;
+    
+    height: calc(2.25rem + 2px);
+    width: 100%;
+    
+    font: inherit;
+    }
+    
+    &__input::placeholder{
+    text-align:left;
+    padding: 1rem;
+    }
+    
+    &__input:focus{
+    box-shadow: 0 0 0 0.2rem #CECECE;
+    }
+    
+    &__btn{
+    all: unset;
+    
+    border-radius: 0.25rem;
+    border: 1px solid #bdbdbd;
+    
+    background-color: #F1F1F1;
+    color: black;
+    
+    width:fit-content;
+    
     text-align: center;
-
-    &__link {
-        color: black;
-
-        &:focus{
-            color: white;
-        }
+    font: inherit;
+    
+    padding: 0.8rem 1rem;
+    margin: 0 0 3rem 0;
+    
+    text-decoration: none;
     }
     
-    &__information{
-        margin: 2rem 0 0 0;
+    &__btn:active {
+    background-color: #CECECE;
     }
     
-    &__container{
-        margin: 1rem 0 0 0;
     }
-    &__fieldset{
-        all: unset;
-
-        margin: 2rem 0 0 0;
-    }
-    &__form{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-
-    }
-}
-
-.form-item{
-    border: 0.5px solid rgb(18, 18, 18);
-    
-    height: 1.5rem;
-    width: 14rem;
-
-    &:focus{
-        background-color:white;
-    }
-}
-
-.form-btn{
-    height: 1.8rem;
-    width: 14rem;
-}
 /* styles for блок-футер END*/
