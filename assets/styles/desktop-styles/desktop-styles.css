@@ -1,12 +1,10 @@
 @charset "UTF-8";
-
 @media screen and (min-width: 1024px) {
   .wrapper {
     max-width: 1680px;
     margin: 0 auto;
     padding: 40px;
   }
-
   /* styles for блок-приветствие START*/
   /* styles for блок-приветствие END*/
   /* srtyles for блок-про производство START*/
@@ -17,6 +15,4 @@
   /* styles for блок-отзывы END*/
   /* srtyles for блок-футер START*/
   /* styles for блок-футер END*/
-}
-
-/*# sourceMappingURL=desktop-styles.css.map */
+}/*# sourceMappingURL=desktop-styles.css.map */

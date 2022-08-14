@@ -157,7 +157,7 @@ $lh-large: 130%;
 
     &__box {
         display: block;
-        position: fixed;
+        position: absolute;
         visibility: hidden;
         top: 0;
         left: -100%;
@@ -252,6 +252,7 @@ $lh-large: 130%;
         padding: 50px 0px 30px 0;
 
     }
+
 
     &__wrapper {
         position: absolute;
