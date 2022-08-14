@@ -86,10 +86,7 @@ $lh-large: 130%;
 .btn {
     border: 0.5px solid rgb(18, 18, 18);
     border-radius: 20px;
-<<<<<<< HEAD
 
-=======
->>>>>>> e66f203fa7de0fbf1f2860ebebaa6fa95b97f37f
     background-color: #F1F1F1;
 }
 
@@ -267,11 +264,8 @@ $lh-large: 130%;
 
     &__text_first_first {
         @include font($fs-medium, $lh-medium, $fw-meduim);
-<<<<<<< HEAD
         position: absolute;
         top: 90%;
-=======
->>>>>>> e66f203fa7de0fbf1f2860ebebaa6fa95b97f37f
         z-index: 1;
         color: black;
         max-width: 90%;
@@ -282,11 +276,8 @@ $lh-large: 130%;
 
     &__text_second {
         @include font($fs-medium, $lh-medium, $fw-meduim);
-<<<<<<< HEAD
         position: absolute;
         top: 104%;
-=======
->>>>>>> e66f203fa7de0fbf1f2860ebebaa6fa95b97f37f
         z-index: 1;
         color: black;
         max-width: 90%;
@@ -491,118 +482,110 @@ $lh-large: 130%;
 }
 
 
-<<<<<<< HEAD
-    /* styles for блок-отзывы END*/
-=======
+/* styles for блок-отзывы END*/
+
 /* styles for блок-футер START*/
-.footer {
-    background-color: #c9c9c9;
->>>>>>> e66f203fa7de0fbf1f2860ebebaa6fa95b97f37f
 
-    /* styles for блок-футер START*/
-    .footer {
-        background-color: #c9c9c9;
-
-        width: 100vw;
-        height: fit-content;
-
-<<<<<<< HEAD
-=======
+.footer{
+    background-color: #656565;
+    color: #F1F1F1;
+    
+    width: 100vw;
+    height: fit-content;
+    
     text-align: center;
-
+    
     &__link {
-        color: black;
-
-        &:focus {
-            color: white;
-        }
+    all: unset;
+    
+    &:focus{
+    text-decoration: underline;
     }
-
-    &__information {
-        margin: 2rem 0 0 0;
     }
-
-    &__container {
-        margin: 1rem 0 0 0;
+    
+    &__information-block{
+    margin: 2rem 0 0 0;
     }
-
-    &__fieldset {
-        all: unset;
-
-        margin: 2rem 0 0 0;
+    
+    &__item{
+    margin: 1rem 0 0 0;
     }
-
-    &__form {
->>>>>>> e66f203fa7de0fbf1f2860ebebaa6fa95b97f37f
-        display: flex;
-        justify-content: center;
-
-        text-align: center;
-
-        &__link {
-            color: black;
-
-            &:focus {
-                color: white;
-            }
-        }
-
-        &__information {
-            margin: 2rem 0 0 0;
-        }
-
-        &__container {
-            margin: 1rem 0 0 0;
-        }
-
-        &__fieldset {
-            all: unset;
-
-            margin: 2rem 0 0 0;
-        }
-
-        &__form {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-
-        }
+    
+    &__icons-block{
+    margin: 3rem 0 ;
+    
+    display: flex;
+    justify-content: center;
     }
-
-<<<<<<< HEAD
-    .form-item {
-        border: 0.5px solid rgb(18, 18, 18);
-
-        height: 1.5rem;
-        width: 14rem;
-
-        &:focus {
-            background-color: white;
-        }
-=======
-.form-item {
-    border: 0.5px solid rgb(18, 18, 18);
-
-    height: 1.5rem;
-    width: 14rem;
-
-    &:focus {
-        background-color: white;
->>>>>>> e66f203fa7de0fbf1f2860ebebaa6fa95b97f37f
+    
+    &__icon{
+    margin: 0 2rem 0 0;
     }
-
-<<<<<<< HEAD
-    .form-btn {
-        height: 1.8rem;
-        width: 14rem;
     }
-
-    /* styles for блок-футер END*/
-=======
-.form-btn {
-    height: 1.8rem;
-    width: 14rem;
-}
+    
+    .fieldset{
+    all: unset;
+    
+    margin: 1rem 0 0 0;
+    
+    width: 70vw;
+    
+    &__legend{
+    margin: 0 0 3rem 0;
+    }
+    
+    &__input{
+    all: unset;
+    
+    background-color: #F1F1F1;
+    color: black;
+    
+    margin: 0 0 3rem 0;
+    background-clip: padding-box;
+    
+    border: 1px solid #bdbdbd;
+    border-radius: 0.25rem;
+    
+    height: calc(2.25rem + 2px);
+    width: 100%;
+    
+    font: inherit;
+    }
+    
+    &__input::placeholder{
+    text-align:left;
+    padding: 1rem;
+    }
+    
+    &__input:focus{
+    box-shadow: 0 0 0 0.2rem #CECECE;
+    }
+    
+    &__btn{
+    all: unset;
+    
+    border-radius: 0.25rem;
+    border: 1px solid #bdbdbd;
+    
+    background-color: #F1F1F1;
+    color: black;
+    
+    width:fit-content;
+    
+    text-align: center;
+    font: inherit;
+    
+    padding: 0.8rem 1rem;
+    margin: 0 0 3rem 0;
+    
+    text-decoration: none;
+    }
+    
+    &__btn:active {
+    background-color: #CECECE;
+    }
+    
+    }
 
 /* styles for блок-футер END*/
->>>>>>> e66f203fa7de0fbf1f2860ebebaa6fa95b97f37f
+
