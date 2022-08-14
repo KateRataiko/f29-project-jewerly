@@ -92,6 +92,7 @@ $lh-large: 130%;
 
 
 /* styles for блок-хедер START*/
+
 .header {
     max-width: 100%;
     height: 110px;
@@ -159,7 +160,7 @@ $lh-large: 130%;
 
     &__box {
         display: block;
-        position: fixed;
+        position: absolute;
         visibility: hidden;
         top: 0;
         left: -100%;
@@ -174,10 +175,11 @@ $lh-large: 130%;
 
     &__item {
         display: block;
-        padding: 12px 24px;
+        padding: 9px 24px;
         color: rgb(22, 21, 21);
         @include font($fs-medium, $lh-medium, $fw-meduim);
         text-decoration: none;
+
     }
 
     &__item:hover {
@@ -186,7 +188,7 @@ $lh-large: 130%;
 
     &__contact {
         display: block;
-        padding: 12px 24px;
+        padding: 7px 24px;
         color: rgb(22, 21, 21);
         @include font($fs-medium, $lh-medium, $fw-meduim);
         text-decoration: underline;
@@ -239,6 +241,7 @@ $lh-large: 130%;
 
 /* styles for блок-хедер END*/
 
+
 /* styles for блок-приветствие START*/
 
 .welcome {
@@ -251,9 +254,10 @@ $lh-large: 130%;
         text-align: center;
         @include font($fs-large, $lh-medium, $fw-bold);
         padding: 50px 0px 30px 0;
-        /* grid-row: 1/2;*/
+
     }
 
+    /* ВАриант с подложкой
     &__wrapper {
         position: absolute;
         padding: 0px 0px 0px 20px;
@@ -261,6 +265,53 @@ $lh-large: 130%;
         width: 100%;
         top: 72%;
 
+    }
+
+    &__text_first {
+<<<<<<< HEAD
+        @include font(1.3rem, $lh-medium, $fw-meduim);
+        color: white;
+=======
+        @include font($fs-medium, $lh-medium, $fw-meduim);
+        z-index: 1;
+        color: black;
+>>>>>>> 7e9dfdba03a48dd15a5e64a63943e779d25b278a
+        max-width: 90%;
+        max-height: 50%;
+        text-align: start;
+        margin-left: 0rem;
+        text-shadow: 1.5px 1.5px 3px #070707;
+    }
+
+    &__text_second {
+<<<<<<< HEAD
+        @include font(1.3rem, $lh-medium, $fw-meduim);
+        color: white;
+=======
+        @include font($fs-medium, $lh-medium, $fw-meduim);
+        z-index: 1;
+        color: black;
+>>>>>>> 7e9dfdba03a48dd15a5e64a63943e779d25b278a
+        max-width: 90%;
+        max-height: 50%;
+        text-align: start;
+        margin-left: 0rem;
+        margin-top: 2vh;
+<<<<<<< HEAD
+        text-shadow: 1.5px 1.5px 3px #070707;
+
+=======
+        margin-bottom: 0rem;
+    }*/
+
+    &__wrapper {
+        position: absolute;
+        padding: 0px 0px 0px 20px;
+        max-height: 30%;
+        width: 100%;
+        top: 72%;
+        /*top: 74%;*/
+        /* background: linear-gradient(90deg, rgba(255, 255, 255, 0.7) 100%, rgba(215, 215, 215, 0.7) 50%, rgba(255, 255, 255, 0.7) 100%);*/
     }
 
     &__text_first {
@@ -281,7 +332,14 @@ $lh-large: 130%;
         text-align: start;
         margin-left: 0rem;
         margin-top: 2vh;
+        margin-bottom: 0rem;
         text-shadow: 1.5px 1.5px 3px #070707;
+
+        /*top: 20px;
+        left: 5%;
+        padding: 5px;
+        max-width: min-content;
+        height: max-content;*/
 
     }
 
@@ -476,6 +534,7 @@ $lh-large: 130%;
 }
 
 
+
 /* styles for блок-отзывы END*/
 
 /* styles for блок-футер START*/
@@ -508,9 +567,12 @@ $lh-large: 130%;
     &__icons-block {
         margin: 3rem 0;
 
+
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
     }
+
 
     &__icon {
         margin: 0 2rem 0 0;
