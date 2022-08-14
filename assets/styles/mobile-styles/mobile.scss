@@ -253,7 +253,7 @@ $lh-large: 130%;
 
     }
 
-
+    /* ВАриант с подложкой
     &__wrapper {
         position: absolute;
         padding: 0px 0px 0px 20px;
@@ -283,11 +283,50 @@ $lh-large: 130%;
         margin-left: 0rem;
         margin-top: 2vh;
         margin-bottom: 0rem;
+    }*/
+
+    &__wrapper {
+        position: absolute;
+        padding: 0px 0px 0px 20px;
+        max-height: 30%;
+        width: 100%;
+        top: 72%;
+        /*top: 74%;*/
+        /* background: linear-gradient(90deg, rgba(255, 255, 255, 0.7) 100%, rgba(215, 215, 215, 0.7) 50%, rgba(255, 255, 255, 0.7) 100%);*/
+    }
+
+    &__text_first {
+        @include font(1.3rem, $lh-medium, $fw-meduim);
+        color: white;
+        max-width: 90%;
+        max-height: 50%;
+        text-align: start;
+        margin-left: 0rem;
+        text-shadow: 1.5px 1.5px 3px #070707;
+    }
+
+    &__text_second {
+        @include font(1.3rem, $lh-medium, $fw-meduim);
+        color: white;
+        max-width: 90%;
+        max-height: 50%;
+        text-align: start;
+        margin-left: 0rem;
+        margin-top: 2vh;
+        margin-bottom: 0rem;
+        text-shadow: 1.5px 1.5px 3px #070707;
+
+        /*top: 20px;
+        left: 5%;
+        padding: 5px;
+        max-width: min-content;
+        height: max-content;*/
+
     }
 
     &__image {
         width: 100%;
-        margin-top: 20px;
+        margin-top: 30px;
     }
 }
 
