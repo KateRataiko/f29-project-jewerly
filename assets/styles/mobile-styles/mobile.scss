@@ -86,10 +86,10 @@ $lh-large: 130%;
 .btn {
     border: 0.5px solid rgb(18, 18, 18);
     border-radius: 20px;
-
 }
 
-/* styles for блок-хедер START*/
+/* styles for блок-хедер END*/
+
 .header {
     max-width: 100%;
     height: 110px;
@@ -237,6 +237,7 @@ $lh-large: 130%;
 
 /* styles for блок-хедер END*/
 
+
 /* styles for блок-приветствие START*/
 
 .welcome {
@@ -249,7 +250,7 @@ $lh-large: 130%;
         text-align: center;
         @include font($fs-large, $lh-medium, $fw-bold);
         padding: 50px 0px 30px 0;
-        /* grid-row: 1/2;*/
+
     }
 
     &__wrapper {
@@ -261,7 +262,17 @@ $lh-large: 130%;
         background: linear-gradient(90deg, rgba(255, 255, 255, 0.7) 100%, rgba(215, 215, 215, 0.7) 50%, rgba(255, 255, 255, 0.7) 100%);
     }
 
-    &__text_first_first {
+    &__text_first {
+        @include font($fs-medium, $lh-medium, $fw-meduim);
+        z-index: 1;
+        color: black;
+        max-width: 90%;
+        max-height: 50%;
+        text-align: start;
+        margin-left: 0rem;
+    }
+
+    &__text_second {
         @include font($fs-medium, $lh-medium, $fw-meduim);
         z-index: 1;
         color: black;
@@ -351,6 +362,7 @@ $lh-large: 130%;
         margin-bottom: 30px;
         padding: 10px;
         text-align: start;
+
         border-bottom: 1px solid #747272;
     }
 }
@@ -466,6 +478,7 @@ $lh-large: 130%;
 }
 
 
+/* styles for блок-футер START*/
 
 
 /* styles for блок-футер START*/
@@ -474,6 +487,8 @@ $lh-large: 130%;
 
     width: 100vw;
     height: fit-content;
+
+
     display: flex;
     justify-content: center;
 
@@ -505,24 +520,6 @@ $lh-large: 130%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+
     }
 }
-
-
-.form-item {
-    border: 0.5px solid rgb(18, 18, 18);
-
-    height: 1.5rem;
-    width: 14rem;
-
-    &:focus {
-        background-color: white;
-    }
-
-    .form-btn {
-        height: 1.8rem;
-        width: 14rem;
-    }
-}
-
-/* styles for блок-футер END*/
