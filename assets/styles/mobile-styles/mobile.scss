@@ -252,57 +252,20 @@ $lh-large: 130%;
 
     &__slogan {
         text-align: center;
-        @include font($fs-large, $lh-medium, $fw-bold);
+        @include font($fs-medium, $lh-medium, $fw-bold);
         padding: 50px 0px 30px 0;
 
-    }
-
-    /* ВАриант с подложкой
-    &__wrapper {
-        position: absolute;
-        padding: 0px 0px 0px 20px;
-        max-height: 30%;
-        width: 100%;
-        top: 72%;
 
     }
 
-    &__text_first {
-<<<<<<< HEAD
-        @include font(1.3rem, $lh-medium, $fw-meduim);
-        color: white;
-=======
-        @include font($fs-medium, $lh-medium, $fw-meduim);
-        z-index: 1;
-        color: black;
->>>>>>> 7e9dfdba03a48dd15a5e64a63943e779d25b278a
-        max-width: 90%;
-        max-height: 50%;
-        text-align: start;
-        margin-left: 0rem;
-        text-shadow: 1.5px 1.5px 3px #070707;
+    &__slogan_as {
+        text-align: center;
+        @include font($fs-medium, $lh-medium, $fw-bold);
+        padding: 50px 0px 30px 0;
+        text-transform: uppercase;
     }
 
-    &__text_second {
-<<<<<<< HEAD
-        @include font(1.3rem, $lh-medium, $fw-meduim);
-        color: white;
-=======
-        @include font($fs-medium, $lh-medium, $fw-meduim);
-        z-index: 1;
-        color: black;
->>>>>>> 7e9dfdba03a48dd15a5e64a63943e779d25b278a
-        max-width: 90%;
-        max-height: 50%;
-        text-align: start;
-        margin-left: 0rem;
-        margin-top: 2vh;
-<<<<<<< HEAD
-        text-shadow: 1.5px 1.5px 3px #070707;
 
-=======
-        margin-bottom: 0rem;
-    }*/
 
     &__wrapper {
         position: absolute;
