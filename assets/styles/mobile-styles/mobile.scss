@@ -90,9 +90,7 @@ $lh-large: 130%;
     background-color: #F1F1F1;
 }
 
-
 /* styles for блок-хедер START*/
-
 .header {
     max-width: 100%;
     height: 110px;
@@ -160,7 +158,7 @@ $lh-large: 130%;
 
     &__box {
         display: block;
-        position: absolute;
+        position: fixed;
         visibility: hidden;
         top: 0;
         left: -100%;
@@ -175,11 +173,10 @@ $lh-large: 130%;
 
     &__item {
         display: block;
-        padding: 9px 24px;
+        padding: 12px 24px;
         color: rgb(22, 21, 21);
         @include font($fs-medium, $lh-medium, $fw-meduim);
         text-decoration: none;
-
     }
 
     &__item:hover {
@@ -188,7 +185,7 @@ $lh-large: 130%;
 
     &__contact {
         display: block;
-        padding: 7px 24px;
+        padding: 12px 24px;
         color: rgb(22, 21, 21);
         @include font($fs-medium, $lh-medium, $fw-meduim);
         text-decoration: underline;
@@ -241,7 +238,6 @@ $lh-large: 130%;
 
 /* styles for блок-хедер END*/
 
-
 /* styles for блок-приветствие START*/
 
 .welcome {
@@ -254,103 +250,49 @@ $lh-large: 130%;
         text-align: center;
         @include font($fs-large, $lh-medium, $fw-bold);
         padding: 50px 0px 30px 0;
-
+        /* grid-row: 1/2;*/
     }
-
-    /* ВАриант с подложкой
-    &__wrapper {
-        position: absolute;
-        padding: 0px 0px 0px 20px;
-        max-height: 30%;
-        width: 100%;
-        top: 72%;
-
-    }
-
-    &__text_first {
-<<<<<<< HEAD
-        @include font(1.3rem, $lh-medium, $fw-meduim);
-        color: white;
-=======
-        @include font($fs-medium, $lh-medium, $fw-meduim);
-        z-index: 1;
-        color: black;
->>>>>>> 7e9dfdba03a48dd15a5e64a63943e779d25b278a
-        max-width: 90%;
-        max-height: 50%;
-        text-align: start;
-        margin-left: 0rem;
-        text-shadow: 1.5px 1.5px 3px #070707;
-    }
-
-    &__text_second {
-<<<<<<< HEAD
-        @include font(1.3rem, $lh-medium, $fw-meduim);
-        color: white;
-=======
-        @include font($fs-medium, $lh-medium, $fw-meduim);
-        z-index: 1;
-        color: black;
->>>>>>> 7e9dfdba03a48dd15a5e64a63943e779d25b278a
-        max-width: 90%;
-        max-height: 50%;
-        text-align: start;
-        margin-left: 0rem;
-        margin-top: 2vh;
-<<<<<<< HEAD
-        text-shadow: 1.5px 1.5px 3px #070707;
-
-=======
-        margin-bottom: 0rem;
-    }*/
 
     &__wrapper {
         position: absolute;
         padding: 0px 0px 0px 20px;
         max-height: 30%;
         width: 100%;
-        top: 72%;
-        /*top: 74%;*/
-        /* background: linear-gradient(90deg, rgba(255, 255, 255, 0.7) 100%, rgba(215, 215, 215, 0.7) 50%, rgba(255, 255, 255, 0.7) 100%);*/
+        top: 74%;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.7) 100%, rgba(215, 215, 215, 0.7) 50%, rgba(255, 255, 255, 0.7) 100%);
     }
 
     &__text_first {
-        @include font(1.3rem, $lh-medium, $fw-meduim);
-        color: white;
+        @include font($fs-medium, $lh-medium, $fw-meduim);
+        position: absolute;
+        top: 90%;
+        z-index: 1;
+        color: black;
         max-width: 90%;
         max-height: 50%;
         text-align: start;
         margin-left: 0rem;
-        text-shadow: 1.5px 1.5px 3px #070707;
     }
 
     &__text_second {
-        @include font(1.3rem, $lh-medium, $fw-meduim);
-        color: white;
+        @include font($fs-medium, $lh-medium, $fw-meduim);
+        position: absolute;
+        top: 104%;
+        z-index: 1;
+        color: black;
         max-width: 90%;
         max-height: 50%;
         text-align: start;
         margin-left: 0rem;
         margin-top: 2vh;
         margin-bottom: 0rem;
-        text-shadow: 1.5px 1.5px 3px #070707;
-
-        /*top: 20px;
-        left: 5%;
-        padding: 5px;
-        max-width: min-content;
-        height: max-content;*/
-
     }
 
     &__image {
         width: 100%;
-        margin-top: 30px;
+        margin-top: 20px;
     }
 }
-
-
-
 
 /* styles for блок-приветствие END*/
 
@@ -369,6 +311,8 @@ $lh-large: 130%;
             width: 100%;
 
             margin-top: 20px;
+
+            border-radius: 2%;
         }
 
         &_img2 {
@@ -379,6 +323,8 @@ $lh-large: 130%;
             width: 100%;
 
             margin-top: 20px;
+
+            border-radius: 2%;
         }
     }
 }
@@ -512,7 +458,9 @@ $lh-large: 130%;
         margin: 20px 0;
         padding: 15px;
 
-        background-color: #EDEDED;
+        border-radius: 2%;
+
+        background-color: #F1F1F1;
     }
 
     &__img {
@@ -534,113 +482,49 @@ $lh-large: 130%;
 }
 
 
-
 /* styles for блок-отзывы END*/
 
 /* styles for блок-футер START*/
 
-.footer {
+.footer{
     background-color: #656565;
     color: #F1F1F1;
-
+    
     width: 100vw;
     height: fit-content;
-
+    
     text-align: center;
-
+    
     &__link {
-        all: unset;
-
-        &:focus {
-            text-decoration: underline;
-        }
-    }
-
-    &__information-block {
-        margin: 2rem 0 0 0;
-    }
-
-    &__item {
-        margin: 1rem 0 0 0;
-    }
-
-    &__icons-block {
-        margin: 3rem 0;
-
-
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-
-    &__icon {
-        margin: 0 2rem 0 0;
-    }
-}
-
-.fieldset {
     all: unset;
-
+    
+    &:focus{
+    text-decoration: underline;
+    }
+    }
+    
+    &__information-block{
+    margin: 2rem 0 0 0;
+    }
+    
+    &__item{
     margin: 1rem 0 0 0;
-
-    width: 70vw;
-
-    &__legend {
-        margin: 0 0 3rem 0;
     }
+    
+    &__icons-block{
 
-    &__input {
+    margin: 3rem 0 ;
+    
+    display: flex;
+    justify-content: center;
+    }
+    
+    &__icon{
         all: unset;
-
-        background-color: #F1F1F1;
-        color: black;
-
-        margin: 0 0 3rem 0;
-        background-clip: padding-box;
-
-        border: 1px solid #bdbdbd;
-        border-radius: 0.25rem;
-
-        height: calc(2.25rem + 2px);
-        width: 100%;
-
-        font: inherit;
+    margin: 0 2rem 0 0;
     }
-
-    &__input::placeholder {
-        text-align: left;
-        padding: 1rem;
     }
-
-    &__input:focus {
-        box-shadow: 0 0 0 0.2rem #CECECE;
-    }
-
-    &__btn {
-        all: unset;
-
-        border-radius: 0.25rem;
-        border: 1px solid #bdbdbd;
-
-        background-color: #F1F1F1;
-        color: black;
-
-        width: fit-content;
-
-        text-align: center;
-        font: inherit;
-
-        padding: 0.8rem 1rem;
-        margin: 0 0 3rem 0;
-
-        text-decoration: none;
-    }
-
-    &__btn:active {
-        background-color: #CECECE;
-    }
-
-}
+    
 
 /* styles for блок-футер END*/
+    
