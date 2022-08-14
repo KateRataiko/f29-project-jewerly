@@ -90,11 +90,12 @@ $lh-large: 130%;
 }
 
 .btn {
-border: 0.5px solid rgb(18, 18, 18);
-border-radius: 20px;
+    border: 0.5px solid rgb(18, 18, 18);
+    border-radius: 20px;
 
-background-color: #F1F1F1;
+    background-color: #F1F1F1;
 }
+
 /* styles for блок-хедер START*/
 .header {
     max-width: 100%;
@@ -297,8 +298,6 @@ background-color: #F1F1F1;
             width: 100%;
 
             margin-top: 20px;
-
-            border-radius: 2%;
         }
 
         &_img2 {
@@ -309,8 +308,6 @@ background-color: #F1F1F1;
             width: 100%;
 
             margin-top: 20px;
-
-            border-radius: 2%;
         }
     }
 }
@@ -333,9 +330,7 @@ background-color: #F1F1F1;
         margin: 20px 0;
         padding: 15px;
 
-        border-radius: 2%;
-
-        background-color: #F1F1F1;
+        background-color: #EDEDED;
     }
 
     &__img {
@@ -354,11 +349,12 @@ background-color: #F1F1F1;
     &__text {
         padding-right: 10px;
     }
+}
 
 /* styles for блок-отзывы END*/
 
 /* styles for блок-футер START*/
-.footer{
+.footer {
     background-color: #c9c9c9;
 
     width: 100vw;
@@ -372,24 +368,26 @@ background-color: #F1F1F1;
     &__link {
         color: black;
 
-        &:focus{
+        &:focus {
             color: white;
         }
     }
-    
-    &__information{
+
+    &__information {
         margin: 2rem 0 0 0;
     }
-    
-    &__container{
+
+    &__container {
         margin: 1rem 0 0 0;
     }
-    &__fieldset{
+
+    &__fieldset {
         all: unset;
 
         margin: 2rem 0 0 0;
     }
-    &__form{
+
+    &__form {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -397,19 +395,21 @@ background-color: #F1F1F1;
     }
 }
 
-.form-item{
+.form-item {
     border: 0.5px solid rgb(18, 18, 18);
-    
+
     height: 1.5rem;
     width: 14rem;
 
-    &:focus{
-        background-color:white;
+    &:focus {
+        background-color: white;
     }
 }
 
-.form-btn{
+.form-btn {
     height: 1.8rem;
     width: 14rem;
 }
+
+
 /* styles for блок-футер END*/
