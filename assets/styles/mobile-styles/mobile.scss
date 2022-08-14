@@ -172,10 +172,11 @@ $lh-large: 130%;
 
     &__item {
         display: block;
-        padding: 12px 24px;
+        padding: 9px 24px;
         color: rgb(22, 21, 21);
         @include font($fs-medium, $lh-medium, $fw-meduim);
         text-decoration: none;
+
     }
 
     &__item:hover {
@@ -184,7 +185,7 @@ $lh-large: 130%;
 
     &__contact {
         display: block;
-        padding: 12px 24px;
+        padding: 7px 24px;
         color: rgb(22, 21, 21);
         @include font($fs-medium, $lh-medium, $fw-meduim);
         text-decoration: underline;
