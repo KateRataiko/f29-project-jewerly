@@ -86,175 +86,172 @@ $lh-large: 130%;
 .btn {
     border: 0.5px solid rgb(18, 18, 18);
     border-radius: 20px;
+}
 
-    /* styles for блок-хедер START*/
+/* styles for блок-хедер START*/
 
-    .header {
-        max-width: 100%;
-        height: 110px;
-        /*background: white;
-    border: 2px solid #9d9d9d;
-    /*background: #C1BFBF;*/
-        /*background: #cfd0cf;*/
-        background: #d4d4d2;
+.header {
+    max-width: 100%;
+    height: 110px;
+    background: #d4d4d2;
 
 
-        &__logo-img {
+    &__logo-img {
 
-            height: 90px;
-            z-index: 1;
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            bottom: 10px;
-            border-radius: 10px;
-        }
-    }
-
-
-    /*скрываем чекбокс*/
-    #burger-menu__toggle {
-        opacity: 0;
-    }
-
-
-    /*стилизуем кнопку*/
-    .burger-menu__btn {
-        display: flex;
-        align-items: center;
-        position: absolute;
-        top: 40px;
-        left: 20px;
-        width: 56px;
-        height: 36px;
-        cursor: pointer;
+        height: 90px;
         z-index: 1;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        bottom: 10px;
+        border-radius: 10px;
     }
-
-    /*добавляем гамбургер*/
-    .burger-menu {
-
-        &__btn>span,
-        &__btn>span::before,
-        &__btn>span::after {
-            display: block;
-            position: absolute;
-            width: 100%;
-            height: 2px;
-            background-color: gray;
-        }
-
-        &__btn>span::before {
-            content: '';
-            top: -8px;
-        }
-
-        &__btn>span::after {
-            content: '';
-            top: 8px;
-        }
-
-        &__box {
-            display: block;
-            position: absolute;
-            visibility: hidden;
-            top: 0;
-            left: -100%;
-            margin: 0;
-            padding: 90px 0 50px 0;
-            list-style: none;
-            text-align: center;
-
-            background-color: #cfd0cf;
-            box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-        }
-
-        &__item {
-            display: block;
-            padding: 9px 24px;
-            color: rgb(22, 21, 21);
-            @include font($fs-medium, $lh-medium, $fw-meduim);
-            text-decoration: none;
-
-        }
-
-        &__item:hover {
-            background-color: #f2eded;
-        }
-
-        &__contact {
-            display: block;
-            padding: 7px 24px;
-            color: rgb(22, 21, 21);
-            @include font($fs-medium, $lh-medium, $fw-meduim);
-            text-decoration: underline;
-        }
-
-        &__contact:hover {
-            background-color: #f2eded;
-
-        }
-    }
+}
 
 
-    #burger-menu__toggle:checked~.burger-menu__btn>span {
-        transform: rotate(45deg);
-    }
-
-    #burger-menu__toggle:checked~.burger-menu__btn>span::before {
-        top: 0;
-        transform: rotate(0);
-    }
+/*скрываем чекбокс*/
+#burger-menu__toggle {
+    opacity: 0;
+}
 
 
-    #burger-menu__toggle:checked~.burger-menu__btn>span::after {
-        top: 0;
-        transform: rotate(90deg);
-    }
+/*стилизуем кнопку*/
+.burger-menu__btn {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    width: 56px;
+    height: 36px;
+    cursor: pointer;
+    z-index: 1;
+}
 
-    #burger-menu__toggle:checked~.burger-menu__box {
-        visibility: visible;
-        left: 0;
-    }
+/*добавляем гамбургер*/
+.burger-menu {
 
-    .burger-menu {
-
-        &__btn>span,
-        &__btn>span::before,
-        &__btn>span::after {
-            transition-duration: .25s;
-        }
-
-        &__box {
-            transition-duration: .25s;
-        }
-
-        &__item {
-            transition-duration: .25s;
-        }
-
-    }
-
-    /* styles for блок-хедер END*/
-
-
-    /* styles for блок-приветствие START*/
-
-    .welcome {
-
+    &__btn>span,
+    &__btn>span::before,
+    &__btn>span::after {
+        display: block;
+        position: absolute;
         width: 100%;
-        height: 100%;
-        position: relative;
+        height: 2px;
+        background-color: gray;
+    }
 
-        &__slogan {
-            text-align: center;
-            @include font($fs-large, $lh-medium, $fw-bold);
-            padding: 50px 0px 30px 0;
+    &__btn>span::before {
+        content: '';
+        top: -8px;
+    }
 
-        }
+    &__btn>span::after {
+        content: '';
+        top: 8px;
+    }
 
-        /* ВАриант с подложкой*/
-        /*&__wrapper {
+    &__box {
+        display: block;
+        position: absolute;
+        visibility: hidden;
+        top: 0;
+        left: -100%;
+        margin: 0;
+        padding: 90px 0 50px 0;
+        list-style: none;
+        text-align: center;
+
+        background-color: #cfd0cf;
+        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    }
+
+    &__item {
+        display: block;
+        padding: 9px 24px;
+        color: rgb(22, 21, 21);
+        @include font($fs-medium, $lh-medium, $fw-meduim);
+        text-decoration: none;
+
+    }
+
+    &__item:hover {
+        background-color: #f2eded;
+    }
+
+    &__contact {
+        display: block;
+        padding: 7px 24px;
+        color: rgb(22, 21, 21);
+        @include font($fs-medium, $lh-medium, $fw-meduim);
+        text-decoration: underline;
+    }
+
+    &__contact:hover {
+        background-color: #f2eded;
+
+    }
+}
+
+
+#burger-menu__toggle:checked~.burger-menu__btn>span {
+    transform: rotate(45deg);
+}
+
+#burger-menu__toggle:checked~.burger-menu__btn>span::before {
+    top: 0;
+    transform: rotate(0);
+}
+
+
+#burger-menu__toggle:checked~.burger-menu__btn>span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+#burger-menu__toggle:checked~.burger-menu__box {
+    visibility: visible;
+    left: 0;
+}
+
+.burger-menu {
+
+    &__btn>span,
+    &__btn>span::before,
+    &__btn>span::after {
+        transition-duration: .25s;
+    }
+
+    &__box {
+        transition-duration: .25s;
+    }
+
+    &__item {
+        transition-duration: .25s;
+    }
+
+}
+
+/* styles for блок-хедер END*/
+
+
+/* styles for блок-приветствие START*/
+
+.welcome {
+
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    &__slogan {
+        text-align: center;
+        @include font($fs-large, $lh-medium, $fw-bold);
+        padding: 50px 0px 30px 0;
+
+    }
+
+    /* ВАриант с подложкой*/
+    /*&__wrapper {
         position: absolute;
         padding: 0px 0px 0px 20px;
         max-height: 30%;
@@ -285,309 +282,309 @@ $lh-large: 130%;
         margin-bottom: 0rem;
     }*/
 
-        &__wrapper {
-            position: absolute;
-            padding: 0px 0px 0px 20px;
-            max-height: 30%;
-            width: 100%;
-            top: 72%;
-            /*top: 74%;*/
-            /* background: linear-gradient(90deg, rgba(255, 255, 255, 0.7) 100%, rgba(215, 215, 215, 0.7) 50%, rgba(255, 255, 255, 0.7) 100%);*/
-        }
+    &__wrapper {
+        position: absolute;
+        padding: 0px 0px 0px 20px;
+        max-height: 30%;
+        width: 100%;
+        top: 72%;
+        /*top: 74%;*/
+        /* background: linear-gradient(90deg, rgba(255, 255, 255, 0.7) 100%, rgba(215, 215, 215, 0.7) 50%, rgba(255, 255, 255, 0.7) 100%);*/
+    }
 
-        &__text_first {
-            @include font(1.3rem, $lh-medium, $fw-meduim);
-            color: white;
-            max-width: 90%;
-            max-height: 50%;
-            text-align: start;
-            margin-left: 0rem;
-            text-shadow: 1.5px 1.5px 3px #070707;
-        }
+    &__text_first {
+        @include font(1.3rem, $lh-medium, $fw-meduim);
+        color: white;
+        max-width: 90%;
+        max-height: 50%;
+        text-align: start;
+        margin-left: 0rem;
+        text-shadow: 1.5px 1.5px 3px #070707;
+    }
 
-        &__text_second {
-            @include font(1.3rem, $lh-medium, $fw-meduim);
-            color: white;
-            max-width: 90%;
-            max-height: 50%;
-            text-align: start;
-            margin-left: 0rem;
-            margin-top: 2vh;
-            margin-bottom: 0rem;
-            text-shadow: 1.5px 1.5px 3px #070707;
+    &__text_second {
+        @include font(1.3rem, $lh-medium, $fw-meduim);
+        color: white;
+        max-width: 90%;
+        max-height: 50%;
+        text-align: start;
+        margin-left: 0rem;
+        margin-top: 2vh;
+        margin-bottom: 0rem;
+        text-shadow: 1.5px 1.5px 3px #070707;
 
-            /*top: 20px;
+        /*top: 20px;
         left: 5%;
         padding: 5px;
         max-width: min-content;
         height: max-content;*/
 
-        }
-
-        &__image {
-            width: 100%;
-            margin-top: 30px;
-        }
     }
 
-    /* styles for блок-приветствие END*/
+    &__image {
+        width: 100%;
+        margin-top: 30px;
+    }
+}
 
-    /* styles for блок-про производство START*/
-    .workshop {
-        max-width: 100%;
-        height: auto;
+/* styles for блок-приветствие END*/
 
-        &__text {
+/* styles for блок-про производство START*/
+.workshop {
+    max-width: 100%;
+    height: auto;
+
+    &__text {
+        margin-top: 20px;
+    }
+
+    &__images {
+
+        &_img1 {
+            width: 100%;
+
             margin-top: 20px;
         }
 
-        &__images {
-
-            &_img1 {
-                width: 100%;
-
-                margin-top: 20px;
-            }
-
-            &_img2 {
-                display: none;
-            }
-
-            &_img3 {
-                width: 100%;
-
-                margin-top: 20px;
-            }
-        }
-    }
-
-    /* styles for блок-про производство END*/
-
-    /* srtyles for блок-витрина START*/
-    .showcase {
-        max-width: 100%;
-
-        &__title {
-            text-align: center;
-        }
-    }
-
-    .category {
-        max-width: 100%;
-
-        margin-top: 40px;
-
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-auto-rows: auto;
-        column-gap: 10px;
-
-        &_layout-1 {
-            grid-column: 1/3;
+        &_img2 {
+            display: none;
         }
 
-        &_layout-2 {
-            grid-column: 1/2;
-        }
-
-        &_layout-3 {
-            grid-column: 2/3;
-        }
-
-        &__small-title {
-            margin-bottom: 30px;
-            padding: 10px;
-            text-align: start;
-
-            border-bottom: 1px solid #747272;
-        }
-    }
-
-    .card {
-        margin-bottom: 30px;
-
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        column-gap: 5px;
-        align-items: flex-start;
-
-        &__img {
-            max-width: 100%;
-
-            grid-column: 1/3;
-        }
-
-        &__img img {
-            max-width: 100%;
-            object-fit: cover;
-        }
-
-        &__small-title,
-        &__price {
-            align-self: center;
-        }
-
-        &__small-title {
-            @include font(1rem, $lh-small);
-            grid-column: 1/2;
-        }
-
-        &__text {
-            @include font(0.8rem, $lh-small, $fw-light);
-            grid-column: 1/2;
-        }
-
-        &__price {
-            @include font(1rem, $lh-small);
-            grid-column: 2/3;
-            grid-row: 2/3;
-
-            text-align: end;
-            justify-self: end;
-        }
-
-        &_accent_hit,
-        &_accent_sale {
-            position: relative;
-        }
-
-        &_accent_hit::after,
-        &_accent_sale::after {
-            position: absolute;
-
-            top: 20px;
-            left: 5%;
-            padding: 5px;
-            max-width: min-content;
-            height: max-content;
-
-            @include font(1rem, $lh-small, $fw-light);
-            background-color: #FFFFFF;
-            // border: 1px solid #8D8D8D;
-        }
-
-        &_accent_sale::after {
-            content: "-35%";
-        }
-
-        &_accent_hit:after {
-            content: "Хит!";
-        }
-    }
-
-    /* styles for блок-витрина END*/
-
-    /* srtyles for блок-отзывы START*/
-    .opinions {
-        max-width: 100%;
-        height: auto;
-
-        &__container-content {
-            border-bottom: 1px solid #747272;
-        }
-
-        &__content {
-            margin: 20px 0;
-            padding: 15px;
-
-            background-color: #EDEDED;
-        }
-
-        &__img {
-            float: left;
-
-            margin-right: 10px;
-            margin-top: 10px;
-
-            border-radius: 50%;
-        }
-
-        &__title {
-            padding: 15px;
-        }
-
-        &__text {
-            padding-right: 10px;
-        }
-    }
-
-
-
-    /* styles for блок-отзывы END*/
-
-    /* styles for блок-футер START*/
-
-    .footer {
-        height: fit-content;
-
-        &__icon {
-            margin: 0 2rem 0 0;
-        }
-    }
-
-    .fieldset {
-        all: unset;
-
-        margin: 1rem 0 0 0;
-
-        width: 70vw;
-
-        &__legend {
-            margin: 0 0 3rem 0;
-        }
-
-        &__input {
-            all: unset;
-
-            background-color: #F1F1F1;
-            color: black;
-
-            margin: 0 0 3rem 0;
-            background-clip: padding-box;
-
-            border: 1px solid #bdbdbd;
-            border-radius: 0.25rem;
-
-            height: calc(2.25rem + 2px);
+        &_img3 {
             width: 100%;
 
-            font: inherit;
+            margin-top: 20px;
         }
-
-        &__input::placeholder {
-            text-align: left;
-            padding: 1rem;
-        }
-
-        &__input:focus {
-            box-shadow: 0 0 0 0.2rem #CECECE;
-        }
-
-        &__btn {
-            all: unset;
-
-            border-radius: 0.25rem;
-            border: 1px solid #bdbdbd;
-
-            background-color: #F1F1F1;
-            color: black;
-
-            width: fit-content;
-
-            text-align: center;
-            font: inherit;
-
-            padding: 0.8rem 1rem;
-            margin: 0 0 3rem 0;
-
-            text-decoration: none;
-        }
-
-        &__btn:active {
-            background-color: #CECECE;
-        }
-
     }
 }
+
+/* styles for блок-про производство END*/
+
+/* srtyles for блок-витрина START*/
+.showcase {
+    max-width: 100%;
+
+    &__title {
+        text-align: center;
+    }
+}
+
+.category {
+    max-width: 100%;
+
+    margin-top: 40px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    column-gap: 10px;
+
+    &_layout-1 {
+        grid-column: 1/3;
+    }
+
+    &_layout-2 {
+        grid-column: 1/2;
+    }
+
+    &_layout-3 {
+        grid-column: 2/3;
+    }
+
+    &__small-title {
+        margin-bottom: 30px;
+        padding: 10px;
+        text-align: start;
+
+        border-bottom: 1px solid #747272;
+    }
+}
+
+.card {
+    margin-bottom: 30px;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 5px;
+    align-items: flex-start;
+
+    &__img {
+        max-width: 100%;
+
+        grid-column: 1/3;
+    }
+
+    &__img img {
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+    &__small-title,
+    &__price {
+        align-self: center;
+    }
+
+    &__small-title {
+        @include font(1rem, $lh-small);
+        grid-column: 1/2;
+    }
+
+    &__text {
+        @include font(0.8rem, $lh-small, $fw-light);
+        grid-column: 1/2;
+    }
+
+    &__price {
+        @include font(1rem, $lh-small);
+        grid-column: 2/3;
+        grid-row: 2/3;
+
+        text-align: end;
+        justify-self: end;
+    }
+
+    &_accent_hit,
+    &_accent_sale {
+        position: relative;
+    }
+
+    &_accent_hit::after,
+    &_accent_sale::after {
+        position: absolute;
+
+        top: 20px;
+        left: 5%;
+        padding: 5px;
+        max-width: min-content;
+        height: max-content;
+
+        @include font(1rem, $lh-small, $fw-light);
+        background-color: #FFFFFF;
+        // border: 1px solid #8D8D8D;
+    }
+
+    &_accent_sale::after {
+        content: "-35%";
+    }
+
+    &_accent_hit:after {
+        content: "Хит!";
+    }
+}
+
+/* styles for блок-витрина END*/
+
+/* srtyles for блок-отзывы START*/
+.opinions {
+    max-width: 100%;
+    height: auto;
+
+    &__container-content {
+        border-bottom: 1px solid #747272;
+    }
+
+    &__content {
+        margin: 20px 0;
+        padding: 15px;
+
+        background-color: #EDEDED;
+    }
+
+    &__img {
+        float: left;
+
+        margin-right: 10px;
+        margin-top: 10px;
+
+        border-radius: 50%;
+    }
+
+    &__title {
+        padding: 15px;
+    }
+
+    &__text {
+        padding-right: 10px;
+    }
+}
+
+
+
+/* styles for блок-отзывы END*/
+
+/* styles for блок-футер START*/
+
+.footer {
+    height: fit-content;
+
+    &__icon {
+        margin: 0 2rem 0 0;
+    }
+}
+
+.fieldset {
+    all: unset;
+
+    margin: 1rem 0 0 0;
+
+    width: 70vw;
+
+    &__legend {
+        margin: 0 0 3rem 0;
+    }
+
+    &__input {
+        all: unset;
+
+        background-color: #F1F1F1;
+        color: black;
+
+        margin: 0 0 3rem 0;
+        background-clip: padding-box;
+
+        border: 1px solid #bdbdbd;
+        border-radius: 0.25rem;
+
+        height: calc(2.25rem + 2px);
+        width: 100%;
+
+        font: inherit;
+    }
+
+    &__input::placeholder {
+        text-align: left;
+        padding: 1rem;
+    }
+
+    &__input:focus {
+        box-shadow: 0 0 0 0.2rem #CECECE;
+    }
+
+    &__btn {
+        all: unset;
+
+        border-radius: 0.25rem;
+        border: 1px solid #bdbdbd;
+
+        background-color: #F1F1F1;
+        color: black;
+
+        width: fit-content;
+
+        text-align: center;
+        font: inherit;
+
+        padding: 0.8rem 1rem;
+        margin: 0 0 3rem 0;
+
+        text-decoration: none;
+    }
+
+    &__btn:active {
+        background-color: #CECECE;
+    }
+
+}
+
 
 /* styles for блок-футер END*/
