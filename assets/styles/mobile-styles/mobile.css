@@ -112,7 +112,7 @@
 }
 .burger-menu__box {
   display: block;
-  position: absolute;
+  position: fixed;
   visibility: hidden;
   top: 0;
   left: -100%;
@@ -125,7 +125,7 @@
 }
 .burger-menu__item {
   display: block;
-  padding: 9px 24px;
+  padding: 12px 24px;
   color: rgb(22, 21, 21);
   font-family: "Inter", Verdana, sans-serif;
   font-weight: 500;
@@ -138,7 +138,7 @@
 }
 .burger-menu__contact {
   display: block;
-  padding: 7px 24px;
+  padding: 12px 24px;
   color: rgb(22, 21, 21);
   font-family: "Inter", Verdana, sans-serif;
   font-weight: 500;
@@ -208,44 +208,42 @@
   padding: 0px 0px 0px 20px;
   max-height: 30%;
   width: 100%;
-  top: 72%;
-  /*top: 74%;*/
-  /* background: linear-gradient(90deg, rgba(255, 255, 255, 0.7) 100%, rgba(215, 215, 215, 0.7) 50%, rgba(255, 255, 255, 0.7) 100%);*/
+  top: 74%;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.7) 100%, rgba(215, 215, 215, 0.7) 50%, rgba(255, 255, 255, 0.7) 100%);
 }
 .welcome__text_first {
   font-family: "Inter", Verdana, sans-serif;
   font-weight: 500;
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   line-height: 120%;
-  color: white;
+  position: absolute;
+  top: 90%;
+  z-index: 1;
+  color: black;
   max-width: 90%;
   max-height: 50%;
   text-align: start;
   margin-left: 0rem;
-  text-shadow: 1.5px 1.5px 3px #070707;
 }
 .welcome__text_second {
   font-family: "Inter", Verdana, sans-serif;
   font-weight: 500;
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   line-height: 120%;
-  color: white;
+  position: absolute;
+  top: 104%;
+  z-index: 1;
+  color: black;
   max-width: 90%;
   max-height: 50%;
   text-align: start;
   margin-left: 0rem;
   margin-top: 2vh;
   margin-bottom: 0rem;
-  text-shadow: 1.5px 1.5px 3px #070707;
-  /*top: 20px;
-  left: 5%;
-  padding: 5px;
-  max-width: min-content;
-  height: max-content;*/
 }
 .welcome__image {
   width: 100%;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 /* styles for блок-приветствие END*/
@@ -260,6 +258,7 @@
 .workshop__images_img1 {
   width: 100%;
   margin-top: 20px;
+  border-radius: 2%;
 }
 .workshop__images_img2 {
   display: none;
@@ -267,6 +266,7 @@
 .workshop__images_img3 {
   width: 100%;
   margin-top: 20px;
+  border-radius: 2%;
 }
 
 /* styles for блок-про производство END*/
@@ -386,7 +386,8 @@
 .opinions__content {
   margin: 20px 0;
   padding: 15px;
-  background-color: #EDEDED;
+  border-radius: 2%;
+  background-color: #F1F1F1;
 }
 .opinions__img {
   float: left;
@@ -427,65 +428,11 @@
 .footer__icons-block {
   margin: 3rem 0;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
 }
 .footer__icon {
+  all: unset;
   margin: 0 2rem 0 0;
-}
-
-.fieldset {
-  all: unset;
-  margin: 1rem 0 0 0;
-  width: 70vw;
-}
-.fieldset__legend {
-  margin: 0 0 3rem 0;
-}
-.fieldset__input {
-  all: unset;
-  background-color: #F1F1F1;
-  color: black;
-  margin: 0 0 3rem 0;
-  background-clip: padding-box;
-  border: 1px solid #bdbdbd;
-  border-radius: 0.25rem;
-  height: calc(2.25rem + 2px);
-  width: 100%;
-  font: inherit;
-}
-.fieldset__input::-moz-placeholder {
-  text-align: left;
-  padding: 1rem;
-}
-.fieldset__input:-ms-input-placeholder {
-  text-align: left;
-  padding: 1rem;
-}
-.fieldset__input::placeholder {
-  text-align: left;
-  padding: 1rem;
-}
-.fieldset__input:focus {
-  box-shadow: 0 0 0 0.2rem #CECECE;
-}
-.fieldset__btn {
-  all: unset;
-  border-radius: 0.25rem;
-  border: 1px solid #bdbdbd;
-  background-color: #F1F1F1;
-  color: black;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  text-align: center;
-  font: inherit;
-  padding: 0.8rem 1rem;
-  margin: 0 0 3rem 0;
-  text-decoration: none;
-}
-.fieldset__btn:active {
-  background-color: #CECECE;
 }
 
 /* styles for блок-футер END*//*# sourceMappingURL=mobile.css.map */
