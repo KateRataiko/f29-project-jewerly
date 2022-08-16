@@ -22,47 +22,50 @@
     font-size: 1.25rem;
     line-height: 120%;
   }
-  .header__logo-img {
-    height: 90px;
-    z-index: 1;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    bottom: 10px;
-    border-radius: 10px;
+  .header__item {
+    display: block;
   }
   .header__item_choker {
-    display: none;
+    color: black;
+    font-family: "Inter", Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 120%;
   }
   .header__item_earrings {
-    display: none;
+    color: black;
+    font-family: "Inter", Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 120%;
   }
   .header__item_bracelet {
-    display: none;
+    color: black;
+    font-family: "Inter", Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 120%;
   }
   .header__item_podveski {
-    display: none;
-  }
-  .header__item_contact {
-    display: none;
-  }
-  .header__item_delivery {
-    display: none;
-  }
-  .header__item_choker {
     color: black;
-  }
-  .header__item_earrings {
-    color: black;
-  }
-  .header__item_bracelet {
-    color: black;
+    font-family: "Inter", Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 120%;
   }
   .header__item_contact {
     color: black;
+    font-family: "Inter", Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 120%;
   }
   .header__item_delivery {
     color: black;
+    font-family: "Inter", Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 120%;
   }
   .header__logo-img {
     height: 130px;
