@@ -88,6 +88,8 @@ $lh-large: 130%;
     border-radius: 20px;
 }
 
+
+
 /* styles for блок-хедер START*/
 .header {
     max-width: 100%;
@@ -96,9 +98,6 @@ $lh-large: 130%;
     position: relative;
     z-index: 3;
 
-    &__menu {
-        display: none;
-    }
 
     &__logo-img {
         height: 90px;
@@ -110,147 +109,185 @@ $lh-large: 130%;
         border-radius: 10px;
     }
 
-
-    /*скрываем чекбокс*/
-    #burger-menu__toggle {
-        opacity: 0;
-
+    &__item_choker {
+        display: none;
     }
 
-    /*стилизуем кнопку*/
-    .burger-menu__btn {
-        display: flex;
-        align-items: center;
+    &__item_earrings {
+        display: none;
+    }
+
+    &__item_bracelet {
+        display: none;
+    }
+
+    &__item_contact {
+        display: none;
+    }
+
+    &__item_delivery {
+        display: none;
+    }
+
+}
+
+
+/*скрываем чекбокс*/
+#burger-menu__toggle {
+    opacity: 0;
+
+}
+
+/*стилизуем кнопку*/
+.burger-menu__btn {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    width: 56px;
+    height: 36px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/*добавляем гамбургер*/
+.burger-menu {
+
+    &__btn>span,
+    &__btn>span::before,
+    &__btn>span::after {
+        display: block;
         position: absolute;
-        top: 40px;
-        left: 20px;
-        width: 56px;
-        height: 36px;
-        cursor: pointer;
-        z-index: 1;
+        width: 100%;
+        height: 2px;
+        background-color: #8c8c88;
     }
 
-    /*добавляем гамбургер*/
-    .burger-menu {
-
-        &__btn>span,
-        &__btn>span::before,
-        &__btn>span::after {
-            display: block;
-            position: absolute;
-            width: 100%;
-            height: 2px;
-            background-color: #8c8c88;
-        }
-
-        &__btn>span::before {
-            content: '';
-            top: -11px;
-        }
-
-        &__btn>span::after {
-            content: '';
-            top: 11px;
-        }
-
-        &__box {
-            display: block;
-            position: absolute;
-            visibility: hidden;
-            top: 0;
-            left: -100%;
-            margin: 0;
-            padding: 90px 0 30px 0;
-            list-style: none;
-            text-align: center;
-            background-color: #d4d4d2;
-            box-shadow: 2px 0px 6px rgba(0, 0, 0, .2);
-            border-radius: 0 6px 6px 0;
-
-        }
-
-        &__item {
-            display: block;
-            padding: 10px 20px;
-            color: rgb(22, 21, 21);
-            @include font($fs-medium, $lh-medium, $fw-meduim);
-            text-decoration: none;
-        }
-
-        &__item:hover {
-            background-color: #f2eded;
-        }
-
-        &__contact {
-            display: block;
-            padding: 10px 20px;
-            color: rgb(22, 21, 21);
-            @include font($fs-medium, $lh-medium, $fw-meduim);
-            text-decoration: underline;
-        }
-
-        &__contact:hover {
-            background-color: #f2eded;
-
-        }
-
-        &__delivery {
-            display: block;
-            padding: 10px 20px;
-            color: rgb(22, 21, 21);
-            @include font($fs-medium, $lh-medium, $fw-meduim);
-            text-decoration: underline;
-        }
-
-        &__delivery:hover {
-            background-color: #f2eded;
-
-        }
+    &__btn>span::before {
+        content: '';
+        top: -11px;
     }
 
-
-    #burger-menu__toggle:checked~.burger-menu__btn>span {
-        transform: rotate(45deg);
+    &__btn>span::after {
+        content: '';
+        top: 11px;
     }
 
-    #burger-menu__toggle:checked~.burger-menu__btn>span::before {
+    &__box {
+        display: block;
+        position: absolute;
+        visibility: hidden;
         top: 0;
-        transform: rotate(0);
+        left: -100%;
+        margin: 0;
+        padding: 90px 0 30px 0;
+        list-style: none;
+        text-align: center;
+        background-color: #d4d4d2;
+        box-shadow: 2px 0px 6px rgba(0, 0, 0, .2);
+        border-radius: 0 6px 6px 0;
+
     }
 
-
-    #burger-menu__toggle:checked~.burger-menu__btn>span::after {
-        top: 0;
-        transform: rotate(90deg);
+    &__item {
+        display: block;
+        padding: 10px 20px;
+        color: rgb(22, 21, 21);
+        @include font($fs-medium, $lh-medium, $fw-meduim);
+        text-decoration: none;
     }
 
-    #burger-menu__toggle:checked~.burger-menu__box {
-        visibility: visible;
-        left: 0;
+    &__item:hover {
+        background-color: #f2eded;
     }
 
-    .burger-menu {
+    &__contact {
+        display: block;
+        padding: 10px 20px;
+        color: rgb(22, 21, 21);
+        @include font($fs-medium, $lh-medium, $fw-meduim);
+        text-decoration: underline;
+    }
 
-        &__btn>span,
-        &__btn>span::before,
-        &__btn>span::after {
-            transition-duration: .25s;
-        }
+    &__contact:hover {
+        background-color: #f2eded;
 
-        &__box {
-            transition-duration: .25s;
-        }
+    }
 
-        &__item {
-            transition-duration: .25s;
-        }
+    &__delivery {
+        display: block;
+        padding: 10px 20px;
+        color: rgb(22, 21, 21);
+        @include font($fs-medium, $lh-medium, $fw-meduim);
+        text-decoration: underline;
+    }
+
+    &__delivery:hover {
+        background-color: #f2eded;
 
     }
 }
 
+
+#burger-menu__toggle:checked~.burger-menu__btn>span {
+    transform: rotate(45deg);
+}
+
+#burger-menu__toggle:checked~.burger-menu__btn>span::before {
+    top: 0;
+    transform: rotate(0);
+}
+
+
+#burger-menu__toggle:checked~.burger-menu__btn>span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+#burger-menu__toggle:checked~.burger-menu__box {
+    visibility: visible;
+    left: 0;
+}
+
+.burger-menu {
+
+    &__btn>span,
+    &__btn>span::before,
+    &__btn>span::after {
+        transition-duration: .25s;
+    }
+
+    &__box {
+        transition-duration: .25s;
+    }
+
+    &__item {
+        transition-duration: .25s;
+    }
+
+}
+
+
+
+
+
 /* styles for блок-хедер END*/
 
 /* styles for блок-приветствие START*/
+
+.welc__slogan {
+    text-align: center;
+    @include font($fs-medium, $lh-medium, $fw-bold);
+    padding: 50px 0px 30px 0;
+}
+
+.welc__slogan_as {
+    text-align: center;
+    @include font($fs-medium, $lh-medium, $fw-bold);
+    padding: 50px 0px 30px 0;
+    text-transform: uppercase;
+}
 
 .welcome {
 
@@ -265,18 +302,6 @@ $lh-large: 130%;
         margin-top: 20px;
     }
 
-    &__slogan {
-        text-align: center;
-        @include font($fs-medium, $lh-medium, $fw-bold);
-        padding: 50px 0px 30px 0;
-    }
-
-    &__slogan_as {
-        text-align: center;
-        @include font($fs-medium, $lh-medium, $fw-bold);
-        padding: 50px 0px 30px 0;
-        text-transform: uppercase;
-    }
 
     &__wrapper {
         position: absolute;
@@ -306,8 +331,6 @@ $lh-large: 130%;
         margin-bottom: 0rem;
         text-shadow: 1.5px 1.5px 3px #070707;
     }
-
-
 }
 
 /* styles for блок-приветствие END*/
