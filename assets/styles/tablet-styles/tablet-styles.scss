@@ -48,9 +48,38 @@ $lh-large: 130%;
             display: none;
         }
 
-        &__menu {
-            display: flex;
+        &__item {
+            display: block;
+        }
 
+        &__item_choker {
+            color: black;
+            @include font(1.3rem, $lh-medium, $fw-meduim);
+        }
+
+        &__item_earrings {
+            color: black;
+            @include font(1.3rem, $lh-medium, $fw-meduim);
+        }
+
+        &__item_bracelet {
+            color: black;
+            @include font(1.3rem, $lh-medium, $fw-meduim);
+        }
+
+        &__item_podveski {
+            color: black;
+            @include font(1.3rem, $lh-medium, $fw-meduim);
+        }
+
+        &__item_contact {
+            color: black;
+            @include font(1.3rem, $lh-medium, $fw-meduim);
+        }
+
+        &__item_delivery {
+            color: black;
+            @include font(1.3rem, $lh-medium, $fw-meduim);
         }
 
         &__logo-img {
@@ -102,7 +131,6 @@ $lh-large: 130%;
             max-width: 95%;
             max-height: 50%;
             margin-left: 0rem;
-
         }
 
         &__text_second {

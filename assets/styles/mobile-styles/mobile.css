@@ -81,6 +81,9 @@
 .header__item_bracelet {
   display: none;
 }
+.header__item_podveski {
+  display: none;
+}
 .header__item_contact {
   display: none;
 }
