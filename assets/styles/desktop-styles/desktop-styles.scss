@@ -36,9 +36,6 @@ $lh-large: 130%;
         padding: 40px;
     }
 
-
-
-
     /* styles for блок-хедер START*/
     .header {
         max-width: 100%;
@@ -50,11 +47,30 @@ $lh-large: 130%;
             display: none;
         }
 
-        &__menu__item {
+        &__header__item {
             color: black;
             @include font($fs-medium, $lh-medium, $fw-meduim);
         }
 
+        &__item_choker {
+            color: black;
+        }
+
+        &__item_earrings {
+            color: black;
+        }
+
+        &__item_bracelet {
+            color: black;
+        }
+
+        &__item_contact {
+            color: black;
+        }
+
+        &__item_delivery {
+            color: black;
+        }
 
         &__logo-img {
             height: 130px;
@@ -115,7 +131,7 @@ $lh-large: 130%;
             max-width: 95%;
             max-height: 50%;
             margin-left: 0rem;
-            margin-top: 2vh;
+            margin-top: 10vh;
             margin-bottom: 0rem;
 
         }

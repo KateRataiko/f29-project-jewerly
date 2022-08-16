@@ -81,10 +81,10 @@
 .header__item_bracelet {
   display: none;
 }
-.header__contact {
+.header__item_contact {
   display: none;
 }
-.header__delivery {
+.header__item_delivery {
   display: none;
 }
 
