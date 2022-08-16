@@ -5,7 +5,104 @@
     margin: 0 auto;
     padding: 40px;
   }
+  /* styles for блок-хедер START*/
+  .header {
+    max-width: 100%;
+    height: 150px;
+    background: #d4d4d2;
+    color: black;
+  }
+  .header__burger {
+    display: none;
+  }
+  .header__header__item {
+    color: black;
+    font-family: "Inter", Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 120%;
+  }
+  .header__item_choker {
+    color: black;
+  }
+  .header__item_earrings {
+    color: black;
+  }
+  .header__item_bracelet {
+    color: black;
+  }
+  .header__item_contact {
+    color: black;
+  }
+  .header__item_delivery {
+    color: black;
+  }
+  .header__logo-img {
+    height: 130px;
+    z-index: 1;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 10px;
+  }
+  /* styles for блок-хедер END*/
   /* styles for блок-приветствие START*/
+  .welc__slogan {
+    text-align: center;
+    font-family: "Inter", Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 1.875rem;
+    line-height: 120%;
+    padding: 50px 0px 30px 0;
+  }
+  .welc__slogan_as {
+    text-align: center;
+    font-family: "Inter", Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 1.875rem;
+    line-height: 120%;
+    padding: 50px 0px 30px 0;
+    text-transform: uppercase;
+  }
+  .welcome {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 1fr;
+  }
+  .welcome__wrapper {
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-content: center;
+  }
+  .welcome__text_first {
+    font-family: "Inter", Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 120%;
+    color: black;
+    max-width: 95%;
+    max-height: 50%;
+    margin-left: 0rem;
+  }
+  .welcome__text_second {
+    font-family: "Inter", Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 120%;
+    color: black;
+    max-width: 95%;
+    max-height: 50%;
+    margin-left: 0rem;
+    margin-top: 10vh;
+    margin-bottom: 0rem;
+  }
+  .welcome__image {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
   /* styles for блок-приветствие END*/
   /* srtyles for блок-про производство START*/
   .workshop {
