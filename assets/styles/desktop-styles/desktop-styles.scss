@@ -52,59 +52,39 @@ $lh-large: 130%;
             @include font($fs-medium, $lh-medium, $fw-meduim);
         }
 
-        &__logo-img {
-            height: 90px;
-            z-index: 1;
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            bottom: 10px;
-            border-radius: 10px;
+
+        &__item {
+            display: block;
         }
 
         &__item_choker {
-            display: none;
+            color: black;
+            @include font(1.3rem, $lh-medium, $fw-meduim);
         }
 
         &__item_earrings {
-            display: none;
+            color: black;
+            @include font(1.3rem, $lh-medium, $fw-meduim);
         }
 
         &__item_bracelet {
-            display: none;
+            color: black;
+            @include font(1.3rem, $lh-medium, $fw-meduim);
         }
 
         &__item_podveski {
-            display: none;
-        }
-
-        &__item_contact {
-            display: none;
-        }
-
-        &__item_delivery {
-            display: none;
-        }
-
-
-        &__item_choker {
             color: black;
-        }
-
-        &__item_earrings {
-            color: black;
-        }
-
-        &__item_bracelet {
-            color: black;
+            @include font(1.3rem, $lh-medium, $fw-meduim);
         }
 
         &__item_contact {
             color: black;
+            @include font(1.3rem, $lh-medium, $fw-meduim);
         }
 
         &__item_delivery {
             color: black;
+            @include font(1.3rem, $lh-medium, $fw-meduim);
         }
 
         &__logo-img {
