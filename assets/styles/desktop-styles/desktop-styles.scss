@@ -47,6 +47,10 @@ $lh-large: 130%;
             display: none;
         }
 
+        &__wrapper {
+            display: none;
+        }
+
         &__phrase {
             position: absolute;
             top: 20px;

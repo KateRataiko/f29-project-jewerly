@@ -307,6 +307,10 @@ $lh-large: 130%;
             margin-top: 20px;
         }
 
+        &__wrapper_big {
+            display: none;
+        }
+
 
         &__wrapper {
             position: absolute;

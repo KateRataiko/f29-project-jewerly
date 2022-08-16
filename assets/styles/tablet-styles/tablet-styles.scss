@@ -142,6 +142,10 @@ $lh-large: 130%;
         grid-template-columns: 40% 60%;
         grid-template-rows: 1fr;
 
+        &__wrapper {
+            display: none;
+        }
+
 
         &__wrapper {
             width: 100%;

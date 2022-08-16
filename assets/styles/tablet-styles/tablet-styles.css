@@ -103,6 +103,9 @@
     grid-template-rows: 1fr;
   }
   .welcome__wrapper {
+    display: none;
+  }
+  .welcome__wrapper {
     width: 100%;
     grid-column: 1/2;
     grid-row: 1/2;
