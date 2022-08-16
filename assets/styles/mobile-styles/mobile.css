@@ -458,6 +458,9 @@
 /* блок Доставка END*/
 /* styles for блок-футер START*/
 .footer {
+  background-color: #656565;
+  color: #F1F1F1;
+  width: 100vw;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
