@@ -386,7 +386,7 @@
   max-width: 100%;
   height: auto;
 }
-.opinions__container-content {
+.opinions__container-content:nth-last-child(n+2) {
   border-bottom: 1px solid #747272;
 }
 .opinions__content {
@@ -419,9 +419,8 @@
   color: white;
   padding: 20px;
 }
-.delivery__small-title {
-  text-align: center;
-  margin-bottom: 20px;
+.delivery__bank-card-img {
+  margin-top: 30px;
 }
 .delivery__title {
   margin-bottom: 15px;
