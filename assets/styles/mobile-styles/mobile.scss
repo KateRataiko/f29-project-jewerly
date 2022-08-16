@@ -187,7 +187,6 @@ $lh-large: 130%;
             color: rgb(22, 21, 21);
             @include font($fs-medium, $lh-medium, $fw-meduim);
             text-decoration: underline;
-            margin-bottom: 2vh;
         }
 
         &__contact:hover {
@@ -201,7 +200,6 @@ $lh-large: 130%;
             color: rgb(22, 21, 21);
             @include font($fs-medium, $lh-medium, $fw-meduim);
             text-decoration: underline;
-            margin-bottom: 2vh;
         }
 
         &__delivery:hover {
