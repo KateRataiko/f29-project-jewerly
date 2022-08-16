@@ -47,44 +47,36 @@ $lh-large: 130%;
             display: none;
         }
 
+        &__phrase {
+            position: absolute;
+            top: 20px;
+            color: white;
+        }
+
         &__item {
-            color: black;
-            @include font($fs-medium, $lh-medium, $fw-meduim);
+            position: absolute;
+            bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            width: 75%;
+
         }
 
-
-        &__item {
-            display: block;
-        }
-
-        &__item_choker {
-            color: black;
-            @include font(1.3rem, $lh-medium, $fw-meduim);
-        }
-
-        &__item_earrings {
-            color: black;
-            @include font(1.3rem, $lh-medium, $fw-meduim);
-        }
-
-        &__item_bracelet {
-            color: black;
-            @include font(1.3rem, $lh-medium, $fw-meduim);
-        }
-
+        &__item_choker,
+        &__item_earrings,
+        &__item_bracelet,
         &__item_podveski {
             color: black;
-            @include font(1.3rem, $lh-medium, $fw-meduim);
+            @include font($fs-small, $lh-medium, $fw-meduim);
+            text-decoration: none;
         }
 
-        &__item_contact {
+        &__item_choker:hover,
+        &__item_earrings:hover,
+        &__item_bracelet:hover,
+        &__item_podveski:hover {
             color: black;
-            @include font(1.3rem, $lh-medium, $fw-meduim);
-        }
-
-        &__item_delivery {
-            color: black;
-            @include font(1.3rem, $lh-medium, $fw-meduim);
+            text-decoration: underline;
         }
 
         &__logo-img {
@@ -118,7 +110,7 @@ $lh-large: 130%;
 
     .welcome {
 
-        width: 100%;
+        max-width: 100%;
         display: grid;
         grid-template-columns: 40% 60%;
         grid-template-rows: 1fr;
@@ -154,6 +146,7 @@ $lh-large: 130%;
         &__image {
             grid-column: 2/3;
             grid-row: 1/2;
+            width: 100%;
         }
     }
 

@@ -43,21 +43,46 @@ $lh-large: 130%;
         height: 110px;
         background: #d4d4d2;
         color: black;
+        position: relative;
 
         &__burger {
             display: none;
         }
 
+        &__phrase {
+            position: absolute;
+            top: 20px;
+            color: white;
+        }
+
+
         &__item {
-            display: block;
+            position: absolute;
+            bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            width: 75%;
+
         }
 
-        &__item_choker {
+        &__item_choker,
+        &__item_earrings,
+        &__item_bracelet,
+        &__item_podveski {
             color: black;
-            @include font(1.3rem, $lh-medium, $fw-meduim);
+            @include font($fs-small, $lh-medium, $fw-meduim);
+            text-decoration: none;
         }
 
-        &__item_earrings {
+        &__item_choker:hover,
+        &__item_earrings:hover,
+        &__item_bracelet:hover,
+        &__item_podveski:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        /*&__item_earrings {
             color: black;
             @include font(1.3rem, $lh-medium, $fw-meduim);
         }
@@ -70,7 +95,7 @@ $lh-large: 130%;
         &__item_podveski {
             color: black;
             @include font(1.3rem, $lh-medium, $fw-meduim);
-        }
+        }*/
 
         &__item_contact {
             color: black;
@@ -112,7 +137,7 @@ $lh-large: 130%;
 
     .welcome {
 
-        width: 100%;
+        max-width: 100%;
         display: grid;
         grid-template-columns: 40% 60%;
         grid-template-rows: 1fr;
@@ -147,6 +172,7 @@ $lh-large: 130%;
         &__image {
             grid-column: 2/3;
             grid-row: 1/2;
+            width: 100%;
         }
     }
 

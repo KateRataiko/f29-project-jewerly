@@ -11,40 +11,48 @@
     height: 110px;
     background: #d4d4d2;
     color: black;
+    position: relative;
+    /*&__item_earrings {
+        color: black;
+        @include font(1.3rem, $lh-medium, $fw-meduim);
+    }
+
+    &__item_bracelet {
+        color: black;
+        @include font(1.3rem, $lh-medium, $fw-meduim);
+    }
+
+    &__item_podveski {
+        color: black;
+        @include font(1.3rem, $lh-medium, $fw-meduim);
+    }*/
   }
   .header__burger {
     display: none;
   }
+  .header__phrase {
+    position: absolute;
+    top: 20px;
+    color: white;
+  }
   .header__item {
-    display: block;
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
   }
-  .header__item_choker {
+  .header__item_choker, .header__item_earrings, .header__item_bracelet, .header__item_podveski {
     color: black;
     font-family: "Inter", Verdana, sans-serif;
     font-weight: 500;
-    font-size: 1.3rem;
+    font-size: 1rem;
     line-height: 120%;
+    text-decoration: none;
   }
-  .header__item_earrings {
+  .header__item_choker:hover, .header__item_earrings:hover, .header__item_bracelet:hover, .header__item_podveski:hover {
     color: black;
-    font-family: "Inter", Verdana, sans-serif;
-    font-weight: 500;
-    font-size: 1.3rem;
-    line-height: 120%;
-  }
-  .header__item_bracelet {
-    color: black;
-    font-family: "Inter", Verdana, sans-serif;
-    font-weight: 500;
-    font-size: 1.3rem;
-    line-height: 120%;
-  }
-  .header__item_podveski {
-    color: black;
-    font-family: "Inter", Verdana, sans-serif;
-    font-weight: 500;
-    font-size: 1.3rem;
-    line-height: 120%;
+    text-decoration: underline;
   }
   .header__item_contact {
     color: black;
@@ -89,7 +97,7 @@
     text-transform: uppercase;
   }
   .welcome {
-    width: 100%;
+    max-width: 100%;
     display: grid;
     grid-template-columns: 40% 60%;
     grid-template-rows: 1fr;
@@ -125,6 +133,7 @@
   .welcome__image {
     grid-column: 2/3;
     grid-row: 1/2;
+    width: 100%;
   }
   /* styles for блок-приветствие END*/
   /* srtyles for блок-про производство START*/
