@@ -62,12 +62,6 @@
   background: #d4d4d2;
   position: relative;
   z-index: 3;
-  /*скрываем чекбокс*/
-  /*стилизуем кнопку*/
-  /*добавляем гамбургер*/
-}
-.header__menu {
-  display: none;
 }
 .header__logo-img {
   height: 90px;
@@ -78,10 +72,29 @@
   bottom: 10px;
   border-radius: 10px;
 }
-.header #burger-menu__toggle {
+.header__item_choker {
+  display: none;
+}
+.header__item_earrings {
+  display: none;
+}
+.header__item_bracelet {
+  display: none;
+}
+.header__contact {
+  display: none;
+}
+.header__delivery {
+  display: none;
+}
+
+/*скрываем чекбокс*/
+#burger-menu__toggle {
   opacity: 0;
 }
-.header .burger-menu__btn {
+
+/*стилизуем кнопку*/
+.burger-menu__btn {
   display: flex;
   align-items: center;
   position: absolute;
@@ -92,22 +105,24 @@
   cursor: pointer;
   z-index: 1;
 }
-.header .burger-menu__btn > span, .header .burger-menu__btn > span::before, .header .burger-menu__btn > span::after {
+
+/*добавляем гамбургер*/
+.burger-menu__btn > span, .burger-menu__btn > span::before, .burger-menu__btn > span::after {
   display: block;
   position: absolute;
   width: 100%;
   height: 2px;
   background-color: #8c8c88;
 }
-.header .burger-menu__btn > span::before {
+.burger-menu__btn > span::before {
   content: "";
   top: -11px;
 }
-.header .burger-menu__btn > span::after {
+.burger-menu__btn > span::after {
   content: "";
   top: 11px;
 }
-.header .burger-menu__box {
+.burger-menu__box {
   display: block;
   position: absolute;
   visibility: hidden;
@@ -121,7 +136,7 @@
   box-shadow: 2px 0px 6px rgba(0, 0, 0, 0.2);
   border-radius: 0 6px 6px 0;
 }
-.header .burger-menu__item {
+.burger-menu__item {
   display: block;
   padding: 10px 20px;
   color: rgb(22, 21, 21);
@@ -131,10 +146,10 @@
   line-height: 120%;
   text-decoration: none;
 }
-.header .burger-menu__item:hover {
+.burger-menu__item:hover {
   background-color: #f2eded;
 }
-.header .burger-menu__contact {
+.burger-menu__contact {
   display: block;
   padding: 10px 20px;
   color: rgb(22, 21, 21);
@@ -144,10 +159,10 @@
   line-height: 120%;
   text-decoration: underline;
 }
-.header .burger-menu__contact:hover {
+.burger-menu__contact:hover {
   background-color: #f2eded;
 }
-.header .burger-menu__delivery {
+.burger-menu__delivery {
   display: block;
   padding: 10px 20px;
   color: rgb(22, 21, 21);
@@ -157,31 +172,36 @@
   line-height: 120%;
   text-decoration: underline;
 }
-.header .burger-menu__delivery:hover {
+.burger-menu__delivery:hover {
   background-color: #f2eded;
 }
-.header #burger-menu__toggle:checked ~ .burger-menu__btn > span {
+
+#burger-menu__toggle:checked ~ .burger-menu__btn > span {
   transform: rotate(45deg);
 }
-.header #burger-menu__toggle:checked ~ .burger-menu__btn > span::before {
+
+#burger-menu__toggle:checked ~ .burger-menu__btn > span::before {
   top: 0;
   transform: rotate(0);
 }
-.header #burger-menu__toggle:checked ~ .burger-menu__btn > span::after {
+
+#burger-menu__toggle:checked ~ .burger-menu__btn > span::after {
   top: 0;
   transform: rotate(90deg);
 }
-.header #burger-menu__toggle:checked ~ .burger-menu__box {
+
+#burger-menu__toggle:checked ~ .burger-menu__box {
   visibility: visible;
   left: 0;
 }
-.header .burger-menu__btn > span, .header .burger-menu__btn > span::before, .header .burger-menu__btn > span::after {
+
+.burger-menu__btn > span, .burger-menu__btn > span::before, .burger-menu__btn > span::after {
   transition-duration: 0.25s;
 }
-.header .burger-menu__box {
+.burger-menu__box {
   transition-duration: 0.25s;
 }
-.header .burger-menu__item {
+.burger-menu__item {
   transition-duration: 0.25s;
 }
 

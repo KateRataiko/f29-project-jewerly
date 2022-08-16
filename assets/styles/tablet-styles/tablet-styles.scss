@@ -48,16 +48,10 @@ $lh-large: 130%;
             display: none;
         }
 
-        &__primary {
-            display: block;
+        &__menu {
+            display: flex;
+
         }
-
-        &__menu__item {
-
-            color: black;
-            @include font($fs-medium, $lh-medium, $fw-meduim);
-        }
-
 
         &__logo-img {
             height: 110px;
