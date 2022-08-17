@@ -79,6 +79,9 @@
   }
   /* styles for header END*/
   /* styles for блок-приветствие START*/
+  .start {
+    background: #d4d4d2;
+  }
   .welc__slogan {
     text-align: center;
     font-family: "Inter", Verdana, sans-serif;

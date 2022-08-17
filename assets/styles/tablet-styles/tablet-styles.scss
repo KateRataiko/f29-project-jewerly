@@ -122,6 +122,10 @@ $lh-large: 130%;
 
     /* styles for блок-приветствие START*/
 
+    .start {
+        background: #d4d4d2;
+    }
+
     .welc__slogan {
         text-align: center;
         @include font($fs-large, $lh-medium, $fw-bold);
