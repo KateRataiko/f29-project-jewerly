@@ -130,28 +130,52 @@ $lh-large: 130%;
 
 
         &__wrapper {
+            display: none;
+        }
+
+        &__wrapper_big {
             width: 100%;
             grid-column: 1/2;
             grid-row: 1/2;
             align-content: center;
         }
 
-        &__text_first {
-            @include font(1.3rem, $lh-medium, $fw-meduim);
+        &__text_first-big {
+            @include font(1.5rem, $lh-medium, $fw-meduim);
             color: black;
             max-width: 95%;
             max-height: 50%;
             margin-left: 0rem;
         }
 
-        &__text_second {
-            @include font(1.3rem, $lh-medium, $fw-meduim);
+        &__text_second-big {
+            @include font(1.5rem, $lh-medium, $fw-meduim);
             color: black;
             max-width: 95%;
             max-height: 50%;
             margin-left: 0rem;
-            margin-top: 10vh;
+            margin-top: 5vh;
             margin-bottom: 0rem;
+        }
+
+        &__text_third-big {
+            @include font(1.5rem, $lh-medium, $fw-meduim);
+            color: black;
+            max-width: 95%;
+            max-height: 50%;
+            margin-left: 0rem;
+            margin-top: 5vh;
+        }
+
+        &__text_fourth-big {
+            @include font(1.5rem, $lh-medium, $fw-meduim);
+            color: black;
+            max-width: 95%;
+            max-height: 50%;
+            margin-left: 0rem;
+            margin-top: 5vh;
+            margin-bottom: 0rem;
+
         }
 
         &__image {
@@ -217,6 +241,7 @@ $lh-large: 130%;
             }
         }
     }
+
 
 
     /* styles for блок-про производство END*/

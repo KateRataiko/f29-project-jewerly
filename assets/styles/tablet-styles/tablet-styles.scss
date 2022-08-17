@@ -146,15 +146,14 @@ $lh-large: 130%;
             display: none;
         }
 
-
-        &__wrapper {
+        &__wrapper_big {
             width: 100%;
             grid-column: 1/2;
             grid-row: 1/2;
             align-content: center;
         }
 
-        &__text_first {
+        &__text_first-big {
             @include font(1.3rem, $lh-medium, $fw-meduim);
             color: black;
             max-width: 95%;
@@ -162,7 +161,27 @@ $lh-large: 130%;
             margin-left: 0rem;
         }
 
-        &__text_second {
+        &__text_second-big {
+            @include font(1.3rem, $lh-medium, $fw-meduim);
+            color: black;
+            max-width: 95%;
+            max-height: 50%;
+            margin-left: 0rem;
+            margin-top: 2vh;
+            margin-bottom: 0rem;
+
+        }
+
+        &__text_third-big {
+            @include font(1.3rem, $lh-medium, $fw-meduim);
+            color: black;
+            max-width: 95%;
+            max-height: 50%;
+            margin-left: 0rem;
+            margin-top: 2vh;
+        }
+
+        &__text_fourth-big {
             @include font(1.3rem, $lh-medium, $fw-meduim);
             color: black;
             max-width: 95%;
