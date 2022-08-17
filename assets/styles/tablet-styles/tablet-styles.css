@@ -164,6 +164,38 @@
   }
   /* styles for блок-про производство END*/
   /* srtyles for блок-витрина START*/
+  .category {
+    column-gap: 30px;
+  }
+  .card {
+    grid-template-columns: 3fr 1fr;
+  }
+  .card__small-title {
+    font-family: "Inter", Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 150%;
+  }
+  .card__text {
+    font-family: "Inter", Verdana, sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 120%;
+    grid-column: 1/2;
+  }
+  .card__price {
+    font-family: "Inter", Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 150%;
+  }
+  .card_accent_hit::after, .card_accent_sale::after {
+    padding: 10px;
+    font-family: "Inter", Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 120%;
+  }
   /* styles for блок-витрина END*/
   /* srtyles for блок-отзывы START*/
   .opinions {

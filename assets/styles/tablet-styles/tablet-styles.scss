@@ -17,7 +17,7 @@ $fs-large: 1.875rem;
 // Для свойства line-height
 $lh-small: 100%;
 $lh-medium: 120%;
-$lh-large: 130%;
+$lh-large: 150%;
 
 // ================ Миксин для шрифтов
 
@@ -208,6 +208,33 @@ $lh-large: 130%;
     /* styles for блок-про производство END*/
 
     /* srtyles for блок-витрина START*/
+    .category {
+        column-gap: 30px;
+    }
+
+    .card {
+        grid-template-columns: 3fr 1fr;
+        
+        &__small-title {
+            @include font($fs-medium, $lh-large);
+        }
+    
+        &__text {
+            @include font($fs-small, $lh-medium, $fw-light);
+            grid-column: 1/2;
+        }
+    
+        &__price {
+            @include font($fs-medium, $lh-large);
+        }
+
+        &_accent_hit::after,
+        &_accent_sale::after {
+            padding: 10px;
+
+            @include font($fs-medium, $lh-medium);
+        }
+    }
     /* styles for блок-витрина END*/
 
     /* srtyles for блок-отзывы START*/
