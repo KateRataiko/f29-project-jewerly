@@ -133,12 +133,13 @@
     top: 0;
     left: -100%;
     margin: 0;
-    padding: 90px 0 30px 0;
+    padding: 90px 20px 30px 20px;
     list-style: none;
     text-align: center;
     background-color: #d4d4d2;
     box-shadow: 2px 0px 6px rgba(0, 0, 0, 0.2);
     border-radius: 0 6px 6px 0;
+    width: 60%;
   }
   .burger-menu__item {
     display: block;
@@ -146,7 +147,7 @@
     color: rgb(22, 21, 21);
     font-family: "Inter", Verdana, sans-serif;
     font-weight: 500;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     line-height: 120%;
     text-decoration: none;
   }
@@ -159,7 +160,7 @@
     color: rgb(22, 21, 21);
     font-family: "Inter", Verdana, sans-serif;
     font-weight: 500;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     line-height: 120%;
     text-decoration: underline;
   }
@@ -172,7 +173,7 @@
     color: rgb(22, 21, 21);
     font-family: "Inter", Verdana, sans-serif;
     font-weight: 500;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     line-height: 120%;
     text-decoration: underline;
   }
