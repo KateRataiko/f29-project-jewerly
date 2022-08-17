@@ -47,29 +47,44 @@ $lh-large: 130%;
             display: none;
         }
 
-        &__header__item {
+        &__item {
             color: black;
             @include font($fs-medium, $lh-medium, $fw-meduim);
         }
 
+
+        &__item {
+            display: block;
+        }
+
         &__item_choker {
             color: black;
+            @include font(1.3rem, $lh-medium, $fw-meduim);
         }
 
         &__item_earrings {
             color: black;
+            @include font(1.3rem, $lh-medium, $fw-meduim);
         }
 
         &__item_bracelet {
             color: black;
+            @include font(1.3rem, $lh-medium, $fw-meduim);
+        }
+
+        &__item_podveski {
+            color: black;
+            @include font(1.3rem, $lh-medium, $fw-meduim);
         }
 
         &__item_contact {
             color: black;
+            @include font(1.3rem, $lh-medium, $fw-meduim);
         }
 
         &__item_delivery {
             color: black;
+            @include font(1.3rem, $lh-medium, $fw-meduim);
         }
 
         &__logo-img {
