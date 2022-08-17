@@ -289,14 +289,15 @@ $lh-large: 150%;
 
         &__wrapper {
             display: flex;
-            // flex-wrap: wrap;
             gap: 20px;
         }
 
         &__container-content {
-            // flex: 1 280px;
             width: 32%;
 
+        }
+
+        &__container-content:nth-last-child(n+2) {
             border-bottom: none;
         }
 
@@ -337,6 +338,35 @@ $lh-large: 150%;
     }
 
     /* styles for блок-отзывы END*/
+
+    /* блок Доставка START */
+    .delivery {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+
+        &__wrapper {
+            display: flex;
+            gap: 40px;
+
+            background-color: #8d8d8d;
+            color: white;
+        }
+
+        &__delivery-method {
+            flex: 1;
+        }
+
+        &__payment-method {
+            flex: 1;
+        }
+
+        &__bank-card-img {
+            margin-top: 0;
+        }
+    }
+
+    /* блок Доставка END */
 
     /* srtyles for блок-футер START*/
     /* styles for блок-футер END*/

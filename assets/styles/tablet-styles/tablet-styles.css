@@ -209,6 +209,9 @@
     width: 32%;
     border-bottom: none;
   }
+  .opinions__container-content:nth-last-child(n+2) {
+    border-bottom: none;
+  }
   .opinions__content {
     display: grid;
     grid-template-columns: 1fr 4fr;

@@ -241,6 +241,8 @@
   }
   .opinions__container-content {
     width: 32%;
+  }
+  .opinions__container-content:nth-last-child(n+2) {
     border-bottom: none;
   }
   .opinions__content {
@@ -269,6 +271,28 @@
     padding-right: 10px;
   }
   /* styles for блок-отзывы END*/
+  /* блок Доставка START */
+  .delivery {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+  .delivery__wrapper {
+    display: flex;
+    gap: 40px;
+    background-color: #8d8d8d;
+    color: white;
+  }
+  .delivery__delivery-method {
+    flex: 1;
+  }
+  .delivery__payment-method {
+    flex: 1;
+  }
+  .delivery__bank-card-img {
+    margin-top: 0;
+  }
+  /* блок Доставка END */
   /* srtyles for блок-футер START*/
   /* styles for блок-футер END*/
 }
