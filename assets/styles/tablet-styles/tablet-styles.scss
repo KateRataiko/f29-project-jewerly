@@ -21,7 +21,7 @@ $lh-large: 130%;
 
 // ================ Миксин для шрифтов
 
-@mixin font($font-size, $line-height: $lh-medium, $font-weight: $fw-meduim, $font-family: $ff-primary,) {
+@mixin font($font-size, $line-height: $lh-medium, $font-weight: $fw-meduim, $font-family: $ff-primary, ) {
     font-family: $font-family;
     font-weight: $font-weight;
     font-size: $font-size;
@@ -32,21 +32,234 @@ $lh-large: 130%;
 
     .wrapper {
         max-width: 1024px;
-
         margin: 0 auto;
         padding: 40px;
     }
 
+    /* styles for header START*/
+
+    .header {
+        max-width: 100%;
+        height: 110px;
+        background: #d4d4d2;
+        color: black;
+
+        &__burger {
+            display: none;
+        }
+
+        &__item {
+            display: block;
+        }
+
+        &__item_choker {
+            color: black;
+            @include font(1.3rem, $lh-medium, $fw-meduim);
+        }
+
+        &__item_earrings {
+            color: black;
+            @include font(1.3rem, $lh-medium, $fw-meduim);
+        }
+
+        &__item_bracelet {
+            color: black;
+            @include font(1.3rem, $lh-medium, $fw-meduim);
+        }
+
+        &__item_podveski {
+            color: black;
+            @include font(1.3rem, $lh-medium, $fw-meduim);
+        }
+
+        &__item_contact {
+            color: black;
+            @include font(1.3rem, $lh-medium, $fw-meduim);
+        }
+
+        &__item_delivery {
+            color: black;
+            @include font(1.3rem, $lh-medium, $fw-meduim);
+        }
+
+        &__logo-img {
+            height: 90px;
+            z-index: 1;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            bottom: 10px;
+            border-radius: 10px;
+        }
+    }
+
+    /* styles for header END*/
+
     /* styles for блок-приветствие START*/
+
+    .welc__slogan {
+        text-align: center;
+        @include font($fs-large, $lh-medium, $fw-bold);
+        padding: 50px 0px 30px 0;
+    }
+
+    .welc__slogan_as {
+        text-align: center;
+        @include font($fs-large, $lh-medium, $fw-bold);
+        padding: 50px 0px 30px 0;
+        text-transform: uppercase;
+    }
+
+    .welcome {
+
+        width: 100%;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 1fr;
+
+
+        &__wrapper {
+            width: 100%;
+            grid-column: 1/2;
+            grid-row: 1/2;
+            align-content: center;
+        }
+
+        &__text_first {
+            @include font(1.3rem, $lh-medium, $fw-meduim);
+            color: black;
+            max-width: 95%;
+            max-height: 50%;
+            margin-left: 0rem;
+        }
+
+        &__text_second {
+            @include font(1.3rem, $lh-medium, $fw-meduim);
+            color: black;
+            max-width: 95%;
+            max-height: 50%;
+            margin-left: 0rem;
+            margin-top: 2vh;
+            margin-bottom: 0rem;
+
+        }
+
+        &__image {
+            grid-column: 2/3;
+            grid-row: 1/2;
+        }
+    }
+
     /* styles for блок-приветствие END*/
 
     /* srtyles for блок-про производство START*/
+    .workshop {
+        height: auto;
+
+        &__small-title {
+            text-align: center;
+            padding-top: 30px;
+
+            margin-top: 30px;
+            letter-spacing: 0.2rem;
+        }
+
+        &__text {
+            text-align: center;
+
+            margin-top: 20px;
+        }
+
+        &__images {
+            display: flex;
+            gap: 15px;
+
+            max-width: 100%;
+
+
+            &_img1 {
+                flex: 1;
+
+                width: 33%;
+
+                margin-top: 20px;
+            }
+
+            &_img2 {
+                display: block;
+
+                flex: 1;
+
+                width: 33%;
+
+                margin-top: 20px;
+            }
+
+            &_img3 {
+                flex: 1;
+
+                width: 33%;
+
+                margin-top: 20px;
+            }
+        }
+    }
+
     /* styles for блок-про производство END*/
 
     /* srtyles for блок-витрина START*/
     /* styles for блок-витрина END*/
 
     /* srtyles for блок-отзывы START*/
+    .opinions {
+        max-width: 100%;
+
+        &__wrapper {
+            display: flex;
+            // flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        &__container-content {
+            // flex: 1 280px;
+            width: 32%;
+
+            border-bottom: none;
+        }
+
+        &__content {
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            grid-template-rows: 15vh 17vh;
+
+            background-color: #F1F1F1;
+        }
+
+        &__small-title {
+            text-align: center;
+        }
+
+        &__img {
+            grid-column: 1/2;
+            grid-row: 1/2;
+
+            border-radius: 50%;
+        }
+
+        &__title {
+            grid-column: 2/3;
+            grid-row: 1/2;
+
+            padding: 20px 0;
+        }
+
+        &__text {
+            grid-column: 1/3;
+            grid-row: 2/3;
+            padding-right: 10px;
+        }
+    }
+
     /* styles for блок-отзывы END*/
 
     /* srtyles for блок-футер START*/

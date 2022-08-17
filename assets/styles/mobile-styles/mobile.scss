@@ -86,23 +86,20 @@ $lh-large: 130%;
 .btn {
     border: 0.5px solid rgb(18, 18, 18);
     border-radius: 20px;
-
-    background-color: #F1F1F1;
 }
+
+
 
 /* styles for блок-хедер START*/
 .header {
     max-width: 100%;
     height: 110px;
-    /*background: white;
-    border: 2px solid #9d9d9d;
-    /*background: #C1BFBF;*/
-    /*background: #cfd0cf;*/
     background: #d4d4d2;
+    position: relative;
+    z-index: 3;
 
 
     &__logo-img {
-
         height: 90px;
         z-index: 1;
         position: absolute;
@@ -111,14 +108,39 @@ $lh-large: 130%;
         bottom: 10px;
         border-radius: 10px;
     }
+
+    &__item_choker {
+        display: none;
+    }
+
+    &__item_earrings {
+        display: none;
+    }
+
+    &__item_bracelet {
+        display: none;
+    }
+
+    &__item_podveski {
+        display: none;
+    }
+
+    &__item_contact {
+        display: none;
+    }
+
+    &__item_delivery {
+        display: none;
+    }
+
 }
 
 
 /*скрываем чекбокс*/
 #burger-menu__toggle {
     opacity: 0;
-}
 
+}
 
 /*стилизуем кнопку*/
 .burger-menu__btn {
@@ -143,37 +165,38 @@ $lh-large: 130%;
         position: absolute;
         width: 100%;
         height: 2px;
-        background-color: gray;
+        background-color: #8c8c88;
     }
 
     &__btn>span::before {
         content: '';
-        top: -8px;
+        top: -11px;
     }
 
     &__btn>span::after {
         content: '';
-        top: 8px;
+        top: 11px;
     }
 
     &__box {
         display: block;
-        position: fixed;
+        position: absolute;
         visibility: hidden;
         top: 0;
         left: -100%;
         margin: 0;
-        padding: 90px 0 50px 0;
+        padding: 90px 0 30px 0;
         list-style: none;
         text-align: center;
+        background-color: #d4d4d2;
+        box-shadow: 2px 0px 6px rgba(0, 0, 0, .2);
+        border-radius: 0 6px 6px 0;
 
-        background-color: #cfd0cf;
-        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
     }
 
     &__item {
         display: block;
-        padding: 12px 24px;
+        padding: 10px 20px;
         color: rgb(22, 21, 21);
         @include font($fs-medium, $lh-medium, $fw-meduim);
         text-decoration: none;
@@ -185,13 +208,26 @@ $lh-large: 130%;
 
     &__contact {
         display: block;
-        padding: 12px 24px;
+        padding: 10px 20px;
         color: rgb(22, 21, 21);
         @include font($fs-medium, $lh-medium, $fw-meduim);
         text-decoration: underline;
     }
 
     &__contact:hover {
+        background-color: #f2eded;
+
+    }
+
+    &__delivery {
+        display: block;
+        padding: 10px 20px;
+        color: rgb(22, 21, 21);
+        @include font($fs-medium, $lh-medium, $fw-meduim);
+        text-decoration: underline;
+    }
+
+    &__delivery:hover {
         background-color: #f2eded;
 
     }
@@ -236,38 +272,46 @@ $lh-large: 130%;
 
 }
 
+
+
+
+
 /* styles for блок-хедер END*/
 
 /* styles for блок-приветствие START*/
+
+.welc__slogan {
+    text-align: center;
+    @include font($fs-medium, $lh-medium, $fw-bold);
+    padding: 50px 0px 30px 0;
+}
+
+.welc__slogan_as {
+    text-align: center;
+    @include font($fs-medium, $lh-medium, $fw-bold);
+    padding: 50px 0px 30px 0;
+    text-transform: uppercase;
+}
 
 .welcome {
 
     width: 100%;
     height: 100%;
     position: relative;
+    z-index: 2;
 
-    &__slogan {
-        text-align: center;
-        @include font($fs-medium, $lh-medium, $fw-bold);
-        padding: 50px 0px 30px 0;
 
-    }
-
-    &__slogan_as {
-        text-align: center;
-        @include font($fs-medium, $lh-medium, $fw-bold);
-        padding: 50px 0px 30px 0;
-        text-transform: uppercase;
+    &__image {
+        width: 100%;
+        margin-top: 20px;
     }
 
 
     &__wrapper {
         position: absolute;
         padding: 0px 0px 0px 20px;
-        max-height: 30%;
         width: 100%;
-        top: 72%;
-
+        bottom: 10px;
     }
 
     &__text_first {
@@ -291,12 +335,6 @@ $lh-large: 130%;
         margin-bottom: 0rem;
         text-shadow: 1.5px 1.5px 3px #070707;
     }
-
-
-    &__image {
-        width: 100%;
-        margin-top: 20px;
-    }
 }
 
 /* styles for блок-приветствие END*/
@@ -306,7 +344,17 @@ $lh-large: 130%;
     max-width: 100%;
     height: auto;
 
+    &__small-title {
+        text-align: center;
+        padding-top: 30px;
+
+        margin-top: 30px;
+        letter-spacing: 0.2rem;
+    }
+
     &__text {
+        text-align: center;
+
         margin-top: 20px;
     }
 
@@ -316,8 +364,6 @@ $lh-large: 130%;
             width: 100%;
 
             margin-top: 20px;
-
-            border-radius: 2%;
         }
 
         &_img2 {
@@ -328,8 +374,6 @@ $lh-large: 130%;
             width: 100%;
 
             margin-top: 20px;
-
-            border-radius: 2%;
         }
     }
 }
@@ -463,18 +507,20 @@ $lh-large: 130%;
         margin: 20px 0;
         padding: 15px;
 
-        border-radius: 2%;
-
         background-color: #F1F1F1;
+    }
+
+    &__small-title {
+        text-align: center;
     }
 
     &__img {
         float: left;
 
+        border-radius: 50%;
+
         margin-right: 10px;
         margin-top: 10px;
-
-        border-radius: 50%;
     }
 
     &__title {
@@ -620,6 +666,37 @@ label, a{/*Изменение стрелки при наведении*/
     //width: 100vw;
 //}
 /* styles for блок stone END*/
+
+/* блок Доставка START*/
+.delivery {
+
+    width: 100%;
+    height: auto;
+    background-color: #8d8d8d;
+    color: white;
+    padding: 20px;
+
+    &__small-title {
+        text-align: center;
+
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        margin-bottom: 15px;
+    }
+
+    &__delivery-method {
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        margin-bottom: 10px;
+    }
+}
+
+/* блок Доставка END*/
+
 /* styles for блок-футер START*/
 
 .footer {
@@ -661,5 +738,67 @@ label, a{/*Изменение стрелки при наведении*/
     }
 }
 
+.fieldset {
+    all: unset;
+
+    margin: 1rem 0 0 0;
+
+    width: 70vw;
+
+    &__legend {
+        margin: 0 0 3rem 0;
+    }
+
+    &__input {
+        all: unset;
+
+        background-color: #F1F1F1;
+        color: black;
+
+        margin: 0 0 3rem 0;
+        background-clip: padding-box;
+
+        border: 1px solid #bdbdbd;
+        border-radius: 0.25rem;
+
+        height: calc(2.25rem + 2px);
+        width: 100%;
+
+        font: inherit;
+    }
+
+    &__input::placeholder {
+        text-align: left;
+        padding: 1rem;
+    }
+
+    &__input:focus {
+        box-shadow: 0 0 0 0.2rem #CECECE;
+    }
+
+    &__btn {
+        all: unset;
+
+        border-radius: 0.25rem;
+        border: 1px solid #bdbdbd;
+
+        background-color: #F1F1F1;
+        color: black;
+
+        width: fit-content;
+
+        text-align: center;
+        font: inherit;
+
+        padding: 0.8rem 1rem;
+        margin: 0 0 3rem 0;
+
+        text-decoration: none;
+    }
+
+    &__btn:active {
+        background-color: #CECECE;
+    }
+}
 
 /* styles for блок-футер END*/
