@@ -349,7 +349,7 @@ $lh-large: 130%;
         padding-top: 30px;
 
         margin-top: 30px;
-        letter-spacing: 0.2rem;
+        letter-spacing: 0;
     }
 
     &__text {
@@ -499,7 +499,7 @@ $lh-large: 130%;
     max-width: 100%;
     height: auto;
 
-    &__container-content {
+    &__container-content:nth-last-child(n+2) {
         border-bottom: 1px solid #747272;
     }
 
@@ -676,10 +676,8 @@ label, a{/*Изменение стрелки при наведении*/
     color: white;
     padding: 20px;
 
-    &__small-title {
-        text-align: center;
-
-        margin-bottom: 20px;
+    &__bank-card-img {
+        margin-top: 30px;
     }
 
     &__title {

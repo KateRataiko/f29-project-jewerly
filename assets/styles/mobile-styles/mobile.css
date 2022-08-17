@@ -282,7 +282,7 @@
   text-align: center;
   padding-top: 30px;
   margin-top: 30px;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0;
 }
 .workshop__text {
   text-align: center;
@@ -411,7 +411,7 @@
   max-width: 100%;
   height: auto;
 }
-.opinions__container-content {
+.opinions__container-content:nth-last-child(n+2) {
   border-bottom: 1px solid #747272;
 }
 .opinions__content {
@@ -591,9 +591,8 @@ label, a { /*Изменение стрелки при наведении*/
   color: white;
   padding: 20px;
 }
-.delivery__small-title {
-  text-align: center;
-  margin-bottom: 20px;
+.delivery__bank-card-img {
+  margin-top: 30px;
 }
 .delivery__title {
   margin-bottom: 15px;

@@ -216,16 +216,19 @@ $lh-large: 130%;
 
         &__wrapper {
             display: flex;
-            // flex-wrap: wrap;
             gap: 20px;
         }
 
         &__container-content {
-            // flex: 1 280px;
             width: 32%;
 
             border-bottom: none;
         }
+
+        &__container-content:nth-last-child(n+2) {
+            border-bottom: none;
+        }
+
 
         &__content {
             display: grid;
