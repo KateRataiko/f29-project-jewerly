@@ -88,400 +88,409 @@ $lh-large: 130%;
     border-radius: 20px;
 }
 
+@media screen and (max-width: 767px) {
+
+    /* styles for блок-хедер START*/
+    .header {
+        max-width: 100%;
+        height: 110px;
+        background: #d4d4d2;
+        position: relative;
+        z-index: 3;
+
+        &__phrase {
+            display: none;
+        }
 
 
-/* styles for блок-хедер START*/
-.header {
-    max-width: 100%;
-    height: 110px;
-    background: #d4d4d2;
-    position: relative;
-    z-index: 3;
+        &__logo-img {
+            height: 90px;
+            z-index: 1;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            bottom: 10px;
+            border-radius: 5px;
+        }
+
+        &__item_choker {
+            display: none;
+        }
+
+        &__item_earrings {
+            display: none;
+        }
+
+        &__item_bracelet {
+            display: none;
+        }
+
+        &__item_podveski {
+            display: none;
+        }
+
+        &__item_contact {
+            display: none;
+        }
+
+        &__item_delivery {
+            display: none;
+        }
+
+    }
 
 
-    &__logo-img {
-        height: 90px;
+    /*скрываем чекбокс*/
+    #burger-menu__toggle {
+        opacity: 0;
+
+    }
+
+    /*стилизуем кнопку*/
+    .burger-menu__btn {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 40px;
+        left: 20px;
+        width: 56px;
+        height: 36px;
+        cursor: pointer;
         z-index: 1;
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        bottom: 10px;
-        border-radius: 10px;
     }
 
-    &__item_choker {
-        display: none;
+    /*добавляем гамбургер*/
+    .burger-menu {
+
+        &__btn>span,
+        &__btn>span::before,
+        &__btn>span::after {
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: #8c8c88;
+        }
+
+        &__btn>span::before {
+            content: '';
+            top: -11px;
+        }
+
+        &__btn>span::after {
+            content: '';
+            top: 11px;
+        }
+
+        &__box {
+            display: block;
+            position: absolute;
+            visibility: hidden;
+            top: 0;
+            left: -100%;
+            margin: 0;
+            padding: 90px 20px 30px 20px;
+            list-style: none;
+            text-align: center;
+            background-color: #d4d4d2;
+            box-shadow: 2px 0px 6px rgba(0, 0, 0, .2);
+            border-radius: 0 6px 6px 0;
+            width: 60%;
+
+        }
+
+        &__item {
+            display: block;
+            padding: 10px 20px;
+            color: rgb(22, 21, 21);
+            @include font(1.5rem, $lh-medium, $fw-meduim);
+            text-decoration: none;
+        }
+
+        &__item:hover {
+            background-color: #f2eded;
+        }
+
+        &__contact {
+            display: block;
+            padding: 10px 20px;
+            color: rgb(22, 21, 21);
+            @include font(1.5rem, $lh-medium, $fw-meduim);
+            text-decoration: underline;
+        }
+
+        &__contact:hover {
+            background-color: #f2eded;
+
+        }
+
+        &__delivery {
+            display: block;
+            padding: 10px 20px;
+            color: rgb(22, 21, 21);
+            @include font(1.5rem, $lh-medium, $fw-meduim);
+            text-decoration: underline;
+        }
+
+        &__delivery:hover {
+            background-color: #f2eded;
+
+        }
     }
 
-    &__item_earrings {
-        display: none;
+
+    #burger-menu__toggle:checked~.burger-menu__btn>span {
+        transform: rotate(45deg);
     }
 
-    &__item_bracelet {
-        display: none;
-    }
-
-    &__item_podveski {
-        display: none;
-    }
-
-    &__item_contact {
-        display: none;
-    }
-
-    &__item_delivery {
-        display: none;
-    }
-
-}
-
-
-/*скрываем чекбокс*/
-#burger-menu__toggle {
-    opacity: 0;
-
-}
-
-/*стилизуем кнопку*/
-.burger-menu__btn {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    top: 40px;
-    left: 20px;
-    width: 56px;
-    height: 36px;
-    cursor: pointer;
-    z-index: 1;
-}
-
-/*добавляем гамбургер*/
-.burger-menu {
-
-    &__btn>span,
-    &__btn>span::before,
-    &__btn>span::after {
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        background-color: #8c8c88;
-    }
-
-    &__btn>span::before {
-        content: '';
-        top: -11px;
-    }
-
-    &__btn>span::after {
-        content: '';
-        top: 11px;
-    }
-
-    &__box {
-        display: block;
-        position: absolute;
-        visibility: hidden;
+    #burger-menu__toggle:checked~.burger-menu__btn>span::before {
         top: 0;
-        left: -100%;
-        margin: 0;
-        padding: 90px 0 30px 0;
-        list-style: none;
+        transform: rotate(0);
+    }
+
+
+    #burger-menu__toggle:checked~.burger-menu__btn>span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+
+    #burger-menu__toggle:checked~.burger-menu__box {
+        visibility: visible;
+        left: 0;
+    }
+
+    .burger-menu {
+
+        &__btn>span,
+        &__btn>span::before,
+        &__btn>span::after {
+            transition-duration: .25s;
+        }
+
+        &__box {
+            transition-duration: .25s;
+        }
+
+        &__item {
+            transition-duration: .25s;
+        }
+
+    }
+
+
+    /* styles for блок-хедер END*/
+
+    /* styles for блок-приветствие START*/
+
+    .welc__slogan {
         text-align: center;
-        background-color: #d4d4d2;
-        box-shadow: 2px 0px 6px rgba(0, 0, 0, .2);
-        border-radius: 0 6px 6px 0;
-
+        @include font($fs-medium, $lh-medium, $fw-bold);
+        padding: 50px 0px 30px 0;
     }
 
-    &__item {
-        display: block;
-        padding: 10px 20px;
-        color: rgb(22, 21, 21);
-        @include font($fs-medium, $lh-medium, $fw-meduim);
-        text-decoration: none;
-    }
-
-    &__item:hover {
-        background-color: #f2eded;
-    }
-
-    &__contact {
-        display: block;
-        padding: 10px 20px;
-        color: rgb(22, 21, 21);
-        @include font($fs-medium, $lh-medium, $fw-meduim);
-        text-decoration: underline;
-    }
-
-    &__contact:hover {
-        background-color: #f2eded;
-
-    }
-
-    &__delivery {
-        display: block;
-        padding: 10px 20px;
-        color: rgb(22, 21, 21);
-        @include font($fs-medium, $lh-medium, $fw-meduim);
-        text-decoration: underline;
-    }
-
-    &__delivery:hover {
-        background-color: #f2eded;
-
-    }
-}
-
-
-#burger-menu__toggle:checked~.burger-menu__btn>span {
-    transform: rotate(45deg);
-}
-
-#burger-menu__toggle:checked~.burger-menu__btn>span::before {
-    top: 0;
-    transform: rotate(0);
-}
-
-
-#burger-menu__toggle:checked~.burger-menu__btn>span::after {
-    top: 0;
-    transform: rotate(90deg);
-}
-
-#burger-menu__toggle:checked~.burger-menu__box {
-    visibility: visible;
-    left: 0;
-}
-
-.burger-menu {
-
-    &__btn>span,
-    &__btn>span::before,
-    &__btn>span::after {
-        transition-duration: .25s;
-    }
-
-    &__box {
-        transition-duration: .25s;
-    }
-
-    &__item {
-        transition-duration: .25s;
-    }
-
-}
-
-
-
-
-
-/* styles for блок-хедер END*/
-
-/* styles for блок-приветствие START*/
-
-.welc__slogan {
-    text-align: center;
-    @include font($fs-medium, $lh-medium, $fw-bold);
-    padding: 50px 0px 30px 0;
-}
-
-.welc__slogan_as {
-    text-align: center;
-    @include font($fs-medium, $lh-medium, $fw-bold);
-    padding: 50px 0px 30px 0;
-    text-transform: uppercase;
-}
-
-.welcome {
-
-    width: 100%;
-    height: 100%;
-    position: relative;
-    z-index: 2;
-
-
-    &__image {
-        width: 100%;
-        margin-top: 20px;
-    }
-
-
-    &__wrapper {
-        position: absolute;
-        padding: 0px 0px 0px 20px;
-        width: 100%;
-        bottom: 10px;
-    }
-
-    &__text_first {
-        @include font(1.3rem, $lh-medium, $fw-meduim);
-        color: white;
-        max-width: 90%;
-        max-height: 50%;
-        text-align: start;
-        margin-left: 0rem;
-        text-shadow: 1.5px 1.5px 3px #070707;
-    }
-
-    &__text_second {
-        @include font(1.3rem, $lh-medium, $fw-meduim);
-        color: white;
-        max-width: 90%;
-        max-height: 50%;
-        text-align: start;
-        margin-left: 0rem;
-        margin-top: 2vh;
-        margin-bottom: 0rem;
-        text-shadow: 1.5px 1.5px 3px #070707;
-    }
-}
-
-/* styles for блок-приветствие END*/
-
-/* styles for блок-про производство START*/
-.workshop {
-    max-width: 100%;
-    height: auto;
-
-    &__small-title {
+    .welc__slogan_as {
         text-align: center;
-        padding-top: 30px;
+        @include font($fs-medium, $lh-medium, $fw-bold);
+        padding: 50px 0px 30px 0;
+        text-transform: uppercase;
+    }
+
+    .welcome {
+
+        max-width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 2;
+
+
+        &__image {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        &__wrapper_big {
+            display: none;
+        }
+
+
+        &__wrapper {
+            position: absolute;
+            padding: 0px 0px 0px 20px;
+            width: 100%;
+            bottom: 10px;
+        }
+
+        &__text_first {
+            @include font(1.3rem, $lh-medium, $fw-meduim);
+            color: white;
+            max-width: 90%;
+            max-height: 50%;
+            text-align: start;
+            margin-left: 0rem;
+            text-shadow: 1.5px 1.5px 3px #070707;
+        }
+
+        &__text_second {
+            @include font(1.3rem, $lh-medium, $fw-meduim);
+            color: white;
+            max-width: 90%;
+            max-height: 50%;
+            text-align: start;
+            margin-left: 0rem;
+            margin-top: 2vh;
+            margin-bottom: 0rem;
+            text-shadow: 1.5px 1.5px 3px #070707;
+        }
+    }
+
+    /* styles for блок-приветствие END*/
+
+    /* styles for блок-про производство START*/
+    .workshop {
+        max-width: 100%;
+        height: auto;
+
+        &__small-title {
+            text-align: center;
+            padding-top: 30px;
+
+            margin-top: 30px;
+            letter-spacing: 0.2rem;
+        }
+
+        &__text {
+            text-align: center;
+
+            margin-top: 20px;
+        }
+
+        &__images {
 
         margin-top: 30px;
         letter-spacing: 0;
     }
 
-    &__text {
-        text-align: center;
 
-        margin-top: 20px;
-    }
+                margin-top: 20px;
+            }
 
-    &__images {
+            &_img2 {
+                display: none;
+            }
 
-        &_img1 {
-            width: 100%;
+            &_img3 {
+                width: 100%;
 
-            margin-top: 20px;
-        }
-
-        &_img2 {
-            display: none;
-        }
-
-        &_img3 {
-            width: 100%;
-
-            margin-top: 20px;
+                margin-top: 20px;
+            }
         }
     }
-}
 
-/* styles for блок-про производство END*/
+    /* styles for блок-про производство END*/
 
-/* srtyles for блок-витрина START*/
-.showcase {
-    max-width: 100%;
+    /* srtyles for блок-витрина START*/
+    .showcase {
+        max-width: 100%;
 
-    &__title {
-        text-align: center;
-    }
-}
-
-.category {
-    max-width: 100%;
-
-    margin-top: 40px;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: auto;
-    column-gap: 10px;
-
-    &_layout-1 {
-        grid-column: 1/3;
+        &__title {
+            text-align: center;
+        }
     }
 
-    &_layout-2 {
-        grid-column: 1/2;
+    .category {
+        max-width: 100%;
+
+        margin-top: 40px;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: auto;
+        column-gap: 10px;
+
+        &_layout-1 {
+            grid-column: 1/3;
+        }
+
+        &_layout-2 {
+            grid-column: 1/2;
+        }
+
+        &_layout-3 {
+            grid-column: 2/3;
+        }
+
+        &__small-title {
+            margin-bottom: 30px;
+            padding: 10px;
+            text-align: start;
+
+            border-bottom: 1px solid #747272;
+        }
     }
 
-    &_layout-3 {
-        grid-column: 2/3;
-    }
-
-    &__small-title {
+    .card {
         margin-bottom: 30px;
-        padding: 10px;
-        text-align: start;
 
-        border-bottom: 1px solid #747272;
-    }
-}
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 5px;
+        align-items: flex-start;
 
-.card {
-    margin-bottom: 30px;
+        &__img {
+            max-width: 100%;
 
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    column-gap: 5px;
-    align-items: flex-start;
+            grid-column: 1/3;
+        }
 
-    &__img {
-        max-width: 100%;
+        &__img img {
+            max-width: 100%;
+            object-fit: cover;
+        }
 
-        grid-column: 1/3;
-    }
+        &__small-title,
+        &__price {
+            align-self: center;
+        }
 
-    &__img img {
-        max-width: 100%;
-        object-fit: cover;
-    }
+        &__small-title {
+            @include font(1rem, $lh-small);
+            grid-column: 1/2;
+        }
 
-    &__small-title,
-    &__price {
-        align-self: center;
-    }
+        &__text {
+            @include font(0.8rem, $lh-small, $fw-light);
+            grid-column: 1/2;
+        }
 
-    &__small-title {
-        @include font(1rem, $lh-small);
-        grid-column: 1/2;
-    }
+        &__price {
+            @include font(1rem, $lh-small);
+            grid-column: 2/3;
+            grid-row: 2/3;
 
-    &__text {
-        @include font(0.8rem, $lh-small, $fw-light);
-        grid-column: 1/2;
-    }
+            text-align: end;
+            justify-self: end;
+        }
 
-    &__price {
-        @include font(1rem, $lh-small);
-        grid-column: 2/3;
-        grid-row: 2/3;
+        &_accent_hit,
+        &_accent_sale {
+            position: relative;
+        }
 
-        text-align: end;
-        justify-self: end;
-    }
+        &_accent_hit::after,
+        &_accent_sale::after {
+            position: absolute;
 
-    &_accent_hit,
-    &_accent_sale {
-        position: relative;
-    }
+            top: 20px;
+            left: 5%;
+            padding: 5px;
+            max-width: min-content;
+            height: max-content;
 
-    &_accent_hit::after,
-    &_accent_sale::after {
-        position: absolute;
+            @include font(1rem, $lh-small, $fw-light);
+            background-color: #FFFFFF;
+            // border: 1px solid #8D8D8D;
+        }
 
-        top: 20px;
-        left: 5%;
-        padding: 5px;
-        max-width: min-content;
-        height: max-content;
-
-        @include font(1rem, $lh-small, $fw-meduim);
-        background-color: #FFFFFF;
-        // border: 1px solid #8D8D8D;
-    }
 
     &_accent_sale_35::after {
         content: "-35%";
@@ -496,49 +505,47 @@ $lh-large: 130%;
     }
 }
 
-/* styles for блок-витрина END*/
+    /* styles for блок-витрина END*/
+    /* srtyles for блок-отзывы START*/
+    .opinions {
+        max-width: 100%;
+        height: auto;
 
-/* srtyles for блок-отзывы START*/
-.opinions {
-    max-width: 100%;
-    height: auto;
+        &__container-content {
+            border-bottom: 1px solid #747272;
+        }
 
-    &__container-content:nth-last-child(n+2) {
-        border-bottom: 1px solid #747272;
+        &__content {
+            margin: 20px 0;
+            padding: 15px;
+
+            background-color: #F1F1F1;
+        }
+
+        &__small-title {
+            text-align: center;
+        }
+
+        &__img {
+            float: left;
+
+            border-radius: 50%;
+
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+
+        &__title {
+            padding: 15px;
+        }
+
+        &__text {
+            padding-right: 10px;
+        }
     }
 
-    &__content {
-        margin: 20px 0;
-        padding: 15px;
 
-        background-color: #F1F1F1;
-    }
-
-    &__small-title {
-        text-align: center;
-    }
-
-    &__img {
-        float: left;
-
-        border-radius: 50%;
-
-        margin-right: 10px;
-        margin-top: 10px;
-    }
-
-    &__title {
-        padding: 15px;
-    }
-
-    &__text {
-        padding-right: 10px;
-    }
-}
-
-
-/* styles for блок-отзывы END*/
-
+    /* styles for блок-отзывы END*/
 
 
 /* styles for блок stone START*/
@@ -696,111 +703,112 @@ label, a{/*Изменение стрелки при наведении*/
         margin-bottom: 10px;
     }
 }
+    /* блок Доставка END*/
 
-/* блок Доставка END*/
+    /* styles for блок-футер START*/
 
-/* styles for блок-футер START*/
+    .footer {
+        background-color: #656565;
+        color: #F1F1F1;
 
-.footer {
-    background-color: #747272;
-    color: #F1F1F1;
+        width: 100vw;
+        height: fit-content;
 
-    width: 100vw;
-    height: fit-content;
 
-    text-align: center;
+        text-align: center;
 
-    &__link {
-        all: unset;
+        &__link {
+            all: unset;
 
-        &:focus {
-            text-decoration: underline;
+            &:focus {
+                text-decoration: underline;
+            }
+        }
+
+        &__information-block {
+            margin: 2rem 0 0 0;
+        }
+
+        &__item {
+            margin: 1rem 0 0 0;
+        }
+
+        &__icons-block {
+
+            margin: 3rem 0;
+
+            display: flex;
+            justify-content: center;
+        }
+
+        &__icon {
+            all: unset;
+            margin: 0 2rem 0 0;
         }
     }
 
-    &__information-block {
-        margin: 2rem 0 0 0;
-    }
+    .fieldset {
+        all: unset;
 
-    &__item {
         margin: 1rem 0 0 0;
+
+        width: 70vw;
+
+        &__legend {
+            margin: 0 0 3rem 0;
+        }
+
+        &__input {
+            all: unset;
+
+            background-color: #F1F1F1;
+            color: black;
+
+            margin: 0 0 3rem 0;
+            background-clip: padding-box;
+
+            border: 1px solid #bdbdbd;
+            border-radius: 0.25rem;
+
+            height: calc(2.25rem + 2px);
+            width: 100%;
+
+            font: inherit;
+        }
+
+        &__input::placeholder {
+            text-align: left;
+            padding: 1rem;
+        }
+
+        &__input:focus {
+            box-shadow: 0 0 0 0.2rem #CECECE;
+        }
+
+        &__btn {
+            all: unset;
+
+            border-radius: 0.25rem;
+            border: 1px solid #bdbdbd;
+
+            background-color: #F1F1F1;
+            color: black;
+
+            width: fit-content;
+
+            text-align: center;
+            font: inherit;
+
+            padding: 0.8rem 1rem;
+            margin: 0 0 3rem 0;
+
+            text-decoration: none;
+        }
+
+        &__btn:active {
+            background-color: #CECECE;
+        }
     }
 
-    &__icons-block {
-
-        margin: 3rem 0;
-
-        display: flex;
-        justify-content: center;
-    }
-
-    &__icon {
-        all: unset;
-        margin: 0 2rem 0 0;
-    }
+    /* styles for блок-футер END*/
 }
-
-.fieldset {
-    all: unset;
-
-    margin: 1rem 0 0 0;
-
-    width: 70vw;
-
-    &__legend {
-        margin: 0 0 3rem 0;
-    }
-
-    &__input {
-        all: unset;
-
-        background-color: #F1F1F1;
-        color: black;
-
-        margin: 0 0 3rem 0;
-        background-clip: padding-box;
-
-        border: 1px solid #bdbdbd;
-        border-radius: 0.25rem;
-
-        height: calc(2.25rem + 2px);
-        width: 100%;
-
-        font: inherit;
-    }
-
-    &__input::placeholder {
-        text-align: left;
-        padding: 1rem;
-    }
-
-    &__input:focus {
-        box-shadow: 0 0 0 0.2rem #CECECE;
-    }
-
-    &__btn {
-        all: unset;
-
-        border-radius: 0.25rem;
-        border: 1px solid #bdbdbd;
-
-        background-color: #F1F1F1;
-        color: black;
-
-        width: fit-content;
-
-        text-align: center;
-        font: inherit;
-
-        padding: 0.8rem 1rem;
-        margin: 0 0 3rem 0;
-
-        text-decoration: none;
-    }
-
-    &__btn:active {
-        background-color: #CECECE;
-    }
-}
-
-/* styles for блок-футер END*/

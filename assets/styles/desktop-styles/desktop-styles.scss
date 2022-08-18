@@ -34,6 +34,8 @@ $lh-large: 150%;
         max-width: 1680px;
         margin: 0 auto;
         padding: 40px;
+        display: flex;
+        justify-content: start;
     }
 
     /* styles for блок-хедер START*/
@@ -47,54 +49,119 @@ $lh-large: 150%;
             display: none;
         }
 
-        &__item {
-            color: black;
-            @include font($fs-medium, $lh-medium, $fw-meduim);
-        }
-
-
-        &__item {
-            display: block;
-        }
-
-        &__item_choker {
-            color: black;
-            @include font(1.3rem, $lh-medium, $fw-meduim);
-        }
-
-        &__item_earrings {
-            color: black;
-            @include font(1.3rem, $lh-medium, $fw-meduim);
-        }
-
-        &__item_bracelet {
-            color: black;
-            @include font(1.3rem, $lh-medium, $fw-meduim);
-        }
-
-        &__item_podveski {
-            color: black;
-            @include font(1.3rem, $lh-medium, $fw-meduim);
-        }
-
-        &__item_contact {
-            color: black;
-            @include font(1.3rem, $lh-medium, $fw-meduim);
-        }
-
-        &__item_delivery {
-            color: black;
-            @include font(1.3rem, $lh-medium, $fw-meduim);
-        }
-
         &__logo-img {
-            height: 130px;
+            height: 110px;
             z-index: 1;
             position: absolute;
             top: 10px;
             right: 10px;
             bottom: 10px;
-            border-radius: 10px;
+
+        }
+
+        /*&__phrase {
+            position: absolute;
+            top: 10px;
+            color: white;
+            @include font(1.4rem, $lh-medium, $fw-meduim);
+            border-radius: 5px;
+            padding: 15px;
+            border: 1px solid transparent;
+            box-shadow: inset 0px 0px 15px white;
+
+
+        }*/
+
+        &__item {
+            position: absolute;
+            top: 50px;
+            display: flex;
+            justify-content: space-between;
+            width: 70%;
+            z-index: 3;
+        }
+
+        /*&__item_choker,
+        &__item_earrings,
+        &__item_bracelet,
+        &__item_podveski {
+            color: black;
+            @include font($fs-medium, $lh-medium, $fw-meduim);
+            text-decoration: none;
+            border: 1px solid transparent;
+            border-radius: 5px;
+            padding: 10px 10px;
+            text-align: center;
+            box-shadow: inset 0px 0px 15px white;
+        }*/
+
+        &__item_choker,
+        &__item_earrings,
+        &__item_bracelet,
+        &__item_podveski {
+            color: black;
+            @include font($fs-medium, $lh-medium, $fw-meduim);
+            text-decoration: none;
+            border-radius: 5px;
+            padding: 10px 10px;
+            text-align: center;
+
+        }
+
+        &__item_choker:visited,
+        &__item_earrings:visited,
+        &__item_bracelet:visited,
+        &__item_podveski:visited {
+            color: #5c5c5b;
+
+        }
+
+        &__item_choker:hover,
+        &__item_earrings:hover,
+        &__item_bracelet:hover,
+        &__item_podveski:hover {
+            background: white;
+        }
+
+
+        &__item_contact {
+            color: black;
+            @include font($fs-medium, $lh-medium, $fw-meduim);
+            text-decoration: none;
+            /* border: 1px solid white;
+            border-radius: 5px;*/
+            padding: 10px 10px;
+            text-align: center;
+            border: 1px solid white;
+            border-left: 10px;
+            border-right: 10px;
+            border-radius: 5px;
+        }
+
+        &__item_delivery {
+            color: black;
+            @include font($fs-medium, $lh-medium, $fw-meduim);
+            text-decoration: none;
+            /*border: 1px solid white;
+            border-radius: 5px;*/
+            padding: 10px 10px;
+            text-align: center;
+            border: 1px solid white;
+            border-left: 10px;
+            border-right: 10px;
+            border-radius: 5px;
+        }
+
+        &__item_contact:visited,
+        &__item_delivery:visited {
+            color: #5c5c5b;
+
+        }
+
+        &__item_contact:hover,
+        &__item_delivery:hover {
+            text-decoration: underline;
+
         }
     }
 
@@ -103,58 +170,112 @@ $lh-large: 150%;
 
     /* styles for блок-приветствие START*/
 
-    .welc__slogan {
-        text-align: center;
-        @include font($fs-large, $lh-medium, $fw-bold);
-        padding: 50px 0px 30px 0;
+    .start {
+        background: #d4d4d2;
     }
 
-    .welc__slogan_as {
+    .welc__slogan {
         text-align: center;
-        @include font($fs-large, $lh-medium, $fw-bold);
-        padding: 50px 0px 30px 0;
-        text-transform: uppercase;
+        @include font(1.8rem, $lh-medium, $fw-bold);
+        padding: 1vh 0px 4vh 0;
+
+
+        .welc__slogan_as {
+            /*text-align: center;*/
+            @include font(1.8rem, $lh-medium, $fw-bold);
+            /*padding: 50px 0px 30px 0;*/
+            text-transform: uppercase;
+        }
     }
 
     .welcome {
 
-        width: 100%;
+        max-width: 100%;
         display: grid;
-        grid-template-columns: 40% 60%;
+        grid-template-columns: 55% 45%;
         grid-template-rows: 1fr;
 
+        &__phrase {
+            /*position: absolute;
+            top: 10px;*/
+            color: black;
+            @include font(1.5rem, $lh-medium, $fw-meduim);
+            max-width: 90%;
+            padding: 1vw;
 
-        &__wrapper {
-            width: 100%;
+            /*border: 1px solid transparent;
+            box-shadow: inset 0px 0px 15px white;*/
             grid-column: 1/2;
             grid-row: 1/2;
-            align-content: center;
-        }
-
-        &__text_first {
-            @include font(1.3rem, $lh-medium, $fw-meduim);
-            color: black;
-            max-width: 95%;
-            max-height: 50%;
-            margin-left: 0rem;
-
-        }
-
-        &__text_second {
-            @include font(1.3rem, $lh-medium, $fw-meduim);
-            color: black;
-            max-width: 95%;
-            max-height: 50%;
-            margin-left: 0rem;
-            margin-top: 10vh;
-            margin-bottom: 0rem;
-
+            border: 1px solid white;
+            border-left: 10px;
+            border-right: 10px;
+            border-radius: 5px;
+            text-align: start;
+            margin-left: -1vw;
         }
 
         &__image {
             grid-column: 2/3;
             grid-row: 1/2;
+            width: 100%;
+            border-radius: 0 0 5px 5px;
+            padding-top: 0vh;
         }
+
+
+        &__wrapper {
+            display: none;
+        }
+
+        &__wrapper_big {
+            width: 100%;
+            grid-column: 1/2;
+            grid-row: 1/2;
+            align-content: center;
+            padding-left: 40px;
+
+        }
+
+        &__text_first-big {
+            @include font(1.3rem, $lh-medium, $fw-meduim);
+            color: black;
+            max-width: 95%;
+
+            margin-left: 0rem;
+            margin-top: 3.5vh;
+        }
+
+        &__text_second-big {
+            @include font(1.3rem, $lh-medium, $fw-meduim);
+            color: black;
+            max-width: 95%;
+
+            margin-left: 0rem;
+            margin-top: 3.5vh;
+            margin-bottom: 0rem;
+        }
+
+        &__text_third-big {
+            @include font(1.3rem, $lh-medium, $fw-meduim);
+            color: black;
+            max-width: 95%;
+
+            margin-left: 0rem;
+            margin-top: 3.5vh;
+        }
+
+        &__text_fourth-big {
+            @include font(1.3rem, $lh-medium, $fw-meduim);
+            color: black;
+            max-width: 95%;
+
+            margin-left: 0rem;
+            margin-top: 3.5vh;
+            margin-bottom: 0rem;
+
+        }
+
     }
 
 
@@ -213,6 +334,8 @@ $lh-large: 150%;
             }
         }
     }
+
+
 
     /* styles for блок-про производство END*/
 
@@ -336,6 +459,7 @@ $lh-large: 150%;
             padding-right: 10px;
         }
     }
+
 
     /* styles for блок-отзывы END*/
 
