@@ -326,16 +326,16 @@ $lh-large: 150%;
 
     .card {
         grid-template-columns: 3fr 1fr;
-        
+
         &__small-title {
             @include font($fs-medium, $lh-large);
         }
-    
+
         &__text {
             @include font($fs-small, $lh-medium, $fw-light);
             grid-column: 1/2;
         }
-    
+
         &__price {
             @include font($fs-medium, $lh-large);
         }
@@ -347,6 +347,7 @@ $lh-large: 150%;
             @include font($fs-medium, $lh-medium);
         }
     }
+
     /* styles for блок-витрина END*/
 
     /* srtyles for блок-отзывы START*/
