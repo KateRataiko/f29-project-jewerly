@@ -49,6 +49,16 @@ $lh-large: 130%;
             display: none;
         }
 
+        &__logo-img {
+            height: 110px;
+            z-index: 1;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            bottom: 10px;
+
+        }
+
         /*&__phrase {
             position: absolute;
             top: 10px;
@@ -71,7 +81,7 @@ $lh-large: 130%;
             z-index: 3;
         }
 
-        &__item_choker,
+        /*&__item_choker,
         &__item_earrings,
         &__item_bracelet,
         &__item_podveski {
@@ -83,6 +93,19 @@ $lh-large: 130%;
             padding: 10px 10px;
             text-align: center;
             box-shadow: inset 0px 0px 15px white;
+        }*/
+
+        &__item_choker,
+        &__item_earrings,
+        &__item_bracelet,
+        &__item_podveski {
+            color: black;
+            @include font($fs-medium, $lh-medium, $fw-meduim);
+            text-decoration: none;
+            border-radius: 5px;
+            padding: 10px 10px;
+            text-align: center;
+
         }
 
         &__item_choker:visited,
@@ -101,34 +124,32 @@ $lh-large: 130%;
         }
 
 
-        &__logo-img {
-            height: 110px;
-            z-index: 1;
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            bottom: 10px;
-
-        }
-
         &__item_contact {
             color: black;
             @include font($fs-medium, $lh-medium, $fw-meduim);
             text-decoration: none;
-            border: 1px solid white;
-            border-radius: 5px;
+            /* border: 1px solid white;
+            border-radius: 5px;*/
             padding: 10px 10px;
             text-align: center;
+            border: 1px solid white;
+            border-left: 10px;
+            border-right: 10px;
+            border-radius: 5px;
         }
 
         &__item_delivery {
             color: black;
             @include font($fs-medium, $lh-medium, $fw-meduim);
             text-decoration: none;
-            border: 1px solid white;
-            border-radius: 5px;
+            /*border: 1px solid white;
+            border-radius: 5px;*/
             padding: 10px 10px;
             text-align: center;
+            border: 1px solid white;
+            border-left: 10px;
+            border-right: 10px;
+            border-radius: 5px;
         }
 
         &__item_contact:visited,
@@ -139,7 +160,7 @@ $lh-large: 130%;
 
         &__item_contact:hover,
         &__item_delivery:hover {
-            background: #d4d4d2;
+            text-decoration: underline;
 
         }
     }
@@ -155,13 +176,13 @@ $lh-large: 130%;
 
     .welc__slogan {
         text-align: center;
-        @include font($fs-large, $lh-medium, $fw-bold);
-        padding: 0vh 0px 5vh 0;
+        @include font(1.8rem, $lh-medium, $fw-bold);
+        padding: 1vh 0px 4vh 0;
 
 
         .welc__slogan_as {
             /*text-align: center;*/
-            @include font($fs-large, $lh-medium, $fw-bold);
+            @include font(1.8rem, $lh-medium, $fw-bold);
             /*padding: 50px 0px 30px 0;*/
             text-transform: uppercase;
         }
@@ -174,6 +195,34 @@ $lh-large: 130%;
         grid-template-columns: 55% 45%;
         grid-template-rows: 1fr;
 
+        &__phrase {
+            /*position: absolute;
+            top: 10px;*/
+            color: black;
+            @include font(1.5rem, $lh-medium, $fw-meduim);
+            max-width: 90%;
+            padding: 1vw;
+
+            /*border: 1px solid transparent;
+            box-shadow: inset 0px 0px 15px white;*/
+            grid-column: 1/2;
+            grid-row: 1/2;
+            border: 1px solid white;
+            border-left: 10px;
+            border-right: 10px;
+            border-radius: 5px;
+            text-align: start;
+            margin-left: -1vw;
+        }
+
+        &__image {
+            grid-column: 2/3;
+            grid-row: 1/2;
+            width: 100%;
+            border-radius: 0 0 5px 5px;
+            padding-top: 0vh;
+        }
+
 
         &__wrapper {
             display: none;
@@ -185,71 +234,48 @@ $lh-large: 130%;
             grid-row: 1/2;
             align-content: center;
             padding-left: 40px;
+
         }
 
         &__text_first-big {
-            @include font(1.5rem, $lh-medium, $fw-meduim);
+            @include font(1.3rem, $lh-medium, $fw-meduim);
             color: black;
             max-width: 95%;
 
             margin-left: 0rem;
-            margin-top: 3vh;
+            margin-top: 3.5vh;
         }
 
         &__text_second-big {
-            @include font(1.5rem, $lh-medium, $fw-meduim);
+            @include font(1.3rem, $lh-medium, $fw-meduim);
             color: black;
             max-width: 95%;
 
             margin-left: 0rem;
-            margin-top: 3vh;
+            margin-top: 3.5vh;
             margin-bottom: 0rem;
         }
 
         &__text_third-big {
-            @include font(1.5rem, $lh-medium, $fw-meduim);
+            @include font(1.3rem, $lh-medium, $fw-meduim);
             color: black;
             max-width: 95%;
 
             margin-left: 0rem;
-            margin-top: 3vh;
+            margin-top: 3.5vh;
         }
 
         &__text_fourth-big {
-            @include font(1.5rem, $lh-medium, $fw-meduim);
+            @include font(1.3rem, $lh-medium, $fw-meduim);
             color: black;
             max-width: 95%;
 
             margin-left: 0rem;
-            margin-top: 3vh;
+            margin-top: 3.5vh;
             margin-bottom: 0rem;
 
         }
 
-        &__phrase {
-            /*position: absolute;
-            top: 10px;*/
-            color: white;
-            @include font($fs-large, $lh-medium, $fw-meduim);
-            max-width: 90%;
-            padding-bottom: 2vh;
-
-            /*border: 1px solid transparent;
-            box-shadow: inset 0px 0px 15px white;*/
-            grid-column: 1/2;
-            grid-row: 1/2;
-
-
-
-        }
-
-        &__image {
-            grid-column: 2/3;
-            grid-row: 1/2;
-            width: 100%;
-            border-radius: 0 0 5px 5px;
-            padding-top: 0vh;
-        }
     }
 
 
