@@ -478,13 +478,17 @@ $lh-large: 130%;
         max-width: min-content;
         height: max-content;
 
-        @include font(1rem, $lh-small, $fw-light);
+        @include font(1rem, $lh-small, $fw-meduim);
         background-color: #FFFFFF;
         // border: 1px solid #8D8D8D;
     }
 
-    &_accent_sale::after {
+    &_accent_sale_35::after {
         content: "-35%";
+    }
+
+    &_accent_sale_30::after {
+        content: "-30%";
     }
 
     &_accent_hit:after {
