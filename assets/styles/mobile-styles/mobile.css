@@ -304,7 +304,7 @@
 .workshop__images_img2 {
   display: none;
 }
-.workshop__images_img3 {
+.workshop__images_img3, .workshop__images_img1 {
   width: 100%;
   margin-top: 20px;
 }
@@ -641,7 +641,6 @@ a {
 .footer {
   background-color: #656565;
   color: #F1F1F1;
-  width: 100vw;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
