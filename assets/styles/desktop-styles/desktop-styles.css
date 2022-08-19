@@ -13,19 +13,6 @@
     height: 150px;
     background: #d4d4d2;
     color: black;
-    /*&__item_choker,
-    &__item_earrings,
-    &__item_bracelet,
-    &__item_podveski {
-        color: black;
-        @include font($fs-medium, $lh-medium, $fw-meduim);
-        text-decoration: none;
-        border: 1px solid transparent;
-        border-radius: 5px;
-        padding: 10px 10px;
-        text-align: center;
-        box-shadow: inset 0px 0px 15px white;
-    }*/
   }
   .header__burger {
     display: none;
