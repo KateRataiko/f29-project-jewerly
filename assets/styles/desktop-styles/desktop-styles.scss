@@ -116,7 +116,7 @@ $lh-large: 150%;
             color: black;
             @include font($fs-medium, $lh-medium, $fw-meduim);
             text-decoration: none;
-            border: 1px solid white;
+            border: 2px solid white;
             border-radius: 5px;
             padding: 10px 15px;
             text-align: center;
@@ -131,7 +131,7 @@ $lh-large: 150%;
             color: black;
             @include font($fs-medium, $lh-medium, $fw-meduim);
             text-decoration: none;
-            border: 1px solid white;
+            border: 2px solid white;
             border-radius: 5px;
             padding: 10px 15px;
             text-align: center;
@@ -198,10 +198,6 @@ $lh-large: 150%;
         &__textlarge {
             grid-column: 1/2;
             grid-row: 1/2;
-            border: 1px solid white;
-            border-left: 10px;
-            border-right: 10px;
-            border-radius: 5px;
             text-align: start;
             margin-left: -1vw;
             width: 100%;
@@ -212,14 +208,15 @@ $lh-large: 150%;
         }
 
         &__textlarge_main {
-            /*position: absolute;
-            top: 10px;*/
+
             color: black;
             @include font(1.5rem, $lh-medium, $fw-meduim);
             max-width: 90%;
             padding: 1vw;
-            border: 1px solid white;
+            border: 2px solid white;
             border-radius: 5px;
+
+
 
         }
 
