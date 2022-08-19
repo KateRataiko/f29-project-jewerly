@@ -64,6 +64,7 @@
     position: relative;
     z-index: 3;
   }
+
   .header__logo-img {
     height: 90px;
     z-index: 1;
@@ -137,6 +138,7 @@
     box-shadow: 2px 0px 6px rgba(0, 0, 0, 0.2);
     border-radius: 0 6px 6px 0;
     width: 70%;
+
   }
   .burger-menu__item {
     display: block;
@@ -203,7 +205,9 @@
   }
   /* styles for блок-хедер END*/
   /* styles for блок-приветствие START*/
+
   .start__slogan {
+
     text-align: center;
     font-family: "Inter", Verdana, sans-serif;
     font-weight: 600;
@@ -211,7 +215,9 @@
     line-height: 120%;
     padding: 50px 0px 30px 0;
   }
+
   .start__slogan_as {
+
     text-align: center;
     font-family: "Inter", Verdana, sans-serif;
     font-weight: 600;
@@ -230,6 +236,7 @@
     width: 100%;
     margin-top: 20px;
   }
+
   .welcome__phrase {
     display: none;
   }
@@ -249,12 +256,15 @@
     display: none;
   }
   .welcome__text {
+
     position: absolute;
     padding: 0px 0px 0px 20px;
     width: 100%;
     bottom: 10px;
   }
+
   .welcome__text_stone {
+
     font-family: "Inter", Verdana, sans-serif;
     font-weight: 500;
     font-size: 1.3rem;
@@ -266,7 +276,10 @@
     margin-left: 0rem;
     text-shadow: 1.5px 1.5px 3px #070707;
   }
+
   .welcome__text_rebuild {
+
+
     font-family: "Inter", Verdana, sans-serif;
     font-weight: 500;
     font-size: 1.3rem;
@@ -300,6 +313,7 @@
     margin-top: 30px;
     letter-spacing: 0;
   }
+
   .workshop__images_img2 {
     display: none;
   }
@@ -490,6 +504,7 @@
   /*настройка переключения и положения левой стрелки*/
   /*если свитч1-4 активны, идет обращение к лейблу из блока с id контролс*/
   #switch1:checked ~ controls label:nth-child(4),
+
 #switch1:checked ~ controls label:nth-child(1),
 #switch1:checked ~ controls label:nth-child(2),
 #switch1:checked ~ controls label:nth-child(3) {
@@ -567,126 +582,79 @@ a {
 #switch2:checked ~ :active label:nth-child(2),
 #switch3:checked ~ :active label:nth-child(3),
 #switch4:checked ~ :active label:nth-child(4) {
-    background: black;
-    border-color: white !important;
-  }
-  #slides .image {
-    /*анимация пролистывания изображений*/
-    transition: all 800ms cubic-bezier(0.77, 0, 0.175, 1);
-  }
-  #controls label:hover {
-    /*прозрачность стрелок при наведении*/
-    opacity: 0.6;
-  }
-  #controls label {
-    /*прозрачность стрелок при отводке курсора*/
-    transition: opacity 0.2s ease-out;
-  }
-  /* styles for блок stone END*/
-  /* блок Доставка START*/
-  .delivery {
-    width: 100%;
-    height: auto;
-    background-color: #8d8d8d;
-    color: white;
-    padding: 20px;
-  }
-  .delivery__bank-card-img {
-    margin-top: 30px;
-  }
-  .delivery__title {
-    margin-bottom: 15px;
-  }
-  .delivery__delivery-method {
-    margin-bottom: 20px;
-  }
-  .delivery__text {
-    margin-bottom: 10px;
-  }
-  /* блок Доставка END*/
-  /* styles for блок-футер START*/
-  .footer {
-    background-color: #656565;
-    color: #F1F1F1;
-    width: 100vw;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    text-align: center;
-  }
-  .footer__link {
-    all: unset;
-  }
-  .footer__link:focus {
-    text-decoration: underline;
-  }
-  .footer__information-block {
-    margin: 2rem 0 0 0;
-  }
-  .footer__item {
-    margin: 1rem 0 0 0;
-  }
-  .footer__icons-block {
-    margin: 3rem 0;
-    display: flex;
-    justify-content: center;
-  }
-  .footer__icon {
-    all: unset;
-    margin: 0 2rem 0 0;
-  }
-  .fieldset {
-    all: unset;
-    margin: 1rem 0 0 0;
-    width: 70vw;
-  }
-  .fieldset__legend {
-    margin: 0 0 3rem 0;
-  }
-  .fieldset__input {
-    all: unset;
-    background-color: #F1F1F1;
-    color: black;
-    margin: 0 0 3rem 0;
-    background-clip: padding-box;
-    border: 1px solid #bdbdbd;
-    border-radius: 0.25rem;
-    height: calc(2.25rem + 2px);
-    width: 100%;
-    font: inherit;
-  }
-  .fieldset__input::-moz-placeholder {
-    text-align: left;
-    padding: 1rem;
-  }
-  .fieldset__input:-ms-input-placeholder {
-    text-align: left;
-    padding: 1rem;
-  }
-  .fieldset__input::placeholder {
-    text-align: left;
-    padding: 1rem;
-  }
-  .fieldset__input:focus {
-    box-shadow: 0 0 0 0.2rem #CECECE;
-  }
-  .fieldset__btn {
-    all: unset;
-    border-radius: 0.25rem;
-    border: 1px solid #bdbdbd;
-    background-color: #F1F1F1;
-    color: black;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    text-align: center;
-    font: inherit;
-    padding: 0.8rem 1rem;
-    margin: 0 0 3rem 0;
-    text-decoration: none;
-  }
-  .fieldset__btn:active {
-    background-color: #CECECE;
-  }
-  /* styles for блок-футер END*/
-}/*# sourceMappingURL=mobile.css.map */
+  background: black;
+  border-color: white !important;
+}
+
+#slides .image { /*анимация пролистывания изображений*/
+  transition: all 800ms cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+#controls label:hover { /*прозрачность стрелок при наведении*/
+  opacity: 0.6;
+}
+
+#controls label { /*прозрачность стрелок при отводке курсора*/
+  transition: opacity 0.2s ease-out;
+}
+
+/* styles for блок stone END*/
+/* блок Доставка START*/
+.delivery {
+  width: 100%;
+  height: auto;
+  background-color: #8d8d8d;
+  color: white;
+  padding: 20px;
+}
+.delivery__bank-card-img {
+  margin-top: 30px;
+}
+.delivery__title {
+  margin-bottom: 15px;
+}
+.delivery__delivery-method {
+  margin-bottom: 20px;
+}
+.delivery__text {
+  margin-bottom: 10px;
+}
+
+/* блок Доставка END*/
+/* styles for блок-футер START*/
+.footer {
+  background-color: #656565;
+  color: #F1F1F1;
+  width: 100vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: center;
+}
+.footer__link {
+  all: unset;
+  text-decoration: underline;
+}
+.footer__information-block {
+  margin: 2rem 0 0 0;
+}
+.footer__item {
+  margin: 1rem 0 0 0;
+}
+.footer__icons-block {
+  margin: 3rem 0;
+  display: flex;
+  justify-content: center;
+}
+.footer__icon {
+  margin: 0 2rem 0 0;
+}
+.footer__icon_change-color:focus {
+  color: #070707;
+}
+.footer__link_top {
+  text-decoration: underline;
+}
+
+/* styles for блок-футер END*//*# sourceMappingURL=mobile.css.map */
+

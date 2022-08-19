@@ -34,8 +34,7 @@ $lh-large: 150%;
         max-width: 1680px;
         margin: 0 auto;
         padding: 40px;
-        display: flex;
-        justify-content: start;
+      
     }
 
     /* styles for блок-хедер START*/
@@ -453,5 +452,66 @@ $lh-large: 150%;
     /* блок Доставка END */
 
     /* srtyles for блок-футер START*/
+    .footer{
+        text-align: start;
+        
+        &__wrapper{
+            display: grid;
+            grid-template-areas: 'block1 block2 '
+            'block4 block3 ';
+        }
+
+        &__greed-block_first{
+    grid-area: block1;
+        }
+
+        &__greed-block_second{
+    grid-area: block2;
+        }
+
+        &__greed-block_third{
+    grid-area: block3;
+
+    margin: 3rem 0 0 0;
+    
+    display: flex;
+    justify-content: start;
+        }
+
+        &__greed-block_fourth{
+    grid-area: block4;
+
+    margin: 3rem 0 0 0;
+
+    display: flex;
+    align-items: center;
+        }
+
+        &__link{
+            cursor: pointer;
+            text-decoration: none;
+
+            &_top{
+                margin: 3rem 0 3rem 0 ;
+                padding: 10px;
+    
+                border: 1px solid white;
+                border-radius: 5px;
+                border-left: 10px;
+                border-right: 10px; 
+            }
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+
+            &__icon_change-color{
+                &:hover{
+                   color: #070707;
+                }
+               }
+    }
+
     /* styles for блок-футер END*/
 }
