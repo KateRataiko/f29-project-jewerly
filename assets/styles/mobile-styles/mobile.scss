@@ -98,10 +98,6 @@ $lh-large: 130%;
         position: relative;
         z-index: 3;
 
-        &__phrase {
-            display: none;
-        }
-
 
         &__logo-img {
             height: 90px;
@@ -136,6 +132,7 @@ $lh-large: 130%;
         &__item_delivery {
             display: none;
         }
+
 
     }
 
@@ -195,7 +192,7 @@ $lh-large: 130%;
             background-color: #d4d4d2;
             box-shadow: 2px 0px 6px rgba(0, 0, 0, .2);
             border-radius: 0 6px 6px 0;
-            width: 60%;
+            width: 70%;
 
         }
 
@@ -282,17 +279,19 @@ $lh-large: 130%;
 
     /* styles for блок-приветствие START*/
 
-    .welc__slogan {
-        text-align: center;
-        @include font($fs-medium, $lh-medium, $fw-bold);
-        padding: 50px 0px 30px 0;
-    }
+    .start {
+        &__slogan {
+            text-align: center;
+            @include font($fs-medium, $lh-medium, $fw-bold);
+            padding: 50px 0px 30px 0;
+        }
 
-    .welc__slogan_as {
-        text-align: center;
-        @include font($fs-medium, $lh-medium, $fw-bold);
-        padding: 50px 0px 30px 0;
-        text-transform: uppercase;
+        &__slogan_as {
+            text-align: center;
+            @include font($fs-medium, $lh-medium, $fw-bold);
+            padding: 50px 0px 30px 0;
+            text-transform: uppercase;
+        }
     }
 
     .welcome {
@@ -308,19 +307,39 @@ $lh-large: 130%;
             margin-top: 20px;
         }
 
-        &__wrapper_big {
+        &__phrase {
+            display: none;
+        }
+
+        &__textlarge_podbor {
+            display: none;
+        }
+
+        &__textlarge_exsclusive {
+            display: none;
+        }
+
+        &__textlarge_new {
+            display: none;
+        }
+
+        &__textlarge_renew {
             display: none;
         }
 
 
-        &__wrapper {
+        &__textlarge {
+            display: none;
+        }
+
+        &__text {
             position: absolute;
             padding: 0px 0px 0px 20px;
             width: 100%;
             bottom: 10px;
         }
 
-        &__text_first {
+        &__text_stone {
             @include font(1.3rem, $lh-medium, $fw-meduim);
             color: white;
             max-width: 90%;
@@ -330,7 +349,7 @@ $lh-large: 130%;
             text-shadow: 1.5px 1.5px 3px #070707;
         }
 
-        &__text_second {
+        &__text_rebuild {
             @include font(1.3rem, $lh-medium, $fw-meduim);
             color: white;
             max-width: 90%;
@@ -353,24 +372,20 @@ $lh-large: 130%;
         &__small-title {
             text-align: center;
             padding-top: 30px;
-
             margin-top: 30px;
             letter-spacing: 0.2rem;
         }
 
         &__text {
             text-align: center;
-
             margin-top: 20px;
         }
 
         &__images {
 
-        margin-top: 30px;
-        letter-spacing: 0;
-    }
 
-
+            margin-top: 30px;
+            letter-spacing: 0;
 
             &_img2 {
                 display: none;
@@ -378,7 +393,6 @@ $lh-large: 130%;
 
             &_img3 {
                 width: 100%;
-
                 margin-top: 20px;
             }
         }
@@ -386,7 +400,7 @@ $lh-large: 130%;
 
     /* styles for блок-про производство END*/
 
-    /* srtyles for блок-витрина START*/
+    /* styles for блок-витрина START*/
     .showcase {
         max-width: 100%;
 
@@ -490,18 +504,18 @@ $lh-large: 130%;
         }
 
 
-    &_accent_sale_35::after {
-        content: "-35%";
-    }
+        &_accent_sale_35::after {
+            content: "-35%";
+        }
 
-    &_accent_sale_30::after {
-        content: "-30%";
-    }
+        &_accent_sale_30::after {
+            content: "-30%";
+        }
 
-    &_accent_hit:after {
-        content: "Хит!";
+        &_accent_hit:after {
+            content: "Хит!";
+        }
     }
-}
 
     /* styles for блок-витрина END*/
     /* srtyles for блок-отзывы START*/
@@ -546,161 +560,210 @@ $lh-large: 130%;
     /* styles for блок-отзывы END*/
 
 
-/* styles for блок stone START*/
-.wrapper1{
-max-width: 100%;
-}
-.choice{
-    padding: 2rem;
-    text-align: center;
-}
-.border{
-    margin-bottom: 2rem;
-    border-top: 1px solid #747272;
-}
-#slider{ /*положение слайдера*/
-    position: relative;
-    text-align: center;
-    bottom: 2rem;
-}
-#slider{ /*центровка слайдера*/
-	margin: 0 auto;
-}
-#slides article{/*все изображения справа друг от друга*/
-    width: 20%;
-    float: left;
-}
-#slides .image{/*устанавливает общий размер блока с изрбражением*/
-    width: 500%;
-    line-height:0;
-}
-#overflow{/*скрывает все, что находится за пределами этог блока*/
-    width: 100%;
-    overflow: hidden;
-}
-article image{/*размер изрбражений слайдера*/
-    width: 100%;
-}
-#desktop:checked ~ slider{/*размер всего слайдера, пока активирован чекбокс*/
-    max-width: 960px;
-}
-/*настройка переключения и положения левой стрелки*/
-/*если свитч1-4 активны, идет обращение к лейблу из блока с id контролс*/
-#switch1:checked ~ controls label:nth-child(4),
-#switch1:checked ~ controls label:nth-child(1),
-#switch1:checked ~ controls label:nth-child(2),
-#switch1:checked ~ controls label:nth-child(3){
-    background: url('prev.png') no-repeat; /*заливка фона картинкой без повторений*/
-    float: left;
-    margin: 0 0 0 -84px;/*сдвиг влево*/
-    display: block;
-    height: 68px;
-    width:68px;
-}
-/*настройка переключения правой стрелки*/
-#switch1:checked ~ controls label:nth-child(2),
-#switch1:checked ~ controls label:nth-child(3),
-#switch1:checked ~ controls label:nth-child(4),
-#switch1:checked ~ controls label:nth-child(1){
-    background: url('next.png') no-repeat;/*заливка фона картинкой без повторений*/
-    float: right;
-    margin: 0 -84px 0 0;/*сдвиг вправо*/
-    display: block;
-    height: 68px;
-    width:68px;
-}
-label, a{/*Изменение стрелки при наведении*/
-    cursor: pointer;
-}
-.all input{/*скрывает стандартные инпуты*/
-    display: none;
-}
-#switch1:checked ~ #slides .image{
-    margin-left: 0;
-}
-#switch2:checked ~ #slides .image{
-    margin-left: -100%;
-}
-#switch3:checked ~ #slides .image{
-    margin-left: -200%;
-}
-#switch4:checked ~ #slides .image{
-    margin-left: -300%;
-}
-#controls{/*позиция изображения при активации переключателя*/
-    margin: -25% 0 0 0;
-    width: 100%;
-    height: 50px;
-}
-#active label{/*стиль отдельного переключателя*/
-    border-radius: 10px;
-    display: inline-block;/*расположение в строку*/
-    width: 15px;
-    height: 15px;
-    background: gray;
-    ;
-}
-#active{/* расположение блока с переключателями*/
-    margin:23% 0 0;
-    text-align: center;
-}
-#active label:hover{/* поведение чекбокса при наведении*/
-    background: black;
-    border-color: white !important;
-}
-/*цвет активного переключателя чекбокса, лейбла  при активации чекбокса*/
-#switch1:checked ~ :active label:nth-child(1),
-#switch2:checked ~ :active label:nth-child(2),
-#switch3:checked ~ :active label:nth-child(3),
-#switch4:checked ~ :active label:nth-child(4){
-    background: black;
-    border-color: white !important;
-}
-#slides .image{/*анимация пролистывания изображений*/
-    transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
-}
-#controls label:hover{/*прозрачность стрелок при наведении*/
-    opacity: 0.6;
-}
-#controls label{/*прозрачность стрелок при отводке курсора*/
-    transition: opacity 0.2s ease-out;
-}
-//.stone{
-   // background-color: #F1F1F1;
+    /* styles for блок stone START*/
+    .wrapper1 {
+        max-width: 100%;
+    }
+
+    .choice {
+        padding: 2rem;
+        text-align: center;
+    }
+
+    .border {
+        margin-bottom: 2rem;
+        border-top: 1px solid #747272;
+    }
+
+    #slider {
+        /*положение слайдера*/
+        position: relative;
+        text-align: center;
+        bottom: 2rem;
+    }
+
+    #slider {
+        /*центровка слайдера*/
+        margin: 0 auto;
+    }
+
+    #slides article {
+        /*все изображения справа друг от друга*/
+        width: 20%;
+        float: left;
+    }
+
+    #slides .image {
+        /*устанавливает общий размер блока с изрбражением*/
+        width: 500%;
+        line-height: 0;
+    }
+
+    #overflow {
+        /*скрывает все, что находится за пределами этог блока*/
+        width: 100%;
+        overflow: hidden;
+    }
+
+    article image {
+        /*размер изрбражений слайдера*/
+        width: 100%;
+    }
+
+    #desktop:checked~slider {
+        /*размер всего слайдера, пока активирован чекбокс*/
+        max-width: 960px;
+    }
+
+    /*настройка переключения и положения левой стрелки*/
+    /*если свитч1-4 активны, идет обращение к лейблу из блока с id контролс*/
+    #switch1:checked~controls label:nth-child(4),
+    #switch1:checked~controls label:nth-child(1),
+    #switch1:checked~controls label:nth-child(2),
+    #switch1:checked~controls label:nth-child(3) {
+        background: url('prev.png') no-repeat;
+        /*заливка фона картинкой без повторений*/
+        float: left;
+        margin: 0 0 0 -84px;
+        /*сдвиг влево*/
+        display: block;
+        height: 68px;
+        width: 68px;
+    }
+
+    /*настройка переключения правой стрелки*/
+    #switch1:checked~controls label:nth-child(2),
+    #switch1:checked~controls label:nth-child(3),
+    #switch1:checked~controls label:nth-child(4),
+    #switch1:checked~controls label:nth-child(1) {
+        background: url('next.png') no-repeat;
+        /*заливка фона картинкой без повторений*/
+        float: right;
+        margin: 0 -84px 0 0;
+        /*сдвиг вправо*/
+        display: block;
+        height: 68px;
+        width: 68px;
+    }
+
+    label,
+    a {
+        /*Изменение стрелки при наведении*/
+        cursor: pointer;
+    }
+
+    .all input {
+        /*скрывает стандартные инпуты*/
+        display: none;
+    }
+
+    #switch1:checked~#slides .image {
+        margin-left: 0;
+    }
+
+    #switch2:checked~#slides .image {
+        margin-left: -100%;
+    }
+
+    #switch3:checked~#slides .image {
+        margin-left: -200%;
+    }
+
+    #switch4:checked~#slides .image {
+        margin-left: -300%;
+    }
+
+    #controls {
+        /*позиция изображения при активации переключателя*/
+        margin: -25% 0 0 0;
+        width: 100%;
+        height: 50px;
+    }
+
+    #active label {
+        /*стиль отдельного переключателя*/
+        border-radius: 10px;
+        display: inline-block;
+        /*расположение в строку*/
+        width: 15px;
+        height: 15px;
+        background: gray;
+        ;
+    }
+
+    #active {
+        /* расположение блока с переключателями*/
+        margin: 23% 0 0;
+        text-align: center;
+    }
+
+    #active label:hover {
+        /* поведение чекбокса при наведении*/
+        background: black;
+        border-color: white !important;
+    }
+
+    /*цвет активного переключателя чекбокса, лейбла  при активации чекбокса*/
+    #switch1:checked~ :active label:nth-child(1),
+    #switch2:checked~ :active label:nth-child(2),
+    #switch3:checked~ :active label:nth-child(3),
+    #switch4:checked~ :active label:nth-child(4) {
+        background: black;
+        border-color: white !important;
+    }
+
+    #slides .image {
+        /*анимация пролистывания изображений*/
+        transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    }
+
+    #controls label:hover {
+        /*прозрачность стрелок при наведении*/
+        opacity: 0.6;
+    }
+
+    #controls label {
+        /*прозрачность стрелок при отводке курсора*/
+        transition: opacity 0.2s ease-out;
+    }
+
+    //.stone{
+    // background-color: #F1F1F1;
     //border-radius: 100px 100px 100px 100px;
     //width: 100vw;
-//}
-//.fone{
+    //}
+    //.fone{
     //background-color: #656565;
     //width: 100vw;
-//}
-/* styles for блок stone END*/
+    //}
+    /* styles for блок stone END*/
 
-/* блок Доставка START*/
-.delivery {
+    /* блок Доставка START*/
+    .delivery {
 
-    width: 100%;
-    height: auto;
-    background-color: #8d8d8d;
-    color: white;
-    padding: 20px;
+        width: 100%;
+        height: auto;
+        background-color: #8d8d8d;
+        color: white;
+        padding: 20px;
 
-    &__bank-card-img {
-        margin-top: 30px;
+        &__bank-card-img {
+            margin-top: 30px;
+        }
+
+        &__title {
+            margin-bottom: 15px;
+        }
+
+        &__delivery-method {
+            margin-bottom: 20px;
+        }
+
+        &__text {
+            margin-bottom: 10px;
+        }
     }
 
-    &__title {
-        margin-bottom: 15px;
-    }
-
-    &__delivery-method {
-        margin-bottom: 20px;
-    }
-
-    &__text {
-        margin-bottom: 10px;
-    }
-}
     /* блок Доставка END*/
 
     /* styles for блок-футер START*/
