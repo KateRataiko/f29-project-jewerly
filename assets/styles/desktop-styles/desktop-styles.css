@@ -4,8 +4,6 @@
     max-width: 1680px;
     margin: 0 auto;
     padding: 40px;
-    display: flex;
-    justify-content: start;
   }
   /* styles for блок-хедер START*/
   .header {
@@ -264,7 +262,8 @@
     grid-template-columns: 2.3fr 1fr 1fr;
     grid-template-rows: auto;
     grid-auto-flow: column dense;
-    column-gap: 30px;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
   }
   .category_layout-1 {
     grid-column: 1/2;
@@ -383,5 +382,4 @@
   /* блок Доставка END */
   /* srtyles for блок-футер START*/
   /* styles for блок-футер END*/
-}
-/*# sourceMappingURL=desktop-styles.css.map */
+}/*# sourceMappingURL=desktop-styles.css.map */

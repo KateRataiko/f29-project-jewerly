@@ -371,8 +371,6 @@ $lh-large: 130%;
     }
 
 
-                margin-top: 20px;
-            }
 
             &_img2 {
                 display: none;
@@ -747,68 +745,5 @@ label, a{/*Изменение стрелки при наведении*/
         }
     }
 
-    .fieldset {
-        all: unset;
-
-        margin: 1rem 0 0 0;
-
-        width: 70vw;
-
-        &__legend {
-            margin: 0 0 3rem 0;
-        }
-
-        &__input {
-            all: unset;
-
-            background-color: #F1F1F1;
-            color: black;
-
-            margin: 0 0 3rem 0;
-            background-clip: padding-box;
-
-            border: 1px solid #bdbdbd;
-            border-radius: 0.25rem;
-
-            height: calc(2.25rem + 2px);
-            width: 100%;
-
-            font: inherit;
-        }
-
-        &__input::placeholder {
-            text-align: left;
-            padding: 1rem;
-        }
-
-        &__input:focus {
-            box-shadow: 0 0 0 0.2rem #CECECE;
-        }
-
-        &__btn {
-            all: unset;
-
-            border-radius: 0.25rem;
-            border: 1px solid #bdbdbd;
-
-            background-color: #F1F1F1;
-            color: black;
-
-            width: fit-content;
-
-            text-align: center;
-            font: inherit;
-
-            padding: 0.8rem 1rem;
-            margin: 0 0 3rem 0;
-
-            text-decoration: none;
-        }
-
-        &__btn:active {
-            background-color: #CECECE;
-        }
-    }
-
+   
     /* styles for блок-футер END*/
-}

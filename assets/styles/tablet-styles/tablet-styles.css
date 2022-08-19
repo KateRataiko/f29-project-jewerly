@@ -245,7 +245,8 @@
   /* styles for блок-про производство END*/
   /* srtyles for блок-витрина START*/
   .category {
-    column-gap: 30px;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
   }
   .card {
     grid-template-columns: 3fr 1fr;
@@ -319,5 +320,4 @@
   /* styles for блок-отзывы END*/
   /* srtyles for блок-футер START*/
   /* styles for блок-футер END*/
-}
-/*# sourceMappingURL=tablet-styles.css.map */
+}/*# sourceMappingURL=tablet-styles.css.map */
