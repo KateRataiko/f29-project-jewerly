@@ -98,9 +98,6 @@ $lh-large: 130%;
         position: relative;
         z-index: 3;
 
-        &__phrase {
-            display: none;
-        }
 
 
         &__logo-img {
@@ -113,7 +110,7 @@ $lh-large: 130%;
             border-radius: 5px;
         }
 
-        /*&__item_choker {
+        &__item_choker {
             display: none;
         }
 
@@ -135,7 +132,7 @@ $lh-large: 130%;
 
         &__item_delivery {
             display: none;
-        }*/
+        }
 
 
     }
@@ -196,7 +193,7 @@ $lh-large: 130%;
             background-color: #d4d4d2;
             box-shadow: 2px 0px 6px rgba(0, 0, 0, .2);
             border-radius: 0 6px 6px 0;
-            width: 60%;
+            width: 70%;
 
         }
 
@@ -309,19 +306,39 @@ $lh-large: 130%;
             margin-top: 20px;
         }
 
-        &__wrapper_big {
+        &__phrase {
+            display: none;
+        }
+
+        &__textlarge_podbor {
+            display: none;
+        }
+
+        &__textlarge_exsclusive {
+            display: none;
+        }
+
+        &__textlarge_new {
+            display: none;
+        }
+
+        &__textlarge_renew {
             display: none;
         }
 
 
-        &__wrapper {
+        &__text-large {
+            display: none;
+        }
+
+        &__text {
             position: absolute;
             padding: 0px 0px 0px 20px;
             width: 100%;
             bottom: 10px;
         }
 
-        &__text_first {
+        &__text_stone {
             @include font(1.3rem, $lh-medium, $fw-meduim);
             color: white;
             max-width: 90%;
@@ -331,7 +348,7 @@ $lh-large: 130%;
             text-shadow: 1.5px 1.5px 3px #070707;
         }
 
-        &__text_second {
+        &__text_rebuild {
             @include font(1.3rem, $lh-medium, $fw-meduim);
             color: white;
             max-width: 90%;
