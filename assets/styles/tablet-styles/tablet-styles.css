@@ -319,5 +319,48 @@
   }
   /* styles for блок-отзывы END*/
   /* srtyles for блок-футер START*/
+  .footer {
+    text-align: start;
+  }
+  .footer__wrapper {
+    display: grid;
+    grid-template-areas: "block1 block2 " "block4 block3 ";
+  }
+  .footer__greed-block_first {
+    grid-area: block1;
+  }
+  .footer__greed-block_second {
+    grid-area: block2;
+  }
+  .footer__greed-block_third {
+    grid-area: block3;
+    margin: 3rem 0 0 0;
+    display: flex;
+    justify-content: start;
+  }
+  .footer__greed-block_fourth {
+    grid-area: block4;
+    margin: 3rem 0 0 0;
+    display: flex;
+    align-items: center;
+  }
+  .footer__link {
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .footer__link_top {
+    margin: 3rem 0 3rem 0;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    border-left: 10px;
+    border-right: 10px;
+  }
+  .footer__link:hover {
+    text-decoration: underline;
+  }
+  .footer__icon_change-color:hover {
+    color: #070707;
+  }
   /* styles for блок-футер END*/
 }/*# sourceMappingURL=tablet-styles.css.map */

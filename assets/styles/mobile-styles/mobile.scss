@@ -718,9 +718,7 @@ label, a{/*Изменение стрелки при наведении*/
         &__link {
             all: unset;
 
-            &:focus {
-                text-decoration: underline;
-            }
+            text-decoration: underline;
         }
 
         &__information-block {
@@ -733,15 +731,25 @@ label, a{/*Изменение стрелки при наведении*/
 
         &__icons-block {
 
-            margin: 3rem 0;
+            margin: 3rem 0 ;
 
             display: flex;
             justify-content: center;
         }
 
         &__icon {
-            all: unset;
             margin: 0 2rem 0 0;
+            
+            &_change-color{
+             &:focus{
+                color: #070707;
+             }
+            }
+        }
+        
+
+        &__link_top{
+          text-decoration: underline;
         }
     }
 

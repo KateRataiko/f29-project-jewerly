@@ -614,8 +614,6 @@ label, a { /*Изменение стрелки при наведении*/
 }
 .footer__link {
   all: unset;
-}
-.footer__link:focus {
   text-decoration: underline;
 }
 .footer__information-block {
@@ -630,62 +628,13 @@ label, a { /*Изменение стрелки при наведении*/
   justify-content: center;
 }
 .footer__icon {
-  all: unset;
   margin: 0 2rem 0 0;
 }
-
-.fieldset {
-  all: unset;
-  margin: 1rem 0 0 0;
-  width: 70vw;
+.footer__icon_change-color:focus {
+  color: #070707;
 }
-.fieldset__legend {
-  margin: 0 0 3rem 0;
-}
-.fieldset__input {
-  all: unset;
-  background-color: #F1F1F1;
-  color: black;
-  margin: 0 0 3rem 0;
-  background-clip: padding-box;
-  border: 1px solid #bdbdbd;
-  border-radius: 0.25rem;
-  height: calc(2.25rem + 2px);
-  width: 100%;
-  font: inherit;
-}
-.fieldset__input::-moz-placeholder {
-  text-align: left;
-  padding: 1rem;
-}
-.fieldset__input:-ms-input-placeholder {
-  text-align: left;
-  padding: 1rem;
-}
-.fieldset__input::placeholder {
-  text-align: left;
-  padding: 1rem;
-}
-.fieldset__input:focus {
-  box-shadow: 0 0 0 0.2rem #CECECE;
-}
-.fieldset__btn {
-  all: unset;
-  border-radius: 0.25rem;
-  border: 1px solid #bdbdbd;
-  background-color: #F1F1F1;
-  color: black;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  text-align: center;
-  font: inherit;
-  padding: 0.8rem 1rem;
-  margin: 0 0 3rem 0;
-  text-decoration: none;
-}
-.fieldset__btn:active {
-  background-color: #CECECE;
+.footer__link_top {
+  text-decoration: underline;
 }
 
 /* styles for блок-футер END*//*# sourceMappingURL=mobile.css.map */
