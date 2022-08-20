@@ -794,7 +794,7 @@ $lh-large: 130%;
 
         &__icons-block {
 
-            margin: 3rem 0 ;
+            margin: 3rem 0;
 
             display: flex;
             justify-content: center;
@@ -802,19 +802,19 @@ $lh-large: 130%;
 
         &__icon {
             margin: 0 2rem 0 0;
-            
-            &_change-color{
-             &:focus{
-                color: #070707;
-             }
+
+            &_change-color {
+                &:focus {
+                    color: #070707;
+                }
             }
         }
-        
 
-        &__link_top{
-          text-decoration: underline;
+
+        &__link_top {
+            text-decoration: underline;
         }
     }
 
-   
+
     /* styles for блок-футер END*/
