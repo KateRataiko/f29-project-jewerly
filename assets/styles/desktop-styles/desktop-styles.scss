@@ -17,7 +17,7 @@ $fs-large: 1.875rem;
 // Для свойства line-height
 $lh-small: 100%;
 $lh-medium: 120%;
-$lh-large: 130%;
+$lh-large: 150%;
 
 // ================ Миксин для шрифтов
 
@@ -34,6 +34,7 @@ $lh-large: 130%;
         max-width: 1680px;
         margin: 0 auto;
         padding: 40px;
+      
     }
 
     /* styles for блок-хедер START*/
@@ -47,54 +48,93 @@ $lh-large: 130%;
             display: none;
         }
 
-        &__item {
-            color: black;
-            @include font($fs-medium, $lh-medium, $fw-meduim);
-        }
-
-
-        &__item {
-            display: block;
-        }
-
-        &__item_choker {
-            color: black;
-            @include font(1.3rem, $lh-medium, $fw-meduim);
-        }
-
-        &__item_earrings {
-            color: black;
-            @include font(1.3rem, $lh-medium, $fw-meduim);
-        }
-
-        &__item_bracelet {
-            color: black;
-            @include font(1.3rem, $lh-medium, $fw-meduim);
-        }
-
-        &__item_podveski {
-            color: black;
-            @include font(1.3rem, $lh-medium, $fw-meduim);
-        }
-
-        &__item_contact {
-            color: black;
-            @include font(1.3rem, $lh-medium, $fw-meduim);
-        }
-
-        &__item_delivery {
-            color: black;
-            @include font(1.3rem, $lh-medium, $fw-meduim);
-        }
-
         &__logo-img {
-            height: 130px;
+            height: 110px;
             z-index: 1;
             position: absolute;
             top: 10px;
             right: 10px;
             bottom: 10px;
-            border-radius: 10px;
+        }
+
+        &__item {
+            position: absolute;
+            top: 50px;
+            display: flex;
+            justify-content: flex-start;
+            width: 80%;
+            z-index: 3;
+            padding-left: 20px;
+        }
+
+        &__item_choker,
+        &__item_earrings,
+        &__item_bracelet,
+        &__item_podveski {
+            color: black;
+            @include font($fs-medium, $lh-medium, $fw-meduim);
+            text-decoration: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            text-align: center;
+
+        }
+
+        &__item_choker:visited,
+        &__item_earrings:visited,
+        &__item_bracelet:visited,
+        &__item_podveski:visited {
+            color: #5c5c5b;
+
+        }
+
+        &__item_choker:hover,
+        &__item_earrings:hover,
+        &__item_bracelet:hover,
+        &__item_podveski:hover {
+            background: white;
+        }
+
+
+        &__item_contact {
+            color: black;
+            @include font($fs-medium, $lh-medium, $fw-meduim);
+            text-decoration: none;
+            border: 2px solid white;
+            border-radius: 5px;
+            padding: 10px 15px;
+            text-align: center;
+            margin-left: 20px;
+            /*border: 1px solid white;
+            border-left: 10px;
+            border-right: 10px;
+            border-radius: 5px;*/
+        }
+
+        &__item_delivery {
+            color: black;
+            @include font($fs-medium, $lh-medium, $fw-meduim);
+            text-decoration: none;
+            border: 2px solid white;
+            border-radius: 5px;
+            padding: 10px 15px;
+            text-align: center;
+            margin-left: 20px;
+            /* border: 1px solid white;
+            border-left: 10px;
+            border-right: 10px;
+            border-radius: 5px;*/
+        }
+
+        &__item_contact:visited,
+        &__item_delivery:visited {
+            color: #5c5c5b;
+
+        }
+
+        &__item_contact:hover,
+        &__item_delivery:hover {
+            text-decoration: underline;
         }
     }
 
@@ -102,59 +142,104 @@ $lh-large: 130%;
     /* styles for блок-хедер END*/
 
     /* styles for блок-приветствие START*/
+    .start {
+        background: #d4d4d2;
 
-    .welc__slogan {
-        text-align: center;
-        @include font($fs-large, $lh-medium, $fw-bold);
-        padding: 50px 0px 30px 0;
-    }
+        &__slogan {
+            text-align: center;
+            @include font(1.8rem, $lh-medium, $fw-bold);
+            padding: 1vh 0px 4vh 0;
+        }
 
-    .welc__slogan_as {
-        text-align: center;
-        @include font($fs-large, $lh-medium, $fw-bold);
-        padding: 50px 0px 30px 0;
-        text-transform: uppercase;
+        &__slogan_as {
+            /*text-align: center;*/
+            @include font(1.8rem, $lh-medium, $fw-bold);
+            /*padding: 50px 0px 30px 0;*/
+            text-transform: uppercase;
+        }
     }
 
     .welcome {
 
-        width: 100%;
+        max-width: 100%;
         display: grid;
-        grid-template-columns: 40% 60%;
+        grid-template-columns: 55% 45%;
         grid-template-rows: 1fr;
 
-
-        &__wrapper {
-            width: 100%;
-            grid-column: 1/2;
-            grid-row: 1/2;
-            align-content: center;
-        }
-
-        &__text_first {
-            @include font(1.3rem, $lh-medium, $fw-meduim);
-            color: black;
-            max-width: 95%;
-            max-height: 50%;
-            margin-left: 0rem;
-
-        }
-
-        &__text_second {
-            @include font(1.3rem, $lh-medium, $fw-meduim);
-            color: black;
-            max-width: 95%;
-            max-height: 50%;
-            margin-left: 0rem;
-            margin-top: 10vh;
-            margin-bottom: 0rem;
-
-        }
 
         &__image {
             grid-column: 2/3;
             grid-row: 1/2;
+            width: 100%;
+            border-radius: 0 0 5px 5px;
+            padding-top: 0vh;
         }
+
+        &__text {
+            display: none;
+        }
+
+        &__textlarge {
+            grid-column: 1/2;
+            grid-row: 1/2;
+            text-align: start;
+            margin-left: -1vw;
+            width: 100%;
+            grid-column: 1/2;
+            grid-row: 1/2;
+            align-content: center;
+            padding-left: 40px;
+        }
+
+        &__textlarge_main {
+
+            color: black;
+            @include font(1.5rem, $lh-medium, $fw-meduim);
+            max-width: 90%;
+            padding: 1vw;
+            border: 2px solid white;
+            border-radius: 5px;
+
+
+
+        }
+
+        &__textlarge_podbor {
+
+            @include font(1.3rem, $lh-medium, $fw-meduim);
+            color: black;
+            max-width: 95%;
+            margin-left: 0rem;
+            margin-top: 3.5vh;
+        }
+
+        &__textlarge_exclusive {
+            @include font(1.3rem, $lh-medium, $fw-meduim);
+            color: black;
+            max-width: 95%;
+            margin-left: 0rem;
+            margin-top: 3.5vh;
+
+        }
+
+        &__textlarge_new {
+            @include font(1.3rem, $lh-medium, $fw-meduim);
+            color: black;
+            max-width: 95%;
+            margin-left: 0rem;
+            margin-top: 3.5vh;
+        }
+
+        &__textlarge_renew {
+            @include font(1.3rem, $lh-medium, $fw-meduim);
+            color: black;
+            max-width: 95%;
+            margin-left: 0rem;
+            margin-top: 3.5vh;
+            margin-bottom: 0rem;
+
+        }
+
     }
 
 
@@ -182,25 +267,20 @@ $lh-large: 130%;
         &__images {
             display: flex;
             gap: 15px;
-
             max-width: 100%;
+
 
 
             &_img1 {
                 flex: 1;
-
                 width: 33%;
-
                 margin-top: 20px;
             }
 
             &_img2 {
                 display: block;
-
                 flex: 1;
-
                 width: 33%;
-
                 margin-top: 20px;
             }
 
@@ -217,6 +297,72 @@ $lh-large: 130%;
     /* styles for блок-про производство END*/
 
     /* srtyles for блок-витрина START*/
+    .category {
+        grid-template-columns: 2.3fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-auto-flow: column dense;
+        column-gap: 30px;
+
+        &_layout-1 {
+            grid-column: 1/2;
+            grid-row: 2/4;
+        }
+
+        &_layout-2 {
+            grid-column: 2/3;
+        }
+
+        &_layout-3 {
+            grid-column: 3/4;
+        }
+
+        &__small-title {
+            grid-column: 1/4;
+            grid-row: 1/2;
+        }
+    }
+
+    .category_right {
+        grid-template-columns: 1fr 1fr 2.3fr;
+        grid-template-rows: auto;
+
+
+        &_layout-1 {
+            grid-column: 3/4;
+            grid-row: 2/4;
+        }
+
+        &_layout-2 {
+            grid-column: 2/3;
+        }
+
+        &_layout-3 {
+            grid-column: 1/2;
+        }
+    }
+
+    .card {
+        grid-template-columns: 2fr 1fr;
+
+        &__small-title,
+        &__price {
+            align-self: flex-start;
+        }
+
+        &__small-title {
+            @include font($fs-medium, $lh-large);
+        }
+
+        &__text {
+            @include font($fs-small, $lh-medium, $fw-light);
+        }
+
+        &__price {
+            @include font($fs-medium, $lh-large);
+        }
+    }
+
+
     /* styles for блок-витрина END*/
 
     /* srtyles for блок-отзывы START*/
@@ -225,14 +371,15 @@ $lh-large: 130%;
 
         &__wrapper {
             display: flex;
-            // flex-wrap: wrap;
             gap: 20px;
         }
 
         &__container-content {
-            // flex: 1 280px;
             width: 32%;
 
+        }
+
+        &__container-content:nth-last-child(n+2) {
             border-bottom: none;
         }
 
@@ -272,8 +419,98 @@ $lh-large: 130%;
         }
     }
 
+
     /* styles for блок-отзывы END*/
 
+    /* блок Доставка START */
+    .delivery {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+
+        &__wrapper {
+            display: flex;
+            gap: 40px;
+
+            background-color: #8d8d8d;
+            color: white;
+        }
+
+        &__delivery-method {
+            flex: 1;
+        }
+
+        &__payment-method {
+            flex: 1;
+        }
+
+        &__bank-card-img {
+            margin-top: 0;
+        }
+    }
+
+    /* блок Доставка END */
+
     /* srtyles for блок-футер START*/
+    .footer{
+        text-align: start;
+        
+        &__wrapper{
+            display: grid;
+            grid-template-areas: 'block1 block2 '
+            'block4 block3 ';
+        }
+
+        &__greed-block_first{
+    grid-area: block1;
+        }
+
+        &__greed-block_second{
+    grid-area: block2;
+        }
+
+        &__greed-block_third{
+    grid-area: block3;
+
+    margin: 3rem 0 0 0;
+    
+    display: flex;
+    justify-content: start;
+        }
+
+        &__greed-block_fourth{
+    grid-area: block4;
+
+    margin: 3rem 0 0 0;
+
+    display: flex;
+    align-items: center;
+        }
+
+        &__link{
+            cursor: pointer;
+            text-decoration: none;
+
+            &_top{
+                margin: 3rem 0 3rem 0 ;
+                padding: 8px;
+    
+                border: 2px solid white;
+                border-radius: 5px;
+                 
+            }
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+
+            &__icon_change-color{
+                &:hover{
+                   color: #070707;
+                }
+               }
+    }
+
     /* styles for блок-футер END*/
 }

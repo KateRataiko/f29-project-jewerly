@@ -17,7 +17,7 @@ $fs-large: 1.875rem;
 // Для свойства line-height
 $lh-small: 100%;
 $lh-medium: 120%;
-$lh-large: 130%;
+$lh-large: 150%;
 
 // ================ Миксин для шрифтов
 
@@ -36,11 +36,10 @@ $lh-large: 130%;
         padding: 40px;
     }
 
-    /* styles for header START*/
-
+    /* styles for блок-хедер START*/
     .header {
         max-width: 100%;
-        height: 110px;
+        height: 130px;
         background: #d4d4d2;
         color: black;
 
@@ -48,106 +47,188 @@ $lh-large: 130%;
             display: none;
         }
 
-        &__item {
-            display: block;
-        }
-
-        &__item_choker {
-            color: black;
-            @include font(1.3rem, $lh-medium, $fw-meduim);
-        }
-
-        &__item_earrings {
-            color: black;
-            @include font(1.3rem, $lh-medium, $fw-meduim);
-        }
-
-        &__item_bracelet {
-            color: black;
-            @include font(1.3rem, $lh-medium, $fw-meduim);
-        }
-
-        &__item_podveski {
-            color: black;
-            @include font(1.3rem, $lh-medium, $fw-meduim);
-        }
-
-        &__item_contact {
-            color: black;
-            @include font(1.3rem, $lh-medium, $fw-meduim);
-        }
-
-        &__item_delivery {
-            color: black;
-            @include font(1.3rem, $lh-medium, $fw-meduim);
-        }
-
         &__logo-img {
-            height: 90px;
+            height: 110px;
             z-index: 1;
             position: absolute;
             top: 10px;
             right: 10px;
             bottom: 10px;
-            border-radius: 10px;
+
+        }
+
+        &__item {
+            position: absolute;
+            top: 50px;
+            display: flex;
+            justify-content: flex-start;
+            width: 75%;
+            z-index: 3;
+            padding-left: 20px;
+        }
+
+        &__item_choker,
+        &__item_earrings,
+        &__item_bracelet,
+        &__item_podveski {
+            color: black;
+            @include font(1rem, $lh-medium, $fw-meduim);
+            text-decoration: none;
+            border-radius: 5px;
+            padding: 8px;
+            text-align: center;
+            /*box-shadow: inset 0px 0px 15px white;*/
+        }
+
+        &__item_choker:visited,
+        &__item_earrings:visited,
+        &__item_bracelet:visited,
+        &__item_podveski:visited {
+            color: #5c5c5b;
+
+        }
+
+        &__item_choker:hover,
+        &__item_earrings:hover,
+        &__item_bracelet:hover,
+        &__item_podveski:hover {
+            background: white;
+        }
+
+
+        &__item_contact {
+            color: black;
+            @include font(1rem, $lh-medium, $fw-meduim);
+            text-decoration: none;
+            border: 2px solid white;
+            border-radius: 5px;
+            padding: 8px;
+            text-align: center;
+            margin-left: 20px;
+
+        }
+
+        &__item_delivery {
+            color: black;
+            @include font(1rem, $lh-medium, $fw-meduim);
+            text-decoration: none;
+            border: 2px solid white;
+            border-radius: 5px;
+            padding: 8px;
+            text-align: center;
+            margin-left: 20px;
+
+        }
+
+        &__item_contact:visited,
+        &__item_delivery:visited {
+            color: #5c5c5b;
+        }
+
+        &__item_contact:hover,
+        &__item_delivery:hover {
+            text-decoration: underline;
         }
     }
 
-    /* styles for header END*/
+    /* styles for блок-хедер END*/
 
     /* styles for блок-приветствие START*/
 
-    .welc__slogan {
-        text-align: center;
-        @include font($fs-large, $lh-medium, $fw-bold);
-        padding: 50px 0px 30px 0;
-    }
+    .start {
+        background: #d4d4d2;
 
-    .welc__slogan_as {
-        text-align: center;
-        @include font($fs-large, $lh-medium, $fw-bold);
-        padding: 50px 0px 30px 0;
-        text-transform: uppercase;
+        &__slogan {
+            text-align: center;
+            @include font(1.6rem, $lh-medium, $fw-bold);
+            padding: 0vh 0px 5vh 0;
+        }
+
+        &__slogan_as {
+            /*text-align: center;*/
+            @include font(1.6rem, $lh-medium, $fw-bold);
+            /*padding: 50px 0px 30px 0;*/
+            text-transform: uppercase;
+        }
     }
 
     .welcome {
 
-        width: 100%;
+        max-width: 100%;
         display: grid;
-        grid-template-columns: 40% 60%;
+        grid-template-columns: 55% 45%;
         grid-template-rows: 1fr;
-
-
-        &__wrapper {
-            width: 100%;
-            grid-column: 1/2;
-            grid-row: 1/2;
-            align-content: center;
-        }
-
-        &__text_first {
-            @include font(1.3rem, $lh-medium, $fw-meduim);
-            color: black;
-            max-width: 95%;
-            max-height: 50%;
-            margin-left: 0rem;
-        }
-
-        &__text_second {
-            @include font(1.3rem, $lh-medium, $fw-meduim);
-            color: black;
-            max-width: 95%;
-            max-height: 50%;
-            margin-left: 0rem;
-            margin-top: 2vh;
-            margin-bottom: 0rem;
-
-        }
 
         &__image {
             grid-column: 2/3;
             grid-row: 1/2;
+            width: 100%;
+            border-radius: 0 0 5px 5px;
+            padding-top: 0vh;
         }
+
+        &__text {
+            display: none;
+        }
+
+        &__textlarge {
+            grid-column: 1/2;
+            grid-row: 1/2;
+            text-align: start;
+            margin-left: -1vw;
+            width: 100%;
+            grid-column: 1/2;
+            grid-row: 1/2;
+            align-content: center;
+            padding-left: 40px;
+        }
+
+        &__textlarge_main {
+
+            color: black;
+            @include font(1.4rem, $lh-medium, $fw-meduim);
+            max-width: 90%;
+            padding: 1vw;
+            border: 2px solid white;
+            border-radius: 5px;
+        }
+
+        &__textlarge_podbor {
+
+            @include font(1.2rem, $lh-medium, $fw-meduim);
+            color: black;
+            max-width: 95%;
+            margin-left: 0rem;
+            margin-top: 3.5vh;
+        }
+
+        &__textlarge_exclusive {
+            @include font(1.2rem, $lh-medium, $fw-meduim);
+            color: black;
+            max-width: 95%;
+            margin-left: 0rem;
+            margin-top: 3.5vh;
+
+        }
+
+        &__textlarge_new {
+            @include font(1.2rem, $lh-medium, $fw-meduim);
+            color: black;
+            max-width: 95%;
+            margin-left: 0rem;
+            margin-top: 3.5vh;
+        }
+
+        &__textlarge_renew {
+            @include font(1.2rem, $lh-medium, $fw-meduim);
+            color: black;
+            max-width: 95%;
+            margin-left: 0rem;
+            margin-top: 3.5vh;
+            margin-bottom: 0rem;
+
+        }
+
     }
 
     /* styles for блок-приветствие END*/
@@ -208,6 +289,34 @@ $lh-large: 130%;
     /* styles for блок-про производство END*/
 
     /* srtyles for блок-витрина START*/
+    .category {
+        column-gap: 30px;
+    }
+
+    .card {
+        grid-template-columns: 3fr 1fr;
+
+        &__small-title {
+            @include font($fs-medium, $lh-large);
+        }
+
+        &__text {
+            @include font($fs-small, $lh-medium, $fw-light);
+            grid-column: 1/2;
+        }
+
+        &__price {
+            @include font($fs-medium, $lh-large);
+        }
+
+        &_accent_hit::after,
+        &_accent_sale::after {
+            padding: 10px;
+
+            @include font($fs-medium, $lh-medium);
+        }
+    }
+
     /* styles for блок-витрина END*/
 
     /* srtyles for блок-отзывы START*/
@@ -216,16 +325,19 @@ $lh-large: 130%;
 
         &__wrapper {
             display: flex;
-            // flex-wrap: wrap;
             gap: 20px;
         }
 
         &__container-content {
-            // flex: 1 280px;
             width: 32%;
 
             border-bottom: none;
         }
+
+        &__container-content:nth-last-child(n+2) {
+            border-bottom: none;
+        }
+
 
         &__content {
             display: grid;
@@ -263,5 +375,65 @@ $lh-large: 130%;
     /* styles for блок-отзывы END*/
 
     /* srtyles for блок-футер START*/
+    .footer{
+        text-align: start;
+        &__wrapper{
+            display: grid;
+            grid-template-areas: 'block1 block2 '
+            'block4 block3 ';
+        }
+
+        &__greed-block_first{
+    grid-area: block1;
+        }
+
+        &__greed-block_second{
+    grid-area: block2;
+        }
+
+        &__greed-block_third{
+    grid-area: block3;
+
+    margin: 3rem 0 0 0;
+    
+    display: flex;
+    justify-content: start;
+        }
+
+        &__greed-block_fourth{
+    grid-area: block4;
+
+    margin: 3rem 0 0 0;
+
+    display: flex;
+    align-items: center;
+ 
+        }
+
+        &__link{
+            cursor: pointer;
+            text-decoration: none;
+
+            &_top{
+                margin: 3rem 0 3rem 0 ;
+                padding: 8px;
+    
+                border: 2px solid white;
+                border-radius: 5px;
+             
+            }
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+
+            &__icon_change-color{
+                &:hover{
+                   color: #070707;
+                }
+               }
+    }
+
     /* styles for блок-футер END*/
 }

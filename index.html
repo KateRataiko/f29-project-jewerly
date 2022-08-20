@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -16,40 +16,38 @@
 
 <body>
     <!--блок-хедер START-->
-    <header class="header">
 
-        <div class="header__wrapper wrapper">
-
-            <div class="header__item item">
-                <a class="header__item_choker" href="#">Чокеры</a>
-                <a class="header__item_earrings" href="#">Серьги</a>
-                <a class="header__item_bracelet" href="#">Браслеты</a>
-                <a class="header__item_podveski" href="#">Подвески</a>
-                <a class="header__item_contact" href="#">Контакты</a>
-                <a class="header__item_delivery" href="#">Доставка</a>
-
-            </div>
-
-            <div class="header__burger burger">
-                <input id="burger-menu__toggle" type="checkbox" />
-                <label class="burger-menu__btn" for="burger-menu__toggle">
-                    <span></span>
-                </label>
-
-                <ul class="burger-menu__box">
-                    <li><a class="burger-menu__item" href="#">Чокеры</a> </li>
-                    <li><a class="burger-menu__item" href="#">Серьги</a> </li>
-                    <li><a class="burger-menu__item" href="#">Браслеты</a> </li>
-                    <li><a class="burger-menu__item" href="#">Подвески</a> </li>
-                    <li><a class="burger-menu__contact" href="#hook">Контакты</a> </li>
-                    <li><a class="burger-menu__delivery" href="#hook">Доставка</a> </li>
-                </ul>
-            </div>
-
-            <div class="header__logo">
-                <img class="header__logo-img" src="assets/images/logo-small.jpg" alt="logo" />
-            </div>
+    <header class="header" id="top">
+        <!--<div class="header__wrapper wrapper">-->
+        <div class="header__item item">
+            <a class="header__item_choker" href="#">Чокеры</a>
+            <a class="header__item_earrings" href="#">Серьги</a>
+            <a class="header__item_bracelet" href="#">Браслеты</a>
+            <a class="header__item_podveski" href="#">Подвески</a>
+            <a class="header__item_contact" href="#hook_contact">Контакты</a>
+            <a class="header__item_delivery" href="#hook_delivery">Доставка</a>
         </div>
+
+
+        <div class="header__burger burger">
+            <input id="burger-menu__toggle" type="checkbox" />
+            <label class="burger-menu__btn" for="burger-menu__toggle">
+                <span></span>
+            </label>
+            <ul class="burger-menu__box">
+                <li><a class="burger-menu__item" href="#">Чокеры</a> </li>
+                <li><a class="burger-menu__item" href="#">Серьги</a> </li>
+                <li><a class="burger-menu__item" href="#">Браслеты</a> </li>
+                <li><a class="burger-menu__item" href="#">Подвески</a> </li>
+                <li><a class="burger-menu__contact" href="#hook_contact">Контакты</a> </li>
+                <li><a class="burger-menu__delivery" href="#hook_delivery">Доставка</a> </li>
+            </ul>
+        </div>
+
+        <div class="header__logo">
+            <img class="header__logo-img" src="assets/images/logo-small.jpg" alt="logo" />
+        </div>
+
 
 
     </header>
@@ -57,25 +55,30 @@
 
     <main>
         <!--блок-приветствие START-->
+        <div class="start">
 
-        <div>
-            <h4 class="welc__slogan slogan"> <span class="welc__slogan_as">Adilio.Store</span> – будь неотразима!
+            <h4 class="start__slogan slogan"> <span class="start__slogan_as">Adilio.Store</span> – будь
+                неотразима!
             </h4>
-            <div class="welcome">
 
+            <div class="welcome">
                 <img class="welcome__image" src="assets/images/model.JPG" alt="welcome">
 
-                <div class="welcome__wrapper wrapper">
+                <div class="welcome__text text">
+                    <p class="welcome__text_stone">Украшения из натуральных камней и премиум фурнитуры</p>
+                    <p class="welcome__text_rebuild">Создание новых украшений из старых материалов</p>
+                </div>
 
-                    <p class="welcome__text_first">Украшения из натуральных камней и премиум фурнитуры</p>
-
-                    <p class="welcome__text_second">Создание новых украшений из старых материалов</p>
+                <div class="welcome__textlarge textlarge">
+                    <p class="welcome__textlarge_main">Мастерская украшений, основанная в 2012 году:</p>
+                    <p class="welcome__textlarge_podbor"> Индивидуальный подбор украшений</p>
+                    <p class="welcome__textlarge_exclusive"> Cоздание эксклюзивных изделий из натуральных камней и
+                        премиум фурнитуры</p>
+                    <p class="welcome__textlarge_new"> Новые украшения из старых материалов под заказ</p>
+                    <p class="welcome__textlarge_renew">Переделка украшений, потерявших свой жизненный вид</p>
                 </div>
             </div>
-
         </div>
-
-
 
 
         <!--блок-приветствие END-->
@@ -103,122 +106,216 @@
                     <div class="category">
                         <h3 class="category_layout-1 category__small-title small-title">Чокеры</h3>
                         <div class="card category_layout-1">
-                            <div class="card__img"><img src="https://picsum.photos/1000/1000?random=1"
-                                    alt="Чокер: Stone mix"></div>
-                            <h4 class="card__small-title small-title">Stone mix</h4>
-                            <p class="card__text text">Перламутр, жемчуг, лунный камень, хризолит, родий</p>
+                            <div class="card__img">
+                                <picture>
+                                    <source srcset="./assets/images/chokers/salty-mobile.jpeg"
+                                        media="(max-width: 767.98px)">
+                                    <source srcset="./assets/images/chokers/salty.jpeg" media="(min-width: 768px)">
+                                    <img src="./assets/images/chokers/salty.jpeg" alt="Фото с моделью">
+                                </picture>
+                            </div>
+                            <h4 class="card__small-title small-title">Фото с моделью</h4>
+                            <p class="card__text text">Описание изделия, если будет</p>
                             <span class="card__price small-title">75 BYN</span>
                         </div>
-                        <div class="card category_layout-2 card_accent_sale">
-                            <div class="card__img"><img src="https://picsum.photos/1000/1000?random=2"
-                                    alt="Чокер: Salty"></div>
+                        <div class="card category_layout-2 card_accent_sale card_accent_sale_35">
+                            <div class="card__img">
+                                <picture>
+                                    <source srcset="./assets/images/chokers/salty-mobile.jpeg"
+                                        media="(max-width: 767.98px)">
+                                    <source srcset="./assets/images/chokers/salty.jpeg" media="(min-width: 768px)">
+                                    <img src="./assets/images/chokers/salty.jpeg" alt="Чокер: Salty">
+                                </picture>
+                            </div>
                             <h4 class="card__small-title small-title">Salty</h4>
                             <p class="card__text text">Перламутр, барочный жемчуг, латунь с позолотой 18к</p>
                             <span class="card__price small-title">60 BYN</span>
                         </div>
                         <div class="card category_layout-3 card_accent_hit">
-                            <div class="card__img"><img src="https://picsum.photos/1000/1000?random=3" alt="Чокер: Sea">
+                            <div class="card__img">
+                                <picture>
+                                    <source srcset="./assets/images/chokers/sea-mobile.jpeg"
+                                        media="(max-width: 767.98px)">
+                                    <source srcset="./assets/images/chokers/sea.jpeg" media="(min-width: 768px)">
+                                    <img src="./assets/images/chokers/sea.jpeg" alt="Чокер: Sea">
+                                </picture>
                             </div>
                             <h4 class="card__small-title small-title">Sea</h4>
                             <p class="card__text text">Барочный жемчуг, латунь с позолотой 18к</p>
-                            <span class="card__price small-title">60 BYN</span>
+                            <span class="card__price small-title">75 BYN</span>
                         </div>
-                        <div class="card category_layout-2">
-                            <div class="card__img"><img src="https://picsum.photos/1000/1000?random=4"
-                                    alt="Чокер: Silver moon"></div>
-                            <h4 class="card__small-title small-title">Silver moon</h4>
-                            <p class="card__text text">Японский бисер TOHO, жемчуг, родий</p>
-                            <span class="card__price small-title">30 BYN</span>
+                        <div class="card category_layout-2 card_accent_sale card_accent_sale_30">
+                            <div class="card__img">
+                                <picture>
+                                    <source srcset="./assets/images/chokers/star-mobile.jpeg"
+                                        media="(max-width: 767.98px)">
+                                    <source srcset="./assets/images/chokers/star.jpeg" media="(min-width: 768px)">
+                                    <img src="./assets/images/chokers/star.jpeg" alt="Чокер: Star">
+                                </picture>
+                            </div>
+                            <h4 class="card__small-title small-title">Star</h4>
+                            <p class="card__text text">Ракушечник, латунь с позолотой 18к, фианиты</p>
+                            <span class="card__price small-title">50 BYN</span>
                         </div>
                         <div class="card category_layout-3">
-                            <div class="card__img"><img src="https://picsum.photos/1000/1000?random=5" alt="Чокер: ">
+                            <div class="card__img">
+                                <picture>
+                                    <source srcset="./assets/images/chokers/lemon-mobile.jpeg"
+                                        media="(max-width: 767.98px)">
+                                    <source srcset="./assets/images/chokers/lemon.jpeg" media="(min-width: 768px)">
+                                    <img src="./assets/images/chokers/lemon.jpeg" alt="Чокер: Lemon">
+                                </picture>
                             </div>
-                            <h4 class="card__small-title small-title">Название изделия</h4>
-                            <p class="card__text text">Краткое описание, материал изделия</p>
-                            <span class="card__price small-title">150$</span>
+                            <h4 class="card__small-title small-title">Lemon</h4>
+                            <p class="card__text text">Каучук, жемчуг, родий</p>
+                            <span class="card__price small-title">40 BYN</span>
                         </div>
                     </div>
-                    <div class="category">
-                        <h3 class="category_layout-1 category__small-title small-title">Серьги</h3>
-                        <div class="card category_layout-1">
-                            <div class="card__img"><img src="https://picsum.photos/1000/1000?random=1" alt="Серьги: ">
+                    <div class="category category_right">
+                        <h3 class="category_layout-1 category__small-title category_right__small-title small-title">
+                            Серьги</h3>
+                        <div class="card category_layout-1 category_right_layout-1">
+                            <div class="card__img">
+                                <picture>
+                                    <source srcset="./assets/images/earrings/emily-mobile.jpeg"
+                                        media="(max-width: 767.98px)">
+                                    <source srcset="./assets/images/earrings/emily.jpeg" media="(min-width: 768px)">
+                                    <img src="./assets/images/earrings/emily.jpeg" alt="Серьги: Emily">
+                                </picture>
                             </div>
-                            <h4 class="card__small-title small-title">Название изделия</h4>
-                            <p class="card__text text">Краткое описание, материал изделия</p>
-                            <span class="card__price small-title">150$</span>
+                            <h4 class="card__small-title small-title">Фото с моделью</h4>
+                            <p class="card__text text">Описание изделия, если будет</p>
+                            <span class="card__price small-title">55 BYN</span>
                         </div>
-                        <div class="card category_layout-2">
-                            <div class="card__img"><img src="https://picsum.photos/1000/1000?random=2" alt="Серьги: ">
+                        <div class="card category_layout-2 category_right_layout-2">
+                            <div class="card__img">
+                                <picture>
+                                    <source srcset="./assets/images/earrings/emily-mobile.jpeg"
+                                        media="(max-width: 767.98px)">
+                                    <source srcset="./assets/images/earrings/emily.jpeg" media="(min-width: 768px)">
+                                    <img src="./assets/images/earrings/emily.jpeg" alt="Серьги: Emily">
+                                </picture>
                             </div>
-                            <h4 class="card__small-title small-title">Название изделия</h4>
-                            <p class="card__text text">Краткое описание, материал изделия</p>
-                            <span class="card__price small-title">150$</span>
+                            <h4 class="card__small-title small-title">Emily</h4>
+                            <p class="card__text text">Латунь, позолота 18к, халцедон</p>
+                            <span class="card__price small-title">55 BYN</span>
                         </div>
-                        <div class="card category_layout-3">
-                            <div class="card__img"><img src="https://picsum.photos/1000/1000?random=3" alt="Серьги: ">
+                        <div class="card category_layout-3 category_right_layout-3 card_accent_hit">
+                            <div class="card__img">
+                                <picture>
+                                    <source srcset="./assets/images/earrings/mari-mobile.jpeg"
+                                        media="(max-width: 767.98px)">
+                                    <source srcset="./assets/images/earrings/mari.jpeg" media="(min-width: 768px)">
+                                    <img src="./assets/images/earrings/mari.jpeg" alt="Серьги: Mari">
+                                </picture>
                             </div>
-                            <h4 class="card__small-title small-title">Название изделия</h4>
-                            <p class="card__text text">Краткое описание, материал изделия</p>
-                            <span class="card__price small-title">150$</span>
+                            <h4 class="card__small-title small-title">Mari</h4>
+                            <p class="card__text text">Латунь, позолота 18к, жемчуг</p>
+                            <span class="card__price small-title">45 BYN</span>
                         </div>
-                        <div class="card category_layout-2">
-                            <div class="card__img"><img src="https://picsum.photos/1000/1000?random=4" alt="Серьги: ">
+                        <div
+                            class="card category_layout-2 category_right_layout-2 card_accent_sale card_accent_sale_30">
+                            <div class="card__img">
+                                <picture>
+                                    <source srcset="./assets/images/earrings/stars-mobile.jpeg"
+                                        media="(max-width: 767.98px)">
+                                    <source srcset="./assets/images/earrings/stars.jpeg" media="(min-width: 768px)">
+                                    <img src="./assets/images/earrings/stars.jpeg" alt="Серьги: Stars">
+                                </picture>
                             </div>
-                            <h4 class="card__small-title small-title">Название изделия</h4>
-                            <p class="card__text text">Краткое описание, материал изделия</p>
-                            <span class="card__price small-title">150$</span>
+                            <h4 class="card__small-title small-title">Stars</h4>
+                            <p class="card__text text">Родий, перламутр</p>
+                            <span class="card__price small-title">25 BYN</span>
                         </div>
-                        <div class="card category_layout-3">
-                            <div class="card__img"><img src="https://picsum.photos/1000/1000?random=5" alt="Серьги: ">
+                        <div class="card category_layout-3 category_right_layout-3">
+                            <div class="card__img">
+                                <picture>
+                                    <source srcset="./assets/images/earrings/hearts-mobile.jpeg"
+                                        media="(max-width: 767.98px)">
+                                    <source srcset="./assets/images/earrings/hearts.jpeg" media="(min-width: 768px)">
+                                    <img src="./assets/images/earrings/hearts.jpeg" alt="Серьги: Hearts">
+                                </picture>
                             </div>
-                            <h4 class="card__small-title small-title">Название изделия</h4>
-                            <p class="card__text text">Краткое описание, материал изделия</p>
-                            <span class="card__price small-title">150$</span>
+                            <h4 class="card__small-title small-title">Hearts</h4>
+                            <p class="card__text text">Латунь, позолота 18к, агат</p>
+                            <span class="card__price small-title">45 BYN</span>
                         </div>
                     </div>
                     <div class="category">
                         <h3 class="category_layout-1 category__small-title small-title">Браслеты</h3>
                         <div class="card category_layout-1">
-                            <div class="card__img"><img src="https://picsum.photos/1000/1000?random=1" alt="Браслет: ">
+                            <div class="card__img">
+                                <picture>
+                                    <source srcset="./assets/images/bracelets/white-dream-mobile.jpeg"
+                                        media="(max-width: 767.98px)">
+                                    <source srcset="./assets/images/bracelets/white-dream.jpeg"
+                                        media="(min-width: 768px)">
+                                    <img src="./assets/images/bracelets/white-dream.jpeg" alt="Браслет: White Dream">
+                                </picture>
                             </div>
-                            <h4 class="card__small-title small-title">Название изделия</h4>
-                            <p class="card__text text">Краткое описание, материал изделия</p>
-                            <span class="card__price small-title">150$</span>
+                            <h4 class="card__small-title small-title">Фото с моделью</h4>
+                            <p class="card__text text">Описание изделия, если будет</p>
+                            <span class="card__price small-title">45 BYN</span>
                         </div>
                         <div class="card category_layout-2">
-                            <div class="card__img"><img src="https://picsum.photos/1000/1000?random=2" alt="Браслет: ">
+                            <div class="card__img">
+                                <picture>
+                                    <source srcset="./assets/images/bracelets/white-dream-mobile.jpeg"
+                                        media="(max-width: 767.98px)">
+                                    <source srcset="./assets/images/bracelets/white-dream.jpeg"
+                                        media="(min-width: 768px)">
+                                    <img src="./assets/images/bracelets/white-dream.jpeg" alt="Браслет: White Dream">
+                                </picture>
                             </div>
-                            <h4 class="card__small-title small-title">Название изделия</h4>
-                            <p class="card__text text">Краткое описание, материал изделия</p>
-                            <span class="card__price small-title">150$</span>
+                            <h4 class="card__small-title small-title">White dream</h4>
+                            <p class="card__text text">Жемчуг, латунь с позолотой 18к</p>
+                            <span class="card__price small-title">45 BYN</span>
                         </div>
                         <div class="card category_layout-3">
-                            <div class="card__img"><img src="https://picsum.photos/1000/1000?random=3" alt="Браслет: ">
+                            <div class="card__img">
+                                <picture>
+                                    <source srcset="./assets/images/bracelets/classic-mobile.jpeg"
+                                        media="(max-width: 767.98px)">
+                                    <source srcset="./assets/images/bracelets/classic.jpeg" media="(min-width: 768px)">
+                                    <img src="./assets/images/bracelets/classic.jpeg" alt="Браслет: Classic">
+                                </picture>
                             </div>
-                            <h4 class="card__small-title small-title">Название изделия</h4>
-                            <p class="card__text text">Краткое описание, материал изделия</p>
-                            <span class="card__price small-title">150$</span>
+                            <h4 class="card__small-title small-title">Classic</h4>
+                            <p class="card__text text">Раковина Тридакна, латунь с позолотой 18к</p>
+                            <span class="card__price small-title">30 BYN</span>
                         </div>
                         <div class="card category_layout-2">
-                            <div class="card__img"><img src="https://picsum.photos/1000/1000?random=4" alt="Браслет: ">
+                            <div class="card__img">
+                                <picture>
+                                    <source srcset="./assets/images/bracelets/stone-mobile.jpeg"
+                                        media="(max-width: 767.98px)">
+                                    <source srcset="./assets/images/bracelets/stone.jpeg" media="(min-width: 768px)">
+                                    <img src="./assets/images/bracelets/stone.jpeg" alt="Браслет: Stone">
+                                </picture>
                             </div>
-                            <h4 class="card__small-title small-title">Название изделия</h4>
-                            <p class="card__text text">Краткое описание, материал изделия</p>
-                            <span class="card__price small-title">150$</span>
+                            <h4 class="card__small-title small-title">Stone</h4>
+                            <p class="card__text text">Говлит, родий</p>
+                            <span class="card__price small-title">30 BYN</span>
                         </div>
                         <div class="card category_layout-3">
-                            <div class="card__img"><img src="https://picsum.photos/1000/1000?random=5" alt="Браслет: ">
+                            <div class="card__img">
+                                <picture>
+                                    <source srcset="./assets/images/bracelets/wave-mobile.jpeg"
+                                        media="(max-width: 767.98px)">
+                                    <source srcset="./assets/images/bracelets/wave.jpeg" media="(min-width: 768px)">
+                                    <img src="./assets/images/bracelets/wave.jpeg" alt="Браслет: Wave">
+                                </picture>
                             </div>
-                            <h4 class="card__small-title small-title">Название изделия</h4>
-                            <p class="card__text text">Краткое описание, материал изделия</p>
-                            <span class="card__price small-title">150$</span>
+                            <h4 class="card__small-title small-title">Wave</h4>
+                            <p class="card__text text">Барочный жемчуг, аквамарин, латунь с позолотой 18к</p>
+                            <span class="card__price small-title">35 BYN</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!--блок-витрина END-->
-        
+
         <!--блок-отзывы START-->
         <section class="opinions">
             <h4 class="opinions__small-title title">Отзывы покупателей</h4>
@@ -263,20 +360,27 @@
         <section class="delivery">
             <div class="delivery__wrapper wrapper">
                 <div class="delivery__delivery-method">
+
+                    <img class="delivery__delivery-img" src="assets/images/delivery.png" alt="delivery">
                     <h5 class="delivery__title small-title">Доставка</h5>
+
                     <ul>
-                        <li class="delivery__text text"> По Минску - самовывоз (из района Каменная Горка) либо доставка
-                            (от 50 BYN - бесплатно);
+                        <li class="delivery__text text"> По Минску &ndash; самовывоз (из района Каменная Горка) либо
+                            доставка (от 50 BYN - бесплатно);
                         </li>
-                        <li class="delivery__text text">По РБ – почтой (при 100% предоплате - бесплатно);</li>
-                        <li class="delivery__text text">По РФ и странам СНГ - согласовываем индивидуально.</li>
+                        <li class="delivery__text text">По РБ &ndash; почтой (при 100% предоплате &ndash;
+                            бесплатно);
+                        </li>
+                        <li class="delivery__text text">По РФ и странам СНГ &ndash; согласовываем индивидуально.
+                        </li>
                     </ul>
                 </div>
                 <div class="delivery__payment-method">
+                    <img class="delivery__bank-card-img" src="assets/images/bank-card.png" alt="bank-card">
                     <h5 class="delivery__title small-title">Способы оплаты</h5>
                     <ul>
-                        <li class="delivery__text text">При доставке или самовывозе - наличные или перевод на карту.
-                        </li>
+                        <li class="delivery__text text">При доставке или самовывозе &ndash; наличные или перевод на
+                            карту.</li>
                         <li class="delivery__text text">При отправлении почтой:
                             <ul>
                                 <li class="delivery__text text">предоплата на карту (и пересылка бесплатно);</li>
@@ -288,47 +392,52 @@
             </div>
         </section>
         <!--блок Доставка END-->
-    </main>
+
 
         <!--блок stone>-->
-    <section class="stone">
-        <div class="wrapper">
-            <h3 class="stone_choice">Выбери свой камень</h3>
-            <div class="stone_border"></div>
-            <div class="all">
-                <input checked type="radio" name="respond" id="desktop">
+    <div class="wrapper1">
+        <h3 class="choice">Выбери свой камень</h3>
+        <div class="border"></div>
+        <div class="all">
+            <input checked type="radio" name="respond" id="desktop">
                 <article id="slider">
                     <input checked type="radio" name="slider" id="switch1">
                     <input  type="radio" name="slider" id="switch2">
                     <input  type="radio" name="slider" id="switch3">
                     <input  type="radio" name="slider" id="switch4">
+
                     <div id="slides">
                         <div id="overflow">
                             <div class="image">
-                                <article>
                                 <div class="image_1">
-                                    <img class="stone_img" src="assets/images/moon.jpg" alt="moon stone">
-                                    <h4 class="stone_name small-title">Лунный камень</h4>
-                                    <p class="stone_text text">Его называют камнем будущего. Рассеивает негативные эмоции, приносит удачу</p></div>
-                                </article>
-                                <article>
+                                    <article><img src="assets/images/moon.jpeg"></article>
+                                    <h4 class="stone_text">Его называют камнем будущего. Рассеивает негативные эмоции, приносит удачу</h4></div>
                                 <div class="image_1">
-                                    <img class="stone_img" src="assets/images/pink.jpg" alt="pink kvarzh">
-                                    <h4 class="stone_name small-title">Розовый кварц</h4>
-                                    <p class="stone_text text">Обладает любовной силой Амура, символ нежности и душевной гармонии</p></div>
-                                </article>
-                                <article>    
+                                    <article>
+                                        <h4 class="stone_text">Обладает любовной силой Амура, символ нежности и душевной
+                                            гармонии</h4>
+                                        <img src="assets/images/moon.jpeg" alt="">
+                                    </article>
+
+                                </div>
                                 <div class="image_1">
-                                    <img class="stone_img" src="assets/images/amazonit.jpeg" alt="amazonit">
-                                    <h4 class="stone_name small-title">Амазонит</h4>
-                                    <p class="stone_text text">Привнесет в вашу жизнь спокойствие и уверенность в завтрашнем дне, уберет чувство тревоги и стресса</p></div>
-                                </article>
-                                <article>
+                                    <article>
+                                        <h4 class="stone_text">Привнесет в вашу жизнь спокойствие и уверенность в
+                                            завтрашнем
+                                            дне, уберет чувство тревоги и стресса</h4>
+                                        <img src="assets/images/moon.jpeg" alt="">
+                                    </article>
+
+                                </div>
                                 <div class="image_1">
-                                    <img class="stone_img" src="assets/images/moon.jpeg" alt="onyx">
-                                    <h4 class="stone_name small-title">Оникс</h4>
-                                    <p class="stone_text text">По-настоящему царский камень, обладающий целебными свойствами</p></div>
-                                </article>
+                                    <article>
+                                        <h4 class="stone_text">По-настоящему царский камень, обладающий целебными
+                                            свойствами
+                                        </h4>
+                                        <img src="assets/images/moon.jpeg" alt="">
+                                    </article>
+
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -352,35 +461,42 @@
     </main>
     <!--блок-футер START-->
 
-
     <footer class="footer text">
         <div class="footer__wrapper wrapper">
-            <div class="footer__information-block">
+            <div class="footer__information-block footer__greed-block_first">
 
                 <p class="footer__item">Автор украшений: Дячкина Ирина Олеговна</p>
                 <p class="footer__item"><a class="footer__link"
                         href="https://instagram.com/adilio.store?igshid=YmMyMTA2M2Y=" target="_blank">
                         Больше о бренде в Instagram: @adilio.store </a></p>
             </div>
-            <div class="footer__information-block">
-                <h4 class="small-title" id="hook">Контакты:</h4>
+            <div class="footer__information-block footer__greed-block_second">
+                <h4 class="small-title" id="hook_contact">Контакты:</h4>
                 <p class="footer__item">tel: +375293164866</p>
                 <p class="footer__item">telegram: @irendi</p>
                 <p class="footer__item">email: adilio.jew.store@gmail.com</p>
+            </div>
+            <div class="footer__greed-block_third">
                 <p class="footer__icons-block">
-                    <a class="footer__link footer__icon" href="https://instagram.com/adilio.store?igshid=YmMyMTA2M2Y="
-                        target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a>
-                    <a class="footer__link footer__icon" href="tel:+375293164866">
+                    <a class="footer__link footer__icon footer__icon_change-color"
+                        href="https://instagram.com/adilio.store?igshid=YmMyMTA2M2Y=" target="_blank"><i
+                            class="fa-brands fa-instagram fa-2xl"></i></a>
+                    <a class="footer__link footer__icon footer__icon_change-color" href="tel:+375293164866">
                         <i class="fa-solid fa-phone fa-2xl"></i></a>
-                    <a class="footer__link footer__icon" href="https://wa.me/375293164866" target="_blank">
+                    <a class="footer__link footer__icon footer__icon_change-color" href="https://wa.me/375293164866"
+                        target="_blank">
                         <i class="fa-brands fa-whatsapp fa-2xl"></i></a>
-                    <a class="footer__link footer__icon" href="https://telegram.me/@irendi" target="_blank">
+                    <a class="footer__link footer__icon footer__icon_change-color" href="https://telegram.me/@irendi"
+                        target="_blank">
                         <i class="fa-brands fa-telegram fa-2xl"></i> </a>
-                    <a class="footer__link " href="mailto:adilio.jew.store@gmail.com">
+                    <a class="footer__link footer__icon_change-color" href="mailto:adilio.jew.store@gmail.com">
                         <i class="fa-solid fa-envelope fa-2xl"></i></a>
                 </p>
             </div>
-        </div>
+            <div class="footer__greed-block_fourth">
+                <a class="footer__link footer__link_top" href="#top">Вернуться к
+                    меню</a>
+            </div>
         </div>
     </footer>
     <!--блок-футер END-->
