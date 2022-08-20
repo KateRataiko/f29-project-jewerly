@@ -460,6 +460,12 @@ $lh-large: 130%;
             object-fit: cover;
         }
 
+        &__img_model img,
+        &__img_model picture {
+            aspect-ratio: 3 / 4;
+            object-fit: cover;
+        }
+
         &__small-title,
         &__price {
             align-self: center;
