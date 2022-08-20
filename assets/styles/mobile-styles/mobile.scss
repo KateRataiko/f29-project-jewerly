@@ -534,7 +534,7 @@ max-width: 100%;
 }
 article img{/*размер изрбражений слайдера*/
     width: 100%;
-    height: 240px
+    height: 200px
 }
 #desktop:checked ~ #slider{ /*размер всего слайдера, пока активирован чекбокс*/
     max-width: 960px;
