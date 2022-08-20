@@ -93,7 +93,8 @@
     font-weight: 600;
     font-size: 1.6rem;
     line-height: 120%;
-    padding: 0vh 0px 5vh 0;
+    padding: 5vh 0px 5vh 0;
+    background: white;
   }
   .start__slogan_as {
     /*text-align: center;*/
@@ -109,6 +110,7 @@
     display: grid;
     grid-template-columns: 55% 45%;
     grid-template-rows: 1fr;
+    margin-top: 4vh;
   }
   .welcome__image {
     grid-column: 2/3;
