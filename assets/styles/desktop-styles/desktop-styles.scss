@@ -361,6 +361,13 @@ $lh-large: 150%;
             @include font($fs-medium, $lh-large);
         }
 
+        &_accent_hit::after,
+        &_accent_sale::after {
+            padding: 10px;
+
+            @include font($fs-medium, $lh-medium);
+        }
+
         &__img_model img,
         &__img_model picture {
             aspect-ratio: 3 / 4;

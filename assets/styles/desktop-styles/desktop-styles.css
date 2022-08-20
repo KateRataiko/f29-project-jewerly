@@ -287,6 +287,13 @@
     font-size: 1.25rem;
     line-height: 150%;
   }
+  .card_accent_hit::after, .card_accent_sale::after {
+    padding: 10px;
+    font-family: "Inter", Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 120%;
+  }
   .card__img_model img,
   .card__img_model picture {
     aspect-ratio: 3 / 4;
