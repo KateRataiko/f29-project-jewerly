@@ -153,7 +153,7 @@
     color: black;
     max-width: 95%;
     margin-left: 0rem;
-    margin-top: 3.5vh;
+    margin-top: 3.2vh;
   }
   .welcome__textlarge_exclusive {
     font-family: "Inter", Verdana, sans-serif;
@@ -163,7 +163,7 @@
     color: black;
     max-width: 95%;
     margin-left: 0rem;
-    margin-top: 3.5vh;
+    margin-top: 3.2vh;
   }
   .welcome__textlarge_new {
     font-family: "Inter", Verdana, sans-serif;
@@ -173,7 +173,7 @@
     color: black;
     max-width: 95%;
     margin-left: 0rem;
-    margin-top: 3.5vh;
+    margin-top: 3.2vh;
   }
   .welcome__textlarge_renew {
     font-family: "Inter", Verdana, sans-serif;
@@ -183,7 +183,7 @@
     color: black;
     max-width: 95%;
     margin-left: 0rem;
-    margin-top: 3.5vh;
+    margin-top: 3.2vh;
     margin-bottom: 0rem;
   }
   /* styles for блок-приветствие END*/
