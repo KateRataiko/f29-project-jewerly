@@ -399,24 +399,33 @@
 
 /* styles for блок-отзывы END*/
 /* styles for блок stone START*/
-.wrapper1 {
+.wrapper {
   max-width: 100%;
 }
 
-.choice {
-  padding: 2rem;
-  text-align: center;
+.stone_choice {
+  text-align: start;
 }
 
-.border {
-  margin-bottom: 2rem;
+.stone_border {
   border-top: 1px solid #747272;
+  margin-bottom: 1rem;
+}
+
+.image1 {
+  width: 100%;
+}
+.image1_img {
+  width: 70%;
+}
+.image1_text {
+  width: 30%;
 }
 
 #slider { /*положение слайдера*/
   position: relative;
   text-align: center;
-  bottom: 2rem;
+  top: 10px;
 }
 
 #slider { /*центровка слайдера*/
@@ -433,25 +442,26 @@
   line-height: 0;
 }
 
-#overflow { /*скрывает все, что находится за пределами этог блока*/
+#overflow { /*сркывает все, что находится за пределами этого блока*/
   width: 100%;
   overflow: hidden;
 }
 
-article image { /*размер изрбражений слайдера*/
+article img { /*размер изрбражений слайдера*/
   width: 100%;
+  height: 240px;
 }
 
-#desktop:checked ~ slider { /*размер всего слайдера, пока активирован чекбокс*/
+#desktop:checked ~ #slider { /*размер всего слайдера, пока активирован чекбокс*/
   max-width: 960px;
 }
 
 /*настройка переключения и положения левой стрелки*/
 /*если свитч1-4 активны, идет обращение к лейблу из блока с id контролс*/
-#switch1:checked ~ controls label:nth-child(4),
-#switch1:checked ~ controls label:nth-child(1),
-#switch1:checked ~ controls label:nth-child(2),
-#switch1:checked ~ controls label:nth-child(3) {
+#switch1:checked ~ #controls label:nth-child(4),
+#switch2:checked ~ #controls label:nth-child(1),
+#switch3:checked ~ #controls label:nth-child(2),
+#switch4:checked ~ #controls label:nth-child(3) {
   background: url("prev.png") no-repeat; /*заливка фона картинкой без повторений*/
   float: left;
   margin: 0 0 0 -84px; /*сдвиг влево*/
@@ -461,10 +471,10 @@ article image { /*размер изрбражений слайдера*/
 }
 
 /*настройка переключения правой стрелки*/
-#switch1:checked ~ controls label:nth-child(2),
-#switch1:checked ~ controls label:nth-child(3),
-#switch1:checked ~ controls label:nth-child(4),
-#switch1:checked ~ controls label:nth-child(1) {
+#switch1:checked ~ #controls label:nth-child(2),
+#switch2:checked ~ #controls label:nth-child(3),
+#switch3:checked ~ #controls label:nth-child(4),
+#switch4:checked ~ #controls label:nth-child(1) {
   background: url("next.png") no-repeat; /*заливка фона картинкой без повторений*/
   float: right;
   margin: 0 -84px 0 0; /*сдвиг вправо*/
@@ -473,11 +483,11 @@ article image { /*размер изрбражений слайдера*/
   width: 68px;
 }
 
-label, a { /*Изменение стрелки при наведении*/
+label, a { /*при наведении на стрелки или переключатели - курсор изменится*/
   cursor: pointer;
 }
 
-.all input { /*скрывает стандартные инпуты*/
+.all input { /*скрывает стандартные инпуты (чекбоксы) на странице*/
   display: none;
 }
 
@@ -512,7 +522,7 @@ label, a { /*Изменение стрелки при наведении*/
 }
 
 #active { /* расположение блока с переключателями*/
-  margin: 23% 0 0;
+  margin: 15% 0 0;
   text-align: center;
 }
 
@@ -522,10 +532,10 @@ label, a { /*Изменение стрелки при наведении*/
 }
 
 /*цвет активного переключателя чекбокса, лейбла  при активации чекбокса*/
-#switch1:checked ~ :active label:nth-child(1),
-#switch2:checked ~ :active label:nth-child(2),
-#switch3:checked ~ :active label:nth-child(3),
-#switch4:checked ~ :active label:nth-child(4) {
+#switch1:checked ~ #active label:nth-child(1),
+#switch2:checked ~ #active label:nth-child(2),
+#switch3:checked ~ #active label:nth-child(3),
+#switch4:checked ~ #active label:nth-child(4) {
   background: black;
   border-color: white !important;
 }
@@ -542,8 +552,6 @@ label, a { /*Изменение стрелки при наведении*/
   transition: opacity 0.2s ease-out;
 }
 
-/* styles for блок stone END*/
-/* styles for блок-футер START*/
 .footer {
   background-color: #747272;
   color: #F1F1F1;
