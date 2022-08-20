@@ -232,9 +232,6 @@ $lh-large: 130%;
 
         }
     }
-}
-
-
     #burger-menu__toggle:checked~.burger-menu__btn>span {
         transform: rotate(45deg);
     }
@@ -254,7 +251,6 @@ $lh-large: 130%;
         visibility: visible;
         left: 0;
     }
-
     .burger-menu {
 
         &__btn>span,
@@ -360,7 +356,7 @@ $lh-large: 130%;
             text-shadow: 1.5px 1.5px 3px #070707;
         }
     }
-}
+
     /* styles for блок-приветствие END*/
 
 /* styles for блок-про производство START*/
