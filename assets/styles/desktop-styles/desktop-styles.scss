@@ -166,7 +166,7 @@ $lh-large: 150%;
         display: grid;
         grid-template-columns: 55% 45%;
         grid-template-rows: 1fr;
-        margin-top: 4vh;
+        /*margin-top: 4vh;*/
 
 
         &__image {
@@ -191,6 +191,7 @@ $lh-large: 150%;
             grid-row: 1/2;
             align-content: center;
             padding-left: 40px;
+            padding-top: 4vh;
         }
 
         &__textlarge_main {

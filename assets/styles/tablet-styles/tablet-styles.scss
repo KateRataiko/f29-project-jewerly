@@ -143,6 +143,7 @@ $lh-large: 150%;
             @include font(1.6rem, $lh-medium, $fw-bold);
             padding: 5vh 0px 5vh 0;
             background: white;
+            /*argin-bottom: 4vh;*/
         }
 
         &__slogan_as {
@@ -159,7 +160,7 @@ $lh-large: 150%;
         display: grid;
         grid-template-columns: 55% 45%;
         grid-template-rows: 1fr;
-        margin-top: 4vh;
+        /* margin-top: 4vh;*/
 
         &__image {
             grid-column: 2/3;
@@ -183,6 +184,7 @@ $lh-large: 150%;
             grid-row: 1/2;
             align-content: center;
             padding-left: 40px;
+            padding-top: 4vh;
         }
 
         &__textlarge_main {

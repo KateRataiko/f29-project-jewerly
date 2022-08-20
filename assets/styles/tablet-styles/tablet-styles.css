@@ -95,6 +95,7 @@
     line-height: 120%;
     padding: 5vh 0px 5vh 0;
     background: white;
+    /*argin-bottom: 4vh;*/
   }
   .start__slogan_as {
     /*text-align: center;*/
@@ -110,7 +111,7 @@
     display: grid;
     grid-template-columns: 55% 45%;
     grid-template-rows: 1fr;
-    margin-top: 4vh;
+    /* margin-top: 4vh;*/
   }
   .welcome__image {
     grid-column: 2/3;
@@ -132,6 +133,7 @@
     grid-row: 1/2;
     align-content: center;
     padding-left: 40px;
+    padding-top: 4vh;
   }
   .welcome__textlarge_main {
     color: black;
