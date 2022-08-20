@@ -361,7 +361,7 @@ $lh-large: 130%;
             text-shadow: 1.5px 1.5px 3px #070707;
         }
     }
-
+}
     /* styles for блок-приветствие END*/
 
     /* styles for блок-про производство START*/
@@ -391,10 +391,11 @@ $lh-large: 130%;
                 display: none;
             }
 
-            &_img3 {
+            &_img3, &_img1 {
                 width: 100%;
                 margin-top: 20px;
             }
+           
         }
     }
 
@@ -772,7 +773,6 @@ $lh-large: 130%;
         background-color: #656565;
         color: #F1F1F1;
 
-        width: 100vw;
         height: fit-content;
 
 
