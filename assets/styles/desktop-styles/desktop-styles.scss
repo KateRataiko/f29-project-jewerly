@@ -298,7 +298,7 @@ $lh-large: 150%;
 
     /* srtyles for блок-витрина START*/
     .category {
-        grid-template-columns: 2.3fr 1fr 1fr;
+        grid-template-columns: 2fr 1fr 1fr;
         grid-template-rows: auto;
         grid-auto-flow: column dense;
         column-gap: 30px;
@@ -323,7 +323,7 @@ $lh-large: 150%;
     }
 
     .category_right {
-        grid-template-columns: 1fr 1fr 2.3fr;
+        grid-template-columns: 1fr 1fr 2fr;
         grid-template-rows: auto;
 
 
@@ -359,6 +359,12 @@ $lh-large: 150%;
 
         &__price {
             @include font($fs-medium, $lh-large);
+        }
+
+        &__img_model img,
+        &__img_model picture {
+            aspect-ratio: 3 / 4;
+            object-fit: cover;
         }
     }
 
