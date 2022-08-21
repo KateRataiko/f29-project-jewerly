@@ -366,27 +366,29 @@ $lh-large: 130%;
     max-width: 100%;
     height: auto;
 
-        &__small-title {
-            text-align: center;
-            padding-top: 30px;
-            margin-top: 30px;
-            letter-spacing: 0.2rem;
-        }
+    &__small-title {
+        text-align: center;
+        padding-top: 30px;
+        margin-top: 30px;
+        letter-spacing: 0;
+    }
 
-        &__text {
-            text-align: center;
+    &__text {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    &__images {
+
+        &_img1 {
+            width: 100%;
+
             margin-top: 20px;
         }
 
-        &__images {
-
-
-            margin-top: 30px;
-            letter-spacing: 0;
-
-            &_img2 {
-                display: none;
-            }
+        &_img2 {
+            display: none;
+        }
 
         &_img3 {
             width: 100%;
@@ -527,7 +529,7 @@ $lh-large: 130%;
         max-width: 100%;
         height: auto;
 
-        &__container-content {
+        &__container-content:nth-last-child(n+2) {
             border-bottom: 1px solid #747272;
         }
 
@@ -697,6 +699,7 @@ $lh-large: 130%;
     }
 /* styles for блок stone END*/
 
+/* блок Доставка START*/
 .delivery {
 
     width: 100%;
@@ -705,10 +708,8 @@ $lh-large: 130%;
     color: white;
     padding: 20px;
 
-    &__small-title {
-        text-align: center;
-
-        margin-bottom: 20px;
+    &__bank-card-img {
+        margin-top: 30px;
     }
 
     &__title {
