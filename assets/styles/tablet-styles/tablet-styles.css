@@ -216,6 +216,7 @@
     margin-top: 20px;
   }
   .workshop__images_img3 {
+    display: block;
     flex: 1;
     width: 33%;
     margin-top: 20px;
