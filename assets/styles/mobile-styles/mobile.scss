@@ -363,7 +363,6 @@ $lh-large: 130%;
 
 /* styles for блок-про производство START*/
 .workshop {
-    max-width: 100%;
     height: auto;
 
     &__small-title {
@@ -526,7 +525,6 @@ $lh-large: 130%;
     /* styles for блок-витрина END*/
     /* srtyles for блок-отзывы START*/
     .opinions {
-        max-width: 100%;
         height: auto;
 
         &__container-content:nth-last-child(n+2) {

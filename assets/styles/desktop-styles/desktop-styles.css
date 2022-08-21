@@ -302,9 +302,6 @@
   }
   /* styles for блок-витрина END*/
   /* srtyles for блок-отзывы START*/
-  .opinions {
-    max-width: 100%;
-  }
   .opinions__wrapper {
     display: flex;
     gap: 20px;

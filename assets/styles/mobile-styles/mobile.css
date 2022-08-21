@@ -283,7 +283,6 @@
 /* styles for блок-приветствие END*/
 /* styles for блок-про производство START*/
 .workshop {
-  max-width: 100%;
   height: auto;
 }
 .workshop__small-title {
@@ -424,7 +423,6 @@
 /* styles for блок-витрина END*/
 /* srtyles for блок-отзывы START*/
 .opinions {
-  max-width: 100%;
   height: auto;
 }
 .opinions__container-content:nth-last-child(n+2) {
