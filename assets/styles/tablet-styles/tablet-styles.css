@@ -271,7 +271,8 @@
   .opinions__content {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 15vh 17vh;
+    grid-template-rows: 1fr 1fr;
+    height: 100%;
     background-color: #F1F1F1;
   }
   .opinions__small-title {
