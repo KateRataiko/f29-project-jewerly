@@ -136,6 +136,7 @@
     background-color: #d4d4d2;
     box-shadow: 2px 0px 6px rgba(0, 0, 0, 0.2);
     border-radius: 0 6px 6px 0;
+    width: 60%;
   }
   .burger-menu__item {
     display: block;
