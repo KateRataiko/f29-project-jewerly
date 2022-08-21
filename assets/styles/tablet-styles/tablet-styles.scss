@@ -141,7 +141,8 @@ $lh-large: 150%;
         &__slogan {
             text-align: center;
             @include font(1.6rem, $lh-medium, $fw-bold);
-            padding: 0vh 0px 5vh 0;
+            padding: 5vh 0px 5vh 0;
+            background: white;
         }
 
         &__slogan_as {
@@ -149,6 +150,7 @@ $lh-large: 150%;
             @include font(1.6rem, $lh-medium, $fw-bold);
             /*padding: 50px 0px 30px 0;*/
             text-transform: uppercase;
+
         }
     }
 
@@ -158,6 +160,7 @@ $lh-large: 150%;
         display: grid;
         grid-template-columns: 55% 45%;
         grid-template-rows: 1fr;
+        /* margin-top: 4vh;*/
 
         &__image {
             grid-column: 2/3;
@@ -181,6 +184,7 @@ $lh-large: 150%;
             grid-row: 1/2;
             align-content: center;
             padding-left: 40px;
+            padding-top: 4vh;
         }
 
         &__textlarge_main {
@@ -199,7 +203,7 @@ $lh-large: 150%;
             color: black;
             max-width: 95%;
             margin-left: 0rem;
-            margin-top: 3.5vh;
+            margin-top: 3.2vh;
         }
 
         &__textlarge_exclusive {
@@ -207,7 +211,7 @@ $lh-large: 150%;
             color: black;
             max-width: 95%;
             margin-left: 0rem;
-            margin-top: 3.5vh;
+            margin-top: 3.2vh;
 
         }
 
@@ -216,7 +220,7 @@ $lh-large: 150%;
             color: black;
             max-width: 95%;
             margin-left: 0rem;
-            margin-top: 3.5vh;
+            margin-top: 3.2vh;
         }
 
         &__textlarge_renew {
@@ -224,7 +228,7 @@ $lh-large: 150%;
             color: black;
             max-width: 95%;
             margin-left: 0rem;
-            margin-top: 3.5vh;
+            margin-top: 3.2vh;
             margin-bottom: 0rem;
 
         }
@@ -507,64 +511,65 @@ $lh-large: 150%;
             transition: opacity 0.2s ease-out;
         }
     /* srtyles for блок-футер START*/
-    .footer{
+    .footer {
         text-align: start;
-        &__wrapper{
+
+        &__wrapper {
             display: grid;
             grid-template-areas: 'block1 block2 '
-            'block4 block3 ';
+                'block4 block3 ';
         }
 
-        &__greed-block_first{
-    grid-area: block1;
+        &__greed-block_first {
+            grid-area: block1;
         }
 
-        &__greed-block_second{
-    grid-area: block2;
+        &__greed-block_second {
+            grid-area: block2;
         }
 
-        &__greed-block_third{
-    grid-area: block3;
+        &__greed-block_third {
+            grid-area: block3;
 
-    margin: 3rem 0 0 0;
-    
-    display: flex;
-    justify-content: start;
+            margin: 3rem 0 0 0;
+
+            display: flex;
+            justify-content: start;
         }
 
-        &__greed-block_fourth{
-    grid-area: block4;
+        &__greed-block_fourth {
+            grid-area: block4;
 
-    margin: 3rem 0 0 0;
+            margin: 3rem 0 0 0;
 
-    display: flex;
-    align-items: center;
- 
+            display: flex;
+            align-items: center;
+
         }
 
-        &__link{
+        &__link {
             cursor: pointer;
             text-decoration: none;
 
-            &_top{
-                margin: 3rem 0 3rem 0 ;
+            &_top {
+                margin: 3rem 0 3rem 0;
                 padding: 8px;
-    
+
                 border: 2px solid white;
                 border-radius: 5px;
-             
+
             }
 
-            &:hover{
+            &:hover {
                 text-decoration: underline;
             }
         }
 
-            &__icon_change-color{
-                &:hover{
-                   color: #070707;
-                }
-               }
+        &__icon_change-color {
+            &:hover {
+                color: #070707;
+            }
+        }
     }
 
     /* styles for блок-футер END*/

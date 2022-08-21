@@ -34,6 +34,9 @@ $lh-large: 150%;
         max-width: 1680px;
         margin: 0 auto;
         padding: 40px;
+
+
+
     }
 
     /* styles for блок-хедер START*/
@@ -48,7 +51,7 @@ $lh-large: 150%;
         }
 
         &__logo-img {
-            height: 110px;
+            height: 130px;
             z-index: 1;
             position: absolute;
             top: 10px;
@@ -147,7 +150,8 @@ $lh-large: 150%;
         &__slogan {
             text-align: center;
             @include font(1.8rem, $lh-medium, $fw-bold);
-            padding: 1vh 0px 4vh 0;
+            padding: 6vh 0px 6vh 0;
+            background: white;
         }
 
         &__slogan_as {
@@ -164,6 +168,7 @@ $lh-large: 150%;
         display: grid;
         grid-template-columns: 55% 45%;
         grid-template-rows: 1fr;
+        /*margin-top: 4vh;*/
 
 
         &__image {
@@ -188,6 +193,7 @@ $lh-large: 150%;
             grid-row: 1/2;
             align-content: center;
             padding-left: 40px;
+            padding-top: 4vh;
         }
 
         &__textlarge_main {
@@ -630,63 +636,66 @@ $lh-large: 150%;
 /* styles for блок stone END*/
 
     /* srtyles for блок-футер START*/
-    .footer{
+    .footer {
         text-align: start;
-        
-        &__wrapper{
+
+        &__wrapper {
             display: grid;
             grid-template-areas: 'block1 block2 '
-            'block4 block3 ';
+                'block4 block3 ';
         }
 
-        &__greed-block_first{
-    grid-area: block1;
+        &__greed-block_first {
+            grid-area: block1;
         }
 
-        &__greed-block_second{
-    grid-area: block2;
+        &__greed-block_second {
+            grid-area: block2;
         }
 
-        &__greed-block_third{
-    grid-area: block3;
+        &__greed-block_third {
+            grid-area: block3;
 
-    margin: 3rem 0 0 0;
-    
-    display: flex;
-    justify-content: start;
+            margin: 3rem 0 0 0;
+
+            display: flex;
+            justify-content: start;
         }
 
-        &__greed-block_fourth{
-    grid-area: block4;
+        &__greed-block_fourth {
+            grid-area: block4;
 
-    margin: 3rem 0 0 0;
+            margin: 3rem 0 0 0;
 
-    display: flex;
-    align-items: center;
+            display: flex;
+            align-items: center;
         }
 
-        &__link{
+        &__link {
             cursor: pointer;
             text-decoration: none;
 
-            &_top{
-                margin: 3rem 0 3rem 0 ;
+            &_top {
+                margin: 3rem 0 3rem 0;
                 padding: 8px;
-    
+
                 border: 2px solid white;
                 border-radius: 5px;
+
             }
 
-            &:hover{
+            &:hover {
                 text-decoration: underline;
             }
         }
 
-            &__icon_change-color{
-                &:hover{
+
+        &__icon_change-color {
+            &:hover {
                 color: #070707;
-                }
             }
+        }
+
     }
 
 }   /* styles for блок-футер END*/
