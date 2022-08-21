@@ -303,8 +303,7 @@
   display: none;
 }
 .workshop__images_img3 {
-  width: 100%;
-  margin-top: 20px;
+  display: none;
 }
 
 /* styles for блок-про производство END*/

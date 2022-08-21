@@ -191,11 +191,13 @@ $lh-large: 150%;
             max-width: 100%;
             max-height: 95%;
             align-content: center;
-            padding-left: 40px;
+            padding-left: 65px;
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: auto;
             /*1fr 1fr 1fr 1fr 1fr*/
+            padding-right: 50px;
+            margin-top: 10px;
 
 
             &_main {
