@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -20,9 +20,9 @@
     <header class="header" id="top">
         <!--<div class="header__wrapper wrapper">-->
         <div class="header__item item">
-            <a class="header__item_choker" href="#">Чокеры</a>
-            <a class="header__item_earrings" href="#">Серьги</a>
-            <a class="header__item_bracelet" href="#">Браслеты</a>
+            <a class="header__item_choker" href="#chokers">Чокеры</a>
+            <a class="header__item_earrings" href="#earrings">Серьги</a>
+            <a class="header__item_bracelet" href="#bracelets">Браслеты</a>
             <a class="header__item_podveski" href="#">Подвески</a>
             <a class="header__item_contact" href="#hook_contact">Контакты</a>
             <a class="header__item_delivery" href="#hook_delivery">Доставка</a>
@@ -35,9 +35,9 @@
                 <span></span>
             </label>
             <ul class="burger-menu__box">
-                <li><a class="burger-menu__item" href="#">Чокеры</a> </li>
-                <li><a class="burger-menu__item" href="#">Серьги</a> </li>
-                <li><a class="burger-menu__item" href="#">Браслеты</a> </li>
+                <li><a class="burger-menu__item" href="#chokers">Чокеры</a> </li>
+                <li><a class="burger-menu__item" href="#earrings">Серьги</a> </li>
+                <li><a class="burger-menu__item" href="#bracelets">Браслеты</a> </li>
                 <li><a class="burger-menu__item" href="#">Подвески</a> </li>
                 <li><a class="burger-menu__contact" href="#hook_contact">Контакты</a> </li>
                 <li><a class="burger-menu__delivery" href="#hook_delivery">Доставка</a> </li>
@@ -57,7 +57,8 @@
         <!--блок-приветствие START-->
         <div class="start">
 
-            <h4 class="start__slogan slogan"> <span class="start__slogan_as">Adilio.Store</span> – будь неотразима!
+            <h4 class="start__slogan slogan"> <span class="start__slogan_as">Adilio.Store</span> – будь
+                неотразима!
             </h4>
 
             <div class="welcome">
@@ -102,20 +103,17 @@
             <div class="wrapper">
                 <h2 class="showcase__title title">Каталог</h2>
                 <div class="showcase__content">
-                    <div class="category">
+                    <div class="category" id="chokers">
                         <h3 class="category_layout-1 category__small-title small-title">Чокеры</h3>
                         <div class="card category_layout-1">
-                            <div class="card__img">
+                            <div class="card__img card__img_model">
                                 <picture>
-                                    <source srcset="./assets/images/chokers/salty-mobile.jpeg"
+                                    <source srcset="./assets/images/chokers/chokers-mobile.jpeg"
                                         media="(max-width: 767.98px)">
-                                    <source srcset="./assets/images/chokers/salty.jpeg" media="(min-width: 768px)">
-                                    <img src="./assets/images/chokers/salty.jpeg" alt="Фото с моделью">
+                                    <source srcset="./assets/images/chokers/chokers.jpeg" media="(min-width: 768px)">
+                                    <img src="./assets/images/chokers/chokers.jpeg" alt="Фото с моделью, демонстрирующей чокеры">
                                 </picture>
                             </div>
-                            <h4 class="card__small-title small-title">Фото с моделью</h4>
-                            <p class="card__text text">Описание изделия, если будет</p>
-                            <span class="card__price small-title">75 BYN</span>
                         </div>
                         <div class="card category_layout-2 card_accent_sale card_accent_sale_35">
                             <div class="card__img">
@@ -170,21 +168,18 @@
                             <span class="card__price small-title">40 BYN</span>
                         </div>
                     </div>
-                    <div class="category category_right">
+                    <div class="category category_right" id="earrings">
                         <h3 class="category_layout-1 category__small-title category_right__small-title small-title">
                             Серьги</h3>
                         <div class="card category_layout-1 category_right_layout-1">
-                            <div class="card__img">
+                            <div class="card__img card__img_model">
                                 <picture>
-                                    <source srcset="./assets/images/earrings/emily-mobile.jpeg"
+                                    <source srcset="./assets/images/earrings/earrings-mobile.jpg"
                                         media="(max-width: 767.98px)">
-                                    <source srcset="./assets/images/earrings/emily.jpeg" media="(min-width: 768px)">
-                                    <img src="./assets/images/earrings/emily.jpeg" alt="Серьги: Emily">
+                                    <source srcset="./assets/images/earrings/earrings.jpg" media="(min-width: 768px)">
+                                    <img src="./assets/images/earrings/earrings.jpg" alt="Фото с моделью, демонстрирующей серьги">
                                 </picture>
                             </div>
-                            <h4 class="card__small-title small-title">Фото с моделью</h4>
-                            <p class="card__text text">Описание изделия, если будет</p>
-                            <span class="card__price small-title">55 BYN</span>
                         </div>
                         <div class="card category_layout-2 category_right_layout-2">
                             <div class="card__img">
@@ -240,21 +235,18 @@
                             <span class="card__price small-title">45 BYN</span>
                         </div>
                     </div>
-                    <div class="category">
+                    <div class="category" id="bracelets">
                         <h3 class="category_layout-1 category__small-title small-title">Браслеты</h3>
                         <div class="card category_layout-1">
-                            <div class="card__img">
+                            <div class="card__img card__img_model">
                                 <picture>
-                                    <source srcset="./assets/images/bracelets/white-dream-mobile.jpeg"
+                                    <source srcset="./assets/images/bracelets/bracelets-mobile.jpeg"
                                         media="(max-width: 767.98px)">
-                                    <source srcset="./assets/images/bracelets/white-dream.jpeg"
+                                    <source srcset="./assets/images/bracelets/bracelets.jpeg"
                                         media="(min-width: 768px)">
-                                    <img src="./assets/images/bracelets/white-dream.jpeg" alt="Браслет: White Dream">
+                                    <img src="./assets/images/bracelets/bracelets.jpeg" alt="Фото с моделью, демонстрирующей браслеты">
                                 </picture>
                             </div>
-                            <h4 class="card__small-title small-title">Фото с моделью</h4>
-                            <p class="card__text text">Описание изделия, если будет</p>
-                            <span class="card__price small-title">45 BYN</span>
                         </div>
                         <div class="card category_layout-2">
                             <div class="card__img">
@@ -391,62 +383,68 @@
             </div>
         </section>
         <!--блок Доставка END-->
-    </main>
 
-    <!--блок stone>-->
-    <div class="wrapper1">
-        <h3 class="choice">Выбери свой камень</h3>
-        <div class="border"></div>
-        <div class="all">
-            <input checked type="radio" name="respond" id="desktop">
-            <article id="slider">
-                <input checked type="radio" name="slider" id="switch1">
-                <input type="radio" name="slider" id="switch2">
-                <input type="radio" name="slider" id="switch3">
-                <input type="radio" name="slider" id="switch4">
 
-                <div id="slides">
-                    <div id="overflow">
-                        <div class="image">
-                            <div class="image_1">
-                                <article><img src="assets/images/moon.jpeg"></article>
-                                <h4 class="stone_text">Его называют камнем будущего. Рассеивает негативные эмоции,
-                                    приносит удачу</h4>
-                            </div>
-                            <div class="image_1">
-                                <article><img src="assets/images/moon.jpeg"></article>
-                                <h4 class="stone_text">Обладает любовной силой Амура, символ нежности и душевной
-                                    гармонии</h4>
-                            </div>
-                            <div class="image_1">
-                                <article><img src="assets/images/moon.jpeg"></article>
-                                <h4 class="stone_text">Привнесет в вашу жизнь спокойствие и уверенность в завтрашнем
-                                    дне, уберет чувство тревоги и стресса</h4>
-                            </div>
-                            <div class="image_1">
-                                <article><img src="assets/images/moon.jpeg"></article>
-                                <h4 class="stone_text">По-настоящему царский камень, обладающий целебными свойствами
-                                </h4>
+        <!--блок stone>-->
+        <section class="stone">
+            <div class="wrapper">
+                <h3 class="stone_choice">Выбери свой камень</h3>
+                <div class="stone_border"></div>
+                <div class="all">
+                    <input checked type="radio" name="respond" id="desktop">
+                    <article id="slider">
+                        <input checked type="radio" name="slider" id="switch1">
+                        <input  type="radio" name="slider" id="switch2">
+                        <input  type="radio" name="slider" id="switch3">
+                        <input  type="radio" name="slider" id="switch4">
+                        <div id="slides">
+                            <div id="overflow">
+                                <div class="image">
+                                    <article>
+                                    <div class="image_1">
+                                        <img class="stone_img" src="assets/images/moon.jpg" alt="moon stone">
+                                        <h4 class="stone_name small-title">Лунный камень</h4>
+                                        <p class="stone_text text">Его называют камнем будущего. Рассеивает негативные эмоции, приносит удачу</p></div>
+                                    </article>
+                                    <article>
+                                    <div class="image_1">
+                                        <img class="stone_img" src="assets/images/pink.jpg" alt="pink kvarzh">
+                                        <h4 class="stone_name small-title">Розовый кварц</h4>
+                                        <p class="stone_text text">Обладает любовной силой Амура, символ нежности и душевной гармонии</p></div>
+                                    </article>
+                                    <article>    
+                                    <div class="image_1">
+                                        <img class="stone_img" src="assets/images/amazonit.jpeg" alt="amazonit">
+                                        <h4 class="stone_name small-title">Амазонит</h4>
+                                        <p class="stone_text text">Привнесет в вашу жизнь спокойствие и уверенность в завтрашнем дне, уберет чувство тревоги и стресса</p></div>
+                                    </article>
+                                    <article>
+                                    <div class="image_1">
+                                        <img class="stone_img" src="assets/images/onyx.jpg" alt="onyx">
+                                        <h4 class="stone_name small-title">Оникс</h4>
+                                        <p class="stone_text text">По-настоящему царский камень, обладающий целебными свойствами</p></div>
+                                    </article>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                        <div id="controls">
+                            <label for="switch1"></label>
+                            <label for="switch2"></label>
+                            <label for="switch3"></label>
+                            <label for="switch4"></label>
+                        </div>
+    
+                        <div id="active">
+                            <label for="switch1"></label>
+                            <label for="switch2"></label>
+                            <label for="switch3"></label>
+                            <label for="switch4"></label>
+                        </div>
+                    </article>
                 </div>
-                <div id="controls">
-                    <label for="switch1"></label>
-                    <label for="switch2"></label>
-                    <label for="switch3"></label>
-                    <label for="switch4"></label>
-                </div>
-
-                <div id="active">
-                    <label for="switch1"></label>
-                    <label for="switch2"></label>
-                    <label for="switch3"></label>
-                    <label for="switch4"></label>
-                </div>
-            </article>
-        </div>
-    </div>
+            </div>
+        </section>
+    
     </main>
     <!--блок-футер START-->
 

@@ -88,7 +88,8 @@ $lh-large: 130%;
     border-radius: 20px;
 }
 
-@media screen and (max-width: 767px) {
+
+@media screen and (max-width: 767.98px) {
 
     /* styles for блок-хедер START*/
     .header {
@@ -99,42 +100,42 @@ $lh-large: 130%;
         z-index: 3;
 
 
-        &__logo-img {
-            height: 90px;
-            z-index: 1;
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            bottom: 10px;
-            border-radius: 5px;
-        }
 
-        &__item_choker {
-            display: none;
-        }
-
-        &__item_earrings {
-            display: none;
-        }
-
-        &__item_bracelet {
-            display: none;
-        }
-
-        &__item_podveski {
-            display: none;
-        }
-
-        &__item_contact {
-            display: none;
-        }
-
-        &__item_delivery {
-            display: none;
-        }
-
-
+    &__logo-img {
+        height: 90px;
+        z-index: 1;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        bottom: 10px;
+        border-radius: 10px;
     }
+
+    &__item_choker {
+        display: none;
+    }
+
+    &__item_earrings {
+        display: none;
+    }
+
+    &__item_bracelet {
+        display: none;
+    }
+
+    &__item_podveski {
+        display: none;
+    }
+
+    &__item_contact {
+        display: none;
+    }
+
+    &__item_delivery {
+        display: none;
+    }
+
+}
 
 
     /*скрываем чекбокс*/
@@ -179,30 +180,29 @@ $lh-large: 130%;
             top: 11px;
         }
 
-        &__box {
-            display: block;
-            position: absolute;
-            visibility: hidden;
-            top: 0;
-            left: -100%;
-            margin: 0;
-            padding: 90px 20px 30px 20px;
-            list-style: none;
-            text-align: center;
-            background-color: #d4d4d2;
-            box-shadow: 2px 0px 6px rgba(0, 0, 0, .2);
-            border-radius: 0 6px 6px 0;
-            width: 70%;
+    &__box {
+        display: block;
+        position: absolute;
+        visibility: hidden;
+        top: 0;
+        left: -100%;
+        margin: 0;
+        padding: 90px 0 30px 0;
+        list-style: none;
+        text-align: center;
+        background-color: #d4d4d2;
+        box-shadow: 2px 0px 6px rgba(0, 0, 0, .2);
+        border-radius: 0 6px 6px 0;
 
-        }
+    }
 
-        &__item {
-            display: block;
-            padding: 10px 20px;
-            color: rgb(22, 21, 21);
-            @include font(1.5rem, $lh-medium, $fw-meduim);
-            text-decoration: none;
-        }
+    &__item {
+        display: block;
+        padding: 10px 20px;
+        color: rgb(22, 21, 21);
+        @include font($fs-medium, $lh-medium, $fw-meduim);
+        text-decoration: none;
+    }
 
         &__item:hover {
             background-color: #f2eded;
@@ -234,8 +234,6 @@ $lh-large: 130%;
 
         }
     }
-
-
     #burger-menu__toggle:checked~.burger-menu__btn>span {
         transform: rotate(45deg);
     }
@@ -255,7 +253,6 @@ $lh-large: 130%;
         visibility: visible;
         left: 0;
     }
-
     .burger-menu {
 
         &__btn>span,
@@ -365,7 +362,10 @@ $lh-large: 130%;
     }
 }
 
+
 /* styles for блок-приветствие END*/
+
+
 
 /* styles for блок-про производство START*/
 .workshop {
@@ -390,9 +390,10 @@ $lh-large: 130%;
         margin-top: 30px;
         letter-spacing: 0;
 
+ NNovikova
         &_img2 {
             display: none;
-        }
+
 
         &_img3,
         &_img1 {
@@ -563,6 +564,7 @@ $lh-large: 130%;
 
 
 /* styles for блок-отзывы END*/
+
 
 
 /* styles for блок stone START*/
@@ -746,11 +748,13 @@ a {
 /* блок Доставка START*/
 .delivery {
 
+
     width: 100%;
     height: auto;
     background-color: #8d8d8d;
     color: white;
     padding: 20px;
+
 
     &__bank-card-img {
         margin-top: 30px;
@@ -766,6 +770,7 @@ a {
 
     &__text {
         margin-bottom: 10px;
+
     }
 }
 
@@ -798,11 +803,14 @@ a {
 
     &__icons-block {
 
+
         margin: 3rem 0;
+
 
         display: flex;
         justify-content: center;
     }
+
 
     &__icon {
         margin: 0 2rem 0 0;
@@ -819,6 +827,7 @@ a {
         text-decoration: underline;
     }
 }
+
 
 
 /* styles for блок-футер END*/
