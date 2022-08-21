@@ -369,14 +369,13 @@ $lh-large: 130%;
 
 /* styles for блок-про производство START*/
 .workshop {
-    max-width: 100%;
     height: auto;
 
     &__small-title {
         text-align: center;
         padding-top: 30px;
         margin-top: 30px;
-        letter-spacing: 0.2rem;
+        letter-spacing: 0;
     }
 
     &__text {
@@ -386,17 +385,17 @@ $lh-large: 130%;
 
     &__images {
 
+        &_img1 {
+            width: 100%;
 
-        margin-top: 30px;
-        letter-spacing: 0;
+            margin-top: 20px;
+        }
 
- NNovikova
         &_img2 {
             display: none;
+        }
 
-
-        &_img3,
-        &_img1 {
+        &_img3 {
             width: 100%;
             margin-top: 20px;
         }
@@ -526,10 +525,9 @@ $lh-large: 130%;
 /* styles for блок-витрина END*/
 /* srtyles for блок-отзывы START*/
 .opinions {
-    max-width: 100%;
     height: auto;
 
-    &__container-content {
+        &__container-content:nth-last-child(n+2) {
         border-bottom: 1px solid #747272;
     }
 
@@ -754,7 +752,6 @@ a {
     background-color: #8d8d8d;
     color: white;
     padding: 20px;
-
 
     &__bank-card-img {
         margin-top: 30px;
